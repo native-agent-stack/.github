@@ -75,7 +75,7 @@
       },
       "dsh-sota-harness": {
         "url": "https://github.com/native-agent-stack/dsh-sota-harness",
-        "baselineSha": "eab2e464cf5cc5a1eb5cbeed48bba74ef7f7b494",
+        "baselineSha": "9e4ca13e4e62dbcfafe985e135f93a6bb8737978",
         "role": "DeepSeek Harness 10-layer probe suite, cc-lead Channel-5 worker hub, cross-OS orca.yaml & 7+ MADR 4.0 ADRs"
       },
       "sota-multi-model-workflows": {

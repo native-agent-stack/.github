@@ -70,7 +70,7 @@
       },
       "agy-sota-harness": {
         "url": "https://github.com/native-agent-stack/agy-sota-harness",
-        "baselineSha": "e01b55e77b38fa624399bba408f9410c0805f14a",
+        "baselineSha": "e5b8b0f6bb2f05f7efa0b8c7313a505d4eb5383f",
         "role": "Antigravity L0-L12 harness, pre-wall DuckDB/Polars studies (H02/H04/H06) & 14 MADR 4.0 ADRs"
       },
       "dsh-sota-harness": {
@@ -80,7 +80,7 @@
       },
       "sota-multi-model-workflows": {
         "url": "https://github.com/native-agent-stack/sota-multi-model-workflows",
-        "baselineSha": "dff2f3a6ba0833c9cbc8af61a114ddea46c4002c",
+        "baselineSha": "82f31a4ce67da77f6c243f8b0c2e61f643bd44f5",
         "role": "10 self-bootstrapping v3.0.0 multi-model workflows, SQLite WAL peer bus & 5-stage promotion gate"
       },
       "sota-compounding-lab": {
@@ -102,13 +102,13 @@
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "4085cf8ea6737cb3240d7f55c8c9ade7c053a0f5",
+        "baselineSha": "c430de56b6612e1bbb6d78e635ec059f37378042",
         "actionsEnabled": false,
         "role": "Stage-3A 3.0s SIP+BOATS radar & <=200/min Alpaca / 3,000/min IBKR paper auto-trader"
       },
       "sota-dynamic-trail-c": {
         "url": "https://github.com/native-agent-stack/sota-dynamic-trail-c",
-        "baselineSha": "d6e25bf82fb8963c8629f648bafbf84222441f6b",
+        "baselineSha": "ecba6b3b19df78d0db52725c0ff07a386752bfe3",
         "actionsEnabled": false,
         "role": "Stage-5A 24/5 sub-50ms Dual-Tranche dynamic trailing guardian (:8799)"
       },

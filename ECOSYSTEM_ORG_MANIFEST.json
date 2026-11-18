@@ -102,7 +102,7 @@
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "6deef482745f811f4e2d17faa29c06555eae4c1f",
+        "baselineSha": "747802be094c95cd14f5bd35255fa293b3f58dfb",
         "actionsEnabled": false,
         "role": "Stage-3A 3.0s SIP+BOATS radar, 7-feed PIT API, 16-tool MCP, post-Gain-Lock 50/50 Core-Harvest + Runner Convexity & 11 MADR 4.0 ADRs"
       },

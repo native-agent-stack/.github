@@ -1,0 +1,12 @@
+# Orca (https://github.com/stablyai/orca) dual-machine workspace recipe for .github
+# Supports portable Apple M5 Max (macOS) and paired stationary Noesis (Windows + WSL2 Noesis-Carbon).
+scripts:
+  setup: |
+    python3 --version
+setupAgentStartupPolicy: start-immediately
+defaultTabs:
+  - title: Org Governance Agent
+  - title: Org Merge & ADR Gate
+    command: python3 scripts/merge_gate.py
+  - title: Org Manifest Tests
+    command: python3 -m unittest discover -s tests -v

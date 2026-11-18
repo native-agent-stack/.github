@@ -102,13 +102,13 @@
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "05c429e6ee40ee60fd29a77933a4d56730e5f11b",
+        "baselineSha": "2d27a6d787a77bf5476f2f60ca3e89a8fac299ec",
         "actionsEnabled": false,
         "role": "Stage-3A 3.0s SIP+BOATS radar, 7-feed PIT API, 16-tool MCP, post-Gain-Lock 50/50 Core-Harvest + Runner Convexity & 11 MADR 4.0 ADRs"
       },
       "sota-dynamic-trail-c": {
         "url": "https://github.com/native-agent-stack/sota-dynamic-trail-c",
-        "baselineSha": "e03f3bc5d74248b4acc1cb830daa15aec40eb9ee",
+        "baselineSha": "48d99bd2cec246ac937cea45344e59a02a17214e",
         "actionsEnabled": false,
         "role": "Stage-5A 24/5 v1.0.1 Near-Lossless trailing guardian (:8799), [L]/[M]/[B] TV preset stager, dual Pine v6 mount & 10 MADR 4.0 ADRs"
       },

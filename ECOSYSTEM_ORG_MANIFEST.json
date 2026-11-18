@@ -102,9 +102,9 @@
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "29cf82d375ae1a1061b133064cb891b3e68ffccc",
+        "baselineSha": "c960848eab93c603352070c1573316c7025ee29c",
         "actionsEnabled": false,
-        "role": "Stage-3A 3.0s SIP+BOATS radar (:8787), ADR-0019 0.15x probation & BOATS/SEC-PIT guards, ADR-0020..0021 Noesis 4K TV + CTA guard, partial-fill FIFO & 21 MADR 4.0 ADRs"
+        "role": "Stage-3A 3.0s SIP+BOATS radar (:8787), ADR-0019..0023 0.15x probation, Noesis 4K TV, 15m Cloud MCP & 23 MADR 4.0 ADRs"
       },
       "sota-dynamic-trail-c": {
         "url": "https://github.com/native-agent-stack/sota-dynamic-trail-c",
@@ -114,7 +114,7 @@
       },
       "sota-private-vault": {
         "url": "https://github.com/native-agent-stack/sota-private-vault",
-        "baselineSha": "8abd957c356a5e712d921a6016c63b0af5841f9e",
+        "baselineSha": "8e54a0ea4ce001050e1b9adc64b1ef28f390ad52",
         "actionsEnabled": false,
         "role": "Stage-5B 95-trial HLZ ledger (t*(96)=4.1882), 80 E1-E4 lessons, ADIA #19 MinTRL law, v1.12.1/v3.9.7 promotion manifest & 19 MADR 4.0 ADRs"
       },
@@ -122,7 +122,7 @@
         "url": "https://github.com/native-agent-stack/cc-sota-harness",
         "baselineSha": "1f07d8bfdf85661dc1ef9332127ced9fced316f3",
         "actionsEnabled": false,
-        "role": "L5 Claude lead central orchestrator harness (OMC v2), /sota-workflow 46-skill 17-workflow enactor, ext4 lake priority & 30 MADR 4.0 ADRs"
+        "role": "L5 Claude lead central orchestrator harness (OMC v2), ADR-0031 Claude 2.1.327 Code Mode + 1h cache + Codex v2 & 31 MADR 4.0 ADRs"
       },
       "meridian": {
         "url": "https://github.com/native-agent-stack/meridian",

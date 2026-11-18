@@ -54,21 +54,76 @@
   ],
   "repositories": {
     "publicUnlimitedActionsTier": {
-      ".github": "https://github.com/native-agent-stack/.github",
-      "native-agent-stack": "https://github.com/native-agent-stack/native-agent-stack",
-      "sota-multi-model-workflows": "https://github.com/native-agent-stack/sota-multi-model-workflows",
-      "sota-compounding-lab": "https://github.com/native-agent-stack/sota-compounding-lab",
-      "sota-harness-foundation": "https://github.com/native-agent-stack/sota-harness-foundation",
-      "sota-upstream-shelf-lock": "https://github.com/native-agent-stack/sota-upstream-shelf-lock",
-      "agy-sota-harness": "https://github.com/native-agent-stack/agy-sota-harness",
-      "dsh-sota-harness": "https://github.com/native-agent-stack/dsh-sota-harness"
+      ".github": {
+        "url": "https://github.com/native-agent-stack/.github",
+        "role": "Org profile, manifest, MADR 4.0 ADRs & reusable CI"
+      },
+      "native-agent-stack": {
+        "url": "https://github.com/native-agent-stack/native-agent-stack",
+        "baselineSha": "4b8ca6208e8b2bb656f662df2708f6a70a3c7830",
+        "role": "861-repo convergence catalog & 8-shard validation suite"
+      },
+      "sota-multi-model-workflows": {
+        "url": "https://github.com/native-agent-stack/sota-multi-model-workflows",
+        "role": "9 LLM-native multi-model workflows, SQLite WAL peer bus & 5-stage promotion gate"
+      },
+      "sota-compounding-lab": {
+        "url": "https://github.com/native-agent-stack/sota-compounding-lab",
+        "baselineSha": "b120671dcc35c44be3370f1681bd7071246f538b",
+        "role": "5-stage Sim->PreWall->Paper->EB->Alpaca/IBKR lifecycle validator & sota-org-doctor"
+      },
+      "sota-upstream-shelf-lock": {
+        "url": "https://github.com/native-agent-stack/sota-upstream-shelf-lock",
+        "baselineSha": "045ddbc676a540906b3e3578d2778824e49a6ab6",
+        "role": "40-char commit-SHA lock & drift auditor for 18 upstream trading clones"
+      },
+      "agy-sota-harness": {
+        "url": "https://github.com/native-agent-stack/agy-sota-harness",
+        "baselineSha": "7355520330214d7c44511f654047476c980c5884",
+        "role": "Antigravity L0-L12 harness, 14 MADR 4.0 ADRs & 13-layer probes"
+      },
+      "dsh-sota-harness": {
+        "url": "https://github.com/native-agent-stack/dsh-sota-harness",
+        "baselineSha": "980d47a7703e0a1f250ef6787bea0da2d88abfe6",
+        "role": "DeepSeek Harness cross-peer MCP preset & pre-wall trading firewall"
+      },
+      "astrolabe": {
+        "url": "https://github.com/native-agent-stack/astrolabe",
+        "baselineSha": "f3511522c048ecde5f1a538387d9cf5b77f81262",
+        "role": "IBKR NautilusTrader paper-trading lane"
+      }
     },
     "privateExecutionAndVaultTier": {
-      "sota-mover-ranker": "https://github.com/native-agent-stack/sota-mover-ranker",
-      "sota-dynamic-trail-c": "https://github.com/native-agent-stack/sota-dynamic-trail-c",
-      "cc-sota-harness": "https://github.com/native-agent-stack/cc-sota-harness",
-      "sota-private-vault": "https://github.com/native-agent-stack/sota-private-vault",
-      "ecosystem-records": "https://github.com/native-agent-stack/ecosystem-records"
+      "sota-mover-ranker": {
+        "url": "https://github.com/native-agent-stack/sota-mover-ranker",
+        "baselineSha": "bae497602334cf8967c2af3491b55f6727fe601f",
+        "role": "3.0s SIP+BOATS whole-market radar (:8787) & 200/min Alpaca + 3,000/min IBKR Paper execution"
+      },
+      "sota-dynamic-trail-c": {
+        "url": "https://github.com/native-agent-stack/sota-dynamic-trail-c",
+        "baselineSha": "d6e25bf82fb8963c8629f648bafbf84222441f6b",
+        "role": "v0.6.0 24/5 6-14bps Mega-Cap Near-Lossless Scratch Shield, Circuit Breaker & :8799 webhook"
+      },
+      "meridian": {
+        "url": "https://github.com/native-agent-stack/meridian",
+        "baselineSha": "4dd0c20ef3c87159e783aea8d774759358bf1413",
+        "role": "Stage-1 event-driven simulation engine"
+      },
+      "trading-sota": {
+        "url": "https://github.com/native-agent-stack/trading-sota",
+        "baselineSha": "c7d60f5b9897ccb30223481de894ce9746e20505",
+        "role": "Sim -> Paper -> Live standard & lane-owned promotion gates"
+      },
+      "sota-private-vault": {
+        "url": "https://github.com/native-agent-stack/sota-private-vault",
+        "baselineSha": "baf630a49d2ff311e0550450231991df8c1bc4a9",
+        "role": "Scrubbed 82-trial HLZ ledger, 29 E1-E4 lessons, pre-wall priors & strategy promotion manifest"
+      },
+      "ecosystem-records": {
+        "url": "https://github.com/native-agent-stack/ecosystem-records",
+        "baselineSha": "265a4d9f6c9d678c2d59fe8d437b9a4ea00581c5",
+        "role": "Cryptographically sealed historical continuity records"
+      }
     }
   },
   "adrGovernance": {

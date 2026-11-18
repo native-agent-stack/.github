@@ -65,6 +65,7 @@
       },
       "sota-multi-model-workflows": {
         "url": "https://github.com/native-agent-stack/sota-multi-model-workflows",
+        "baselineSha": "da0f891d81dd6137cd803073b49ef956c02e33c9",
         "role": "9 LLM-native multi-model workflows, SQLite WAL peer bus & 5-stage promotion gate"
       },
       "sota-compounding-lab": {
@@ -104,6 +105,11 @@
         "baselineSha": "d6e25bf82fb8963c8629f648bafbf84222441f6b",
         "role": "v0.6.0 24/5 6-14bps Mega-Cap Near-Lossless Scratch Shield, Circuit Breaker & :8799 webhook"
       },
+      "cc-sota-harness": {
+        "url": "https://github.com/native-agent-stack/cc-sota-harness",
+        "baselineSha": "66d9cf491485ac6e4807e0e4dba413e68cdcba75",
+        "role": "Claude Code + OMC + 24-runtime frontier sibling harness, H05 empirical lake report & 18 MADR 4.0 ADRs"
+      },
       "meridian": {
         "url": "https://github.com/native-agent-stack/meridian",
         "baselineSha": "4dd0c20ef3c87159e783aea8d774759358bf1413",
@@ -111,13 +117,28 @@
       },
       "trading-sota": {
         "url": "https://github.com/native-agent-stack/trading-sota",
-        "baselineSha": "c7d60f5b9897ccb30223481de894ce9746e20505",
+        "baselineSha": "0d15d8ebcd695fc90717544d2d1e4c1d7c110b7c",
         "role": "Sim -> Paper -> Live standard & lane-owned promotion gates"
+      },
+      "canon": {
+        "url": "https://github.com/native-agent-stack/canon",
+        "baselineSha": "cf5bc1271bb45045dd72e5b23d513b2bc1968d0c",
+        "role": "Deterministic research, provenance & verification engine"
+      },
+      "tsl": {
+        "url": "https://github.com/native-agent-stack/tsl",
+        "baselineSha": "d7d10808c95b8e39c38ec4da1b4edfa68f4a5236",
+        "role": "Trading Strategy Lab (TSL) pre-wall research archive"
+      },
+      "dsh-plugin-landscape": {
+        "url": "https://github.com/native-agent-stack/dsh-plugin-landscape",
+        "baselineSha": "e3b8370def0a18d444d96c38999ff0e10ab65b72",
+        "role": "DSH plugin landscape & upstream capability matrix"
       },
       "sota-private-vault": {
         "url": "https://github.com/native-agent-stack/sota-private-vault",
         "baselineSha": "baf630a49d2ff311e0550450231991df8c1bc4a9",
-        "role": "Scrubbed 82-trial HLZ ledger, 29 E1-E4 lessons, pre-wall priors & strategy promotion manifest"
+        "role": "Scrubbed 82-trial HLZ ledger, 30 E1-E4 lessons, pre-wall priors & strategy promotion manifest"
       },
       "ecosystem-records": {
         "url": "https://github.com/native-agent-stack/ecosystem-records",
@@ -125,6 +146,22 @@
         "role": "Cryptographically sealed historical continuity records"
       }
     }
+  },
+  "legacyDuplicateRemediation": {
+    "policy": "Non-destructive SHA-verified archive + private lock on superseded non-Org copies",
+    "archivedCount": 10,
+    "archivedRepos": [
+      "deer-opus/meridian (locked PRIVATE + archived)",
+      "agy-sota-harness (archived)",
+      "dsh-sota-harness (archived)",
+      "sota-mover-ranker (archived)",
+      "sota-dynamic-trail-c (archived)",
+      "trading-sota (archived)",
+      "astrolabe (archived)",
+      "canon (locked PRIVATE + archived)",
+      "tsl (locked PRIVATE + archived)",
+      "dsh-plugin-landscape (locked PRIVATE + archived)"
+    ]
   },
   "adrGovernance": {
     "format": "MADR-4.0-GitHub-Evidenced",

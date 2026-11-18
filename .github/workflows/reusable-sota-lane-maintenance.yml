@@ -1,0 +1,36 @@
+name: Reusable SOTA 24/5 Lane & Upstream-First Maintenance Gate
+
+on:
+  workflow_call:
+    inputs:
+      lane-kind:
+        required: false
+        type: string
+        default: "foundation"
+
+permissions: {}
+
+jobs:
+  lane-maintenance:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - name: Harden runner
+        uses: step-security/harden-runner@e14015d583714f6e62063499dc959a02595150a1 # v2.21.1
+        with:
+          egress-policy: audit
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Verify MADR 4.0 ADRs, Upstream-First Citations, Zero-PII & Lane Suite
+        run: |
+          echo "Maintaining SOTA lane-kind=${{ inputs.lane-kind }}"
+          if [ -f UPSTREAM.md ]; then grep -q "https://github.com/" UPSTREAM.md; fi
+          if [ -f scripts/architecture_catalog.py ]; then python3 scripts/architecture_catalog.py --check; fi
+          if [ -f tools/architecture_catalog.py ]; then python3 tools/architecture_catalog.py --check; fi
+          if [ -f scripts/merge_gate.py ]; then python3 scripts/merge_gate.py; fi
+          if [ -d tests ]; then python3 -m unittest discover -s tests -v; fi

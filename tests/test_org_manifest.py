@@ -31,6 +31,20 @@ class TestOrgControlPlane(unittest.TestCase):
         r = subprocess.run([sys.executable, str(ROOT / "scripts" / "merge_gate.py")], capture_output=True, text=True)
         self.assertEqual(r.returncode, 0, msg=r.stderr or r.stdout)
 
+    def test_v3103_shared_24x5_foundation_and_github_maintenance_workflows(self) -> None:
+        m = json.loads((ROOT / "ECOSYSTEM_ORG_MANIFEST.json").read_text(encoding="utf-8"))
+        self.assertEqual(m["schemaVersion"], "3.10.3")
+        pol = m["executionFirewall"]["stage5ProvenLosslessLivePolicy"]
+        self.assertEqual(pol["goalId"], "G_SOTA_DUAL_MACHINE_MERIT_TO_LOSSLESS_LIVE_24X5")
+        self.assertEqual(pol["simLanesNeverGated"], 2)
+        self.assertEqual(pol["paperFarmAccountsNeverGated"], 4)
+        self.assertEqual(pol["alpacaPaperAccounts"], 3)
+        self.assertEqual(pol["ibkrPaperAccounts"], 1)
+        self.assertTrue(pol["paperAndLiveShareSame24x5Foundation"])
+        self.assertTrue((ROOT / ".github" / "workflows" / "reusable-sota-lane-maintenance.yml").is_file())
+        ci_txt = (ROOT / ".github" / "workflows" / "ci.yml").read_text(encoding="utf-8")
+        self.assertIn("schedule:", ci_txt)
+
 
 if __name__ == "__main__":
     unittest.main()

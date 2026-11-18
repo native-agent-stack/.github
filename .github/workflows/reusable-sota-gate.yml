@@ -26,8 +26,9 @@ jobs:
         with:
           persist-credentials: false
           fetch-depth: 0
-      - name: Run Merge Gate, ADR Catalog & Unit Suite
+      - name: Run Upstream-First, Merge Gate, ADR Catalog & Unit Suite
         run: |
+          if [ -f UPSTREAM.md ]; then grep -q "https://github.com/" UPSTREAM.md; fi
           if [ -f scripts/architecture_catalog.py ]; then python3 scripts/architecture_catalog.py --check; fi
           if [ -f tools/architecture_catalog.py ]; then python3 tools/architecture_catalog.py --check; fi
           if [ -f scripts/merge_gate.py ]; then python3 scripts/merge_gate.py; fi

@@ -1,11 +1,24 @@
 {
-  "schemaVersion": "3.10.2",
+  "schemaVersion": "3.10.3",
   "organization": "native-agent-stack",
   "verifiedDate": "2026-11-18",
   "studyWallDate": "2026-10-15",
   "executionFirewall": {
     "paperOnlyAutonomousExecution": true,
     "liveCapitalHardRefused": true,
+    "stage5ProvenLosslessLivePolicy": {
+      "goalId": "G_SOTA_DUAL_MACHINE_MERIT_TO_LOSSLESS_LIVE_24X5",
+      "simLanesNeverGated": 2,
+      "paperFarmAccountsNeverGated": 4,
+      "alpacaPaperAccounts": 3,
+      "ibkrPaperAccounts": 1,
+      "paperAndLiveShareSame24x5Foundation": true,
+      "liveGatingPolicy": "PROVEN_AUTOMATION_ONLY_STARTING_WITH_LOSSLESS_FOUNDATION",
+      "liveLanePort": 8798,
+      "protectiveExitReservePct": 10.0,
+      "dailyDrawdownBreakerPct": -1.5,
+      "ownerLiveWindowRequired": true
+    },
     "forbiddenIbkrLivePorts": [
       4001,
       7496
@@ -56,17 +69,17 @@
     "publicUnlimitedActionsTier": {
       ".github": {
         "url": "https://github.com/native-agent-stack/.github",
-        "role": "Org profile, v3.10.2 manifest, 30 MADR 4.0 ADRs, 33-repo (413-star) + 6-beyond-starred Visual/Eval Craft Atlas, UPSTREAM.md & reusable SHA-pinned CI gate"
+        "role": "Org profile, v3.10.3 manifest, 31 MADR 4.0 ADRs, weekday scheduled CI + reusable-sota-lane-maintenance.yml & SHA-pinned reusable gate"
       },
       "native-agent-stack": {
         "url": "https://github.com/native-agent-stack/native-agent-stack",
-        "baselineSha": "f43481d722cd68b2f3d596e4b8958a7c831348b5",
-        "role": "Canonical v3.10.2 upstream-first umbrella, DF1..DF12 IEEE-754/bitemporal symbol ranking, zero-kimi 8-runtime parity & 30 MADR 4.0 ADRs"
+        "baselineSha": "c06939d1471adc9ea6e2ba0589b7cacd99064d14",
+        "role": "Canonical v3.10.3 upstream-first umbrella, Shared 24/5 Lossless Foundation, 7-Lane Merit Harness & 31 MADR 4.0 ADRs"
       },
       "sota-harness-foundation": {
         "url": "https://github.com/native-agent-stack/sota-harness-foundation",
-        "baselineSha": "341b946fa9a0183b31066636c1b25eac13e1de62",
-        "role": "Open-core multi-runtime harness foundation, v2.3.0 zero-kimi/zero-stale routing, JSON-RPC silence, bitemporal PIT & 39 MADR 4.0 ADRs"
+        "baselineSha": "43b51358af05a65aef9761b71abed26ff3dc2594",
+        "role": "Open-core multi-runtime harness foundation, ADR-0040 Shared Active 24/5 Lossless Foundation (Paper==Live), upstream-first bindings & 40 MADR 4.0 ADRs"
       },
       "agy-sota-harness": {
         "url": "https://github.com/native-agent-stack/agy-sota-harness",
@@ -80,8 +93,8 @@
       },
       "sota-multi-model-workflows": {
         "url": "https://github.com/native-agent-stack/sota-multi-model-workflows",
-        "baselineSha": "d3385afd30b0ba4da9d8f0b374e5546991dc99a7",
-        "role": "19 v3.10.2 workflows, IEEE-754/bitemporal DF1..DF12 symbol ranking, Mac-pinned broker Orca routing & 26 MADR 4.0 ADRs"
+        "baselineSha": "163d86e7d80144806b5dd0d070c3cadff0823bca",
+        "role": "20 v3.10.3 workflows (incl. WF20 grand-merit-harness), 7-Lane Sim/4-Paper/Stage-5-Live Merit Harness, DF1..DF12 & 27 MADR 4.0 ADRs"
       },
       "sota-compounding-lab": {
         "url": "https://github.com/native-agent-stack/sota-compounding-lab",
@@ -102,9 +115,9 @@
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "adbc9baefc60728fd23dff1d36542bb72ed19d94",
+        "baselineSha": "a628552bed37cb97ff2276c65f3fbdfa0debe105",
         "actionsEnabled": false,
-        "role": "Stage-3A 3.0s SIP+BOATS radar (:8787), ADR-0028..0030 seamless TV practice & Stage-5 :8798 paper-default automation lane, ANT/SPCX Wave-2 re-entry & 30 MADR 4.0 ADRs"
+        "role": "Stage-3A/5 3.0s SIP+BOATS radar (:8787 P2), :8797 P3 Account A Aggressive Crucible, /api/merit_farm_status, :8798 Stage-5 Lossless Live Lane & 31 MADR 4.0 ADRs"
       },
       "sota-dynamic-trail-c": {
         "url": "https://github.com/native-agent-stack/sota-dynamic-trail-c",
@@ -207,7 +220,7 @@
     "catalogPath": "docs/adr/CATALOG.md",
     "generatorScript": "scripts/architecture_catalog.py",
     "revisitThresholdDays": 45,
-    "adrCount": 30,
+    "adrCount": 31,
     "records": [
       {
         "id": "ADR-0001",
@@ -714,6 +727,23 @@
           "https://github.com/native-agent-stack/sota-harness-foundation",
           "https://github.com/native-agent-stack/sota-multi-model-workflows",
           "https://github.com/native-agent-stack/sota-private-vault"
+        ]
+      },
+      {
+        "id": "ADR-0031",
+        "layer": "Organization Control Plane, Reusable GitHub Actions Maintenance, Shared Active `24/5` Foundation & `22`-Repo SHA Manifest (`L0\u2013L13` \u00d7 `P0\u2013P5` \u00d7 `T0\u2013T8`)",
+        "title": "`v3.10.3` Shared Active `24/5` Lossless Foundation, SOTA GitHub Maintenance Automation & `22`-Repo Zero-Drift Seal",
+        "status": "Accepted",
+        "date": "2026-11-18",
+        "evidenceGrade": "E4 (`22/22` Live 40-Char `origin/main` SHA Parity, `9/9` Public GitHub Actions, `13/13` Private `Actions=false`, `sota-harness-foundation@43b51358` `ADR-0040`, `sota-multi-model-workflows@163d86e7` `ADR-0027`/`WF20`, `sota-mover-ranker@a628552b` `ADR-0031`, `native-agent-stack@c06939d1` `ADR-0031`, `0` Leaks)",
+        "file": "docs/adr/ADR-0031-v3103-shared-24x5-lossless-foundation-github-automation-and-22repo-seal.md",
+        "githubUrls": [
+          "https://github.com/alpacahq/alpaca-mcp-server",
+          "https://github.com/native-agent-stack/.github",
+          "https://github.com/native-agent-stack/native-agent-stack",
+          "https://github.com/native-agent-stack/sota-harness-foundation",
+          "https://github.com/native-agent-stack/sota-multi-model-workflows",
+          "https://github.com/stablyai/orca"
         ]
       }
     ]

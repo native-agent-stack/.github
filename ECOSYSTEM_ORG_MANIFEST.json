@@ -70,7 +70,7 @@
       },
       "agy-sota-harness": {
         "url": "https://github.com/native-agent-stack/agy-sota-harness",
-        "baselineSha": "08eb57b11e3adcc4115401dfd6c535d4c5794855",
+        "baselineSha": "6c4073d9f36a2212a3d9f6258d5cd34b9d939c1a",
         "role": "Antigravity L0-L12 v3.8.0 harness, 6 native agy workflows, 9-feed PIT ranking skill, dual-machine Orca lanes & 21+ MADR 4.0 ADRs"
       },
       "dsh-sota-harness": {
@@ -80,7 +80,7 @@
       },
       "sota-multi-model-workflows": {
         "url": "https://github.com/native-agent-stack/sota-multi-model-workflows",
-        "baselineSha": "b64f3dc212a7286b8f3c63bac8ecbe53f752c774",
+        "baselineSha": "a6c71a4a4d0fa7189345b0202f295936fd3f6eab",
         "role": "16 self-bootstrapping v3.8.0 workflows, cross-OS sota-cc-hub runtime orchestrator, 9-feed PIT & two-track versioning DAGs & 14+ MADR 4.0 ADRs"
       },
       "sota-compounding-lab": {
@@ -102,19 +102,19 @@
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "e8eebd7a05702472767d33651db55fa3da4bd2bd",
+        "baselineSha": "31907e95999d56ee63b790f60db6dcc5967be6d6",
         "actionsEnabled": false,
         "role": "Stage-3A 3.0s SIP+BOATS radar, 9-feed PIT API (DF1..DF9 + Vega/Tetlock surprise), 17-tool MCP, cross-OS orca.yaml & 14+ MADR 4.0 ADRs"
       },
       "sota-dynamic-trail-c": {
         "url": "https://github.com/native-agent-stack/sota-dynamic-trail-c",
-        "baselineSha": "d1f6840485e314c8c6c7a5b205032502c952e7b1",
+        "baselineSha": "7fb92138931e5c2908947b26c4932ba34c9cee79",
         "actionsEnabled": false,
         "role": "Stage-5A 24/5 Near-Lossless guardian (:8799), 5-preset [P]/[L]/[M]/[B]/[S] TV stager, Pine v1.0 HUD, cross-OS orca.yaml & 12+ MADR 4.0 ADRs"
       },
       "sota-private-vault": {
         "url": "https://github.com/native-agent-stack/sota-private-vault",
-        "baselineSha": "7e305b737fc79a6840f820f0bf0a258f23349caf",
+        "baselineSha": "4de294b6daf5edadf1cab53cd0aa62ad333f0ceb",
         "actionsEnabled": false,
         "role": "Stage-5B 90-trial HLZ ledger (t*(91)=4.1760, H090 +20.84bps 1x, 5/5 CPCV), 62 E1-E4 lessons, cross-OS orca.yaml & 11 MADR 4.0 ADRs"
       },
@@ -132,7 +132,7 @@
       },
       "canon": {
         "url": "https://github.com/native-agent-stack/canon",
-        "baselineSha": "8dcdb90b23042a2e7ffcf4d4a1f2219eb0c8b314",
+        "baselineSha": "b12968e125b1afb49bfabdc4389c7b805ba795d5",
         "actionsEnabled": false,
         "role": "Stage-2 deterministic causal research, BagIt/dirhash snapshots, 0178 9-feed PIT RVOL_tod & v3.8.0 compounding lineage (152 MADR 4.0 ADRs)"
       },

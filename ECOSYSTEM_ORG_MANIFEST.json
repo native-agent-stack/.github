@@ -80,8 +80,8 @@
       },
       "sota-multi-model-workflows": {
         "url": "https://github.com/native-agent-stack/sota-multi-model-workflows",
-        "baselineSha": "0ef5cb6d067462d903f64c3475fd79554b27a33c",
-        "role": "19 self-bootstrapping v3.10.2 workflows (WF19 Orca-Lead E2E), DF1..DF12 sota-symbol-ranking-datafeeds.v3.10, cross-OS sota-cc-hub & 24 MADR 4.0 ADRs"
+        "baselineSha": "d3385afd30b0ba4da9d8f0b374e5546991dc99a7",
+        "role": "19 self-bootstrapping v3.10.2 workflows (WF19 Orca-Lead E2E), DF1..DF12 sota-symbol-ranking-datafeeds.v3.10 (ADR-0026 IEEE-754/bitemporal/key-bijection), cross-OS sota-cc-hub & 26 MADR 4.0 ADRs"
       },
       "sota-compounding-lab": {
         "url": "https://github.com/native-agent-stack/sota-compounding-lab",
@@ -102,15 +102,15 @@
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "a473230f7839d0de0f93937e912518682a19811a",
+        "baselineSha": "adbc9baefc60728fd23dff1d36542bb72ed19d94",
         "actionsEnabled": false,
-        "role": "Stage-3A 3.0s SIP+BOATS radar (:8787), ADR-0028 46-skill/424-star seamless TV practice, ANT/SPCX Wave-2 re-entry & 28 MADR 4.0 ADRs"
+        "role": "Stage-3A 3.0s SIP+BOATS radar (:8787), ADR-0028..0030 seamless TV practice & Stage-5 :8798 paper-default automation lane, ANT/SPCX Wave-2 re-entry & 30 MADR 4.0 ADRs"
       },
       "sota-dynamic-trail-c": {
         "url": "https://github.com/native-agent-stack/sota-dynamic-trail-c",
-        "baselineSha": "1d2df7904624afb45a1c94cb248326218a5b3687",
+        "baselineSha": "00b8ecc69a97915a7c76c7495795cfc95b92a6c5",
         "actionsEnabled": false,
-        "role": "Stage-5A 24/5 Near-Lossless guardian (:8799), ADR-0020..0021 H096 dry-powder collar handoff, Wave-2 re-entry watch ledger & 23 MADR 4.0 ADRs"
+        "role": "Stage-5A 24/5 Near-Lossless guardian (:8799), ADR-0020..0024 H096 collar, Wave-2 re-entry, DF1..DF12 & Dec-6 23/5 SIP cutover readiness envelope & 24 MADR 4.0 ADRs"
       },
       "sota-private-vault": {
         "url": "https://github.com/native-agent-stack/sota-private-vault",

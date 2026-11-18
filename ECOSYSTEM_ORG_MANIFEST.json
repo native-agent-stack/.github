@@ -60,18 +60,18 @@
       },
       "native-agent-stack": {
         "url": "https://github.com/native-agent-stack/native-agent-stack",
-        "baselineSha": "113c695601e8d6fd43d98eaa6c7cfa00d0175b6b",
-        "role": "Canonical v3.0.0 upstream-first umbrella, single-owner layer bijection & supersession lock"
+        "baselineSha": "5a9d93f5a8bc0c5730e99acf96130f965202bbf5",
+        "role": "Canonical v3.2.0 upstream-first umbrella, dual-workstation mesh, 7 MADR 4.0 ADRs & supersession lock"
       },
       "sota-harness-foundation": {
         "url": "https://github.com/native-agent-stack/sota-harness-foundation",
-        "baselineSha": "1394175b7fd77c4abb4005fc6ec3834c4fc0a7a6",
-        "role": "Open-core multi-runtime harness foundation & Hypothesis stateful fuzzing"
+        "baselineSha": "d1e5048073341e9446ea09e51115990a16299c5e",
+        "role": "Open-core multi-runtime harness foundation, 21 MADR 4.0 ADRs, dual-machine lane & Hypothesis stateful fuzzing"
       },
       "agy-sota-harness": {
         "url": "https://github.com/native-agent-stack/agy-sota-harness",
-        "baselineSha": "be002d14a71582a2b4c89ed1ba86dcc7dbce050d",
-        "role": "Antigravity L0-L12 harness, pre-wall DuckDB/Polars studies (H02/H04/H06) & 14 MADR 4.0 ADRs"
+        "baselineSha": "7819b19aae1d14ead395488239b73adf1aa02b1a",
+        "role": "Antigravity L0-L12 harness, pre-wall DuckDB/Polars studies (H02/H04/H06) & 15 MADR 4.0 ADRs"
       },
       "dsh-sota-harness": {
         "url": "https://github.com/native-agent-stack/dsh-sota-harness",
@@ -114,21 +114,21 @@
       },
       "sota-private-vault": {
         "url": "https://github.com/native-agent-stack/sota-private-vault",
-        "baselineSha": "baf630a49d2ff311e0550450231991df8c1bc4a9",
+        "baselineSha": "77f229f9c8f4cfb880d2abe26f73bb6abdacc92a",
         "actionsEnabled": false,
-        "role": "Stage-5B 82-trial HLZ ledger, E1-E4 lessons, Empirical-Bayes priors & broker manifest"
+        "role": "Stage-5B 82-trial HLZ ledger, redacted Meridian session directives, E1-E4 lessons & 7 MADR 4.0 ADRs"
       },
       "cc-sota-harness": {
         "url": "https://github.com/native-agent-stack/cc-sota-harness",
-        "baselineSha": "be14a83a3dcadf74c27001c592c74fcc82135168",
+        "baselineSha": "252693348f3c464db4b26752e5142b3ddbaba114",
         "actionsEnabled": false,
-        "role": "L5 27-runtime Claude lead harness, H05 tick microstructure study & 19 MADR 4.0 ADRs"
+        "role": "L5 27-runtime Claude lead harness, H05 tick study, Dual-Machine Orca lane & 21 MADR 4.0 ADRs"
       },
       "meridian": {
         "url": "https://github.com/native-agent-stack/meridian",
-        "baselineSha": "a739e599224ee5795d22330c99accf2111719d18",
+        "baselineSha": "85def3e7a099b596057fb2b03313cd4f35731b3c",
         "actionsEnabled": false,
-        "role": "Stage-1 NautilusTrader v2.0.0rc9 queue-fill parity simulation engine (50 ADRs)"
+        "role": "Stage-1 NautilusTrader v2.0.0rc9 simulation engine & converged workstation handoff (54 MADR 4.0 ADRs)"
       },
       "canon": {
         "url": "https://github.com/native-agent-stack/canon",
@@ -138,9 +138,9 @@
       },
       "tsl": {
         "url": "https://github.com/native-agent-stack/tsl",
-        "baselineSha": "ca2cc9c779085c302c9a0ab0a26f33ed480730d0",
+        "baselineSha": "aa1ae0d1a395cb6e72f9e99b41c385ee8f9ac789",
         "actionsEnabled": false,
-        "role": "Private Trading Strategy Lab PIT research & ranking automation (16 ADRs)"
+        "role": "Private Trading Strategy Lab PIT research & ungated paper/live-closed ladder (17 MADR 4.0 ADRs)"
       },
       "trading-sota": {
         "url": "https://github.com/native-agent-stack/trading-sota",
@@ -207,7 +207,7 @@
     "catalogPath": "docs/adr/CATALOG.md",
     "generatorScript": "scripts/architecture_catalog.py",
     "revisitThresholdDays": 45,
-    "adrCount": 6,
+    "adrCount": 7,
     "records": [
       {
         "id": "ADR-0001",
@@ -293,6 +293,21 @@
           "https://github.com/actions/checkout",
           "https://github.com/gitleaks/gitleaks",
           "https://github.com/step-security/harden-runner"
+        ]
+      },
+      {
+        "id": "ADR-0007",
+        "layer": "Multi-Machine Execution & Org Convergence (`L0` \u00d7 `L1` \u00d7 `L8` \u00d7 `L9`)",
+        "title": "Dual-Machine Orca Workstation Mesh, Shared-VM WSL2 Isolation & Meridian Successor Convergence",
+        "status": "Accepted",
+        "date": "2026-11-18",
+        "evidenceGrade": "E4 (`sota-doctor` `11/11` + `sota-org-doctor --live` `22/22` Verified)",
+        "file": "docs/adr/ADR-0007-dual-machine-orca-mesh-and-meridian-successor-convergence.md",
+        "githubUrls": [
+          "https://github.com/gitleaks/gitleaks",
+          "https://github.com/native-agent-stack/native-agent-stack",
+          "https://github.com/native-agent-stack/sota-harness-foundation",
+          "https://github.com/stablyai/orca"
         ]
       }
     ]

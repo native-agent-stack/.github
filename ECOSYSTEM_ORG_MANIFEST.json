@@ -102,7 +102,7 @@
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "fd572c09fee58366b61ab720e3be59bf32daad7b",
+        "baselineSha": "8e01ec178404fc5f18e33a2f3328083be7e35eb4",
         "actionsEnabled": false,
         "role": "Stage-3A 3.0s SIP+BOATS radar (:8787), ADR-0019 0.15x bleeder probation & BOATS/SEC-PIT guards, ADR-0020 Noesis 4K TV display & 20 MADR 4.0 ADRs"
       },

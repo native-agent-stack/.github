@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "3.0.0",
+  "schemaVersion": "3.3.0",
   "organization": "native-agent-stack",
   "verifiedDate": "2026-11-18",
   "studyWallDate": "2026-10-15",
@@ -60,55 +60,55 @@
       },
       "native-agent-stack": {
         "url": "https://github.com/native-agent-stack/native-agent-stack",
-        "baselineSha": "5a9d93f5a8bc0c5730e99acf96130f965202bbf5",
-        "role": "Canonical v3.2.0 upstream-first umbrella, dual-workstation mesh, 7 MADR 4.0 ADRs & supersession lock"
+        "baselineSha": "e5eb9ba0724dfd8c70de1cda720d190775a8e75e",
+        "role": "Canonical v3.3.0 upstream-first umbrella, 424-star matrix, Orca co-op mesh & 8 MADR 4.0 ADRs"
       },
       "sota-harness-foundation": {
         "url": "https://github.com/native-agent-stack/sota-harness-foundation",
-        "baselineSha": "d1e5048073341e9446ea09e51115990a16299c5e",
-        "role": "Open-core multi-runtime harness foundation, 21 MADR 4.0 ADRs, dual-machine lane & Hypothesis stateful fuzzing"
+        "baselineSha": "c6c4a8f85228e8e3d491f11ecb20aa40595ee0ce",
+        "role": "Open-core multi-runtime harness foundation, 22 MADR 4.0 ADRs, WSL2 bootstrap & Hypothesis fuzzing"
       },
       "agy-sota-harness": {
         "url": "https://github.com/native-agent-stack/agy-sota-harness",
-        "baselineSha": "7819b19aae1d14ead395488239b73adf1aa02b1a",
+        "baselineSha": "ceb78426be6e97adb7939a6a585d68860f12590c",
         "role": "Antigravity L0-L12 harness, pre-wall DuckDB/Polars studies (H02/H04/H06) & 15 MADR 4.0 ADRs"
       },
       "dsh-sota-harness": {
         "url": "https://github.com/native-agent-stack/dsh-sota-harness",
-        "baselineSha": "980d47a7703e0a1f250ef6787bea0da2d88abfe6",
-        "role": "DeepSeek Harness 10-layer probe suite, MADR 4.0 ADRs & cross-peer MCP triad"
+        "baselineSha": "228ae2014a219b6b1fb3c2ac8916bf7b844e7202",
+        "role": "DeepSeek Harness 10-layer probe suite, 4 MADR 4.0 ADRs & cross-peer MCP triad"
       },
       "sota-multi-model-workflows": {
         "url": "https://github.com/native-agent-stack/sota-multi-model-workflows",
-        "baselineSha": "82f31a4ce67da77f6c243f8b0c2e61f643bd44f5",
+        "baselineSha": "8a29338c70778565379aacccf308a2c9fea14de8",
         "role": "11 self-bootstrapping v3.0.0 multi-model workflows, Dual-Machine Orca lane, SQLite WAL peer bus & 5-stage promotion gate"
       },
       "sota-compounding-lab": {
         "url": "https://github.com/native-agent-stack/sota-compounding-lab",
-        "baselineSha": "7cc1010d41cda4bfca7f74949df30b6b591fb166",
+        "baselineSha": "d791f8adb4b4b5b0384e4ffbdeab1e7de4015ba3",
         "role": "5-stage Sim->PreWall->Paper->EB->Alpaca/IBKR lifecycle engine & 4-invariant sota-org-doctor"
       },
       "sota-upstream-shelf-lock": {
         "url": "https://github.com/native-agent-stack/sota-upstream-shelf-lock",
-        "baselineSha": "1be9b36918761b50dff65c0b50605bdf8639f84a",
+        "baselineSha": "075e66b5423001fcb919b4dc690cf9f6f8cd4b24",
         "role": "18 immutable 40-char Git SHA upstream library pins & promotion validator"
       },
       "astrolabe": {
         "url": "https://github.com/native-agent-stack/astrolabe",
-        "baselineSha": "9c654ea565da3f152f4577b372b87f411a68e326",
+        "baselineSha": "6016e0798b9c8cd9f3bf72b17336f8a87007e848",
         "role": "Stage-3B IBKR (:4002 DU... paper-only) NautilusTrader execution engine"
       }
     },
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "6af53795b5ddd74df4ec3fba06ce9ea1301800dc",
+        "baselineSha": "3639663a7866ce127caf1875e22437e443d94c8b",
         "actionsEnabled": false,
         "role": "Stage-3A 3.0s SIP+BOATS radar & <=200/min Alpaca / 3,000/min IBKR paper auto-trader"
       },
       "sota-dynamic-trail-c": {
         "url": "https://github.com/native-agent-stack/sota-dynamic-trail-c",
-        "baselineSha": "ecba6b3b19df78d0db52725c0ff07a386752bfe3",
+        "baselineSha": "4b87d23e7869c0683981751c136cc92c2bea9204",
         "actionsEnabled": false,
         "role": "Stage-5A 24/5 sub-50ms Dual-Tranche dynamic trailing guardian (:8799)"
       },
@@ -120,9 +120,9 @@
       },
       "cc-sota-harness": {
         "url": "https://github.com/native-agent-stack/cc-sota-harness",
-        "baselineSha": "252693348f3c464db4b26752e5142b3ddbaba114",
+        "baselineSha": "006a631adc4e870eb945a03fc8a6205b97abf5b8",
         "actionsEnabled": false,
-        "role": "L5 27-runtime Claude lead harness, H05 tick study, Dual-Machine Orca lane & 21 MADR 4.0 ADRs"
+        "role": "L5 27-runtime Claude lead harness, Dual-Machine Orca co-op lane & 22 MADR 4.0 ADRs"
       },
       "meridian": {
         "url": "https://github.com/native-agent-stack/meridian",
@@ -132,9 +132,9 @@
       },
       "canon": {
         "url": "https://github.com/native-agent-stack/canon",
-        "baselineSha": "87ae843705e1e590dca1dfcc0b451de325a609c3",
+        "baselineSha": "e6a709119e1dd5fe550c89f69fad46fe1949a091",
         "actionsEnabled": false,
-        "role": "Stage-2 deterministic causal research & evaluation engine (149 ADRs)"
+        "role": "Stage-2 deterministic causal research, BagIt/dirhash snapshots & 150 MADR 4.0 ADRs"
       },
       "tsl": {
         "url": "https://github.com/native-agent-stack/tsl",
@@ -144,7 +144,7 @@
       },
       "trading-sota": {
         "url": "https://github.com/native-agent-stack/trading-sota",
-        "baselineSha": "b1922662f4f9561f061eab0dda55b4c62f9fedd9",
+        "baselineSha": "a75a5f72daa27cd43ad7672be7380ccc6fe883e3",
         "actionsEnabled": false,
         "role": "Private PIT research archive converged into tsl & sota-compounding-lab (10 ADRs)"
       },
@@ -207,7 +207,7 @@
     "catalogPath": "docs/adr/CATALOG.md",
     "generatorScript": "scripts/architecture_catalog.py",
     "revisitThresholdDays": 45,
-    "adrCount": 7,
+    "adrCount": 8,
     "records": [
       {
         "id": "ADR-0001",
@@ -307,6 +307,25 @@
           "https://github.com/gitleaks/gitleaks",
           "https://github.com/native-agent-stack/native-agent-stack",
           "https://github.com/native-agent-stack/sota-harness-foundation",
+          "https://github.com/stablyai/orca"
+        ]
+      },
+      {
+        "id": "ADR-0008",
+        "layer": "Research Convergence & Dual-Workstation Co-op (`L0\u2013L12` \u00d7 `T0\u2013T8`)",
+        "title": "424-Row Starred & Research-Converged Upstream Matrix + Bidirectional `agy` Orca Co-op Governance",
+        "status": "Accepted",
+        "date": "2026-11-18",
+        "evidenceGrade": "E4 (`sota-org-doctor --live` `22/22` + Live E2EE Orca Co-op Verified)",
+        "file": "docs/adr/ADR-0008-research-converged-424-star-matrix-and-orca-coop-governance.md",
+        "githubUrls": [
+          "https://github.com/QuantConnect/Lean",
+          "https://github.com/golang/mod",
+          "https://github.com/louislam/uptime-kuma",
+          "https://github.com/massive-com/client-python",
+          "https://github.com/ml4t/diagnostic",
+          "https://github.com/nkaz001/hftbacktest",
+          "https://github.com/skfolio/skfolio",
           "https://github.com/stablyai/orca"
         ]
       }

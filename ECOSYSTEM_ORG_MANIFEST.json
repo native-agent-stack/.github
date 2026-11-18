@@ -65,12 +65,12 @@
       },
       "sota-harness-foundation": {
         "url": "https://github.com/native-agent-stack/sota-harness-foundation",
-        "baselineSha": "3a6fb403648d53174339ad3f1fa48d8ad429ff97",
+        "baselineSha": "44911f357067337692c8941959d063f92eff3b55",
         "role": "Open-core multi-runtime harness foundation, 28+ MADR 4.0 ADRs, Stage-B Noesis-Carbon manifest v1.1.0, H090 study & Orca v2.1 co-op"
       },
       "agy-sota-harness": {
         "url": "https://github.com/native-agent-stack/agy-sota-harness",
-        "baselineSha": "5694d0efc34e6490fe790652504c5ccaf3f334ab",
+        "baselineSha": "d2e7ada2fad86d086ae77ed1eef37b99d65b6fe7",
         "role": "Antigravity L0-L12 harness, dual-machine Orca trading/harness lanes DAG, H089 study & 20 MADR 4.0 ADRs"
       },
       "dsh-sota-harness": {
@@ -85,30 +85,30 @@
       },
       "sota-compounding-lab": {
         "url": "https://github.com/native-agent-stack/sota-compounding-lab",
-        "baselineSha": "b76cd272bc215c39956b4b3fb3f0103320a75620",
+        "baselineSha": "567acb2528c8dd36866b5055a9b9d2cb43154974",
         "role": "5-stage Sim->PreWall->Paper->EB->Alpaca/IBKR lifecycle engine, 09:30 50/50+Wave2+OFI/UCB protection & 9+ MADR 4.0 ADRs"
       },
       "sota-upstream-shelf-lock": {
         "url": "https://github.com/native-agent-stack/sota-upstream-shelf-lock",
-        "baselineSha": "425e762bce910926a6d82abe06927b448bdae360",
+        "baselineSha": "e8fbb682b50954e17727fb9687ffeb683fdc3731",
         "role": "18 immutable 40-char Git SHA upstream pins, MinTRL/MDE power gate, two-stage RiskAdverseQueueModel synthesis & 6 MADR 4.0 ADRs"
       },
       "astrolabe": {
         "url": "https://github.com/native-agent-stack/astrolabe",
-        "baselineSha": "49e9b2479f139fc35739869a4f6985a6c901637b",
+        "baselineSha": "ad8cc91452c5d1b7ca61c5b0e5349e5eb9faa179",
         "role": "Stage-3B IBKR (:4002 paper-only, 300/min exit reserve) two-stage hybrid queue, 50/50 runner convexity & 6+ MADR 4.0 ADRs"
       }
     },
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "b5f1d7c398ba9aa0fbb0853a1ca9df3300e46908",
+        "baselineSha": "26aa4715028aaf683464a4ff362decb87e23aa8e",
         "actionsEnabled": false,
         "role": "Stage-3A 3.0s SIP+BOATS radar, 7-feed PIT API, 16-tool MCP, 09:30 off-pool 50/50+Wave2 watches, SAR OFI/UCB gate & 13 MADR 4.0 ADRs"
       },
       "sota-dynamic-trail-c": {
         "url": "https://github.com/native-agent-stack/sota-dynamic-trail-c",
-        "baselineSha": "83b74ecba05087ea0a78a2656d53c2c5cae1d614",
+        "baselineSha": "bd5c4a9783d869819639e8e9212a064e19e9a0d9",
         "actionsEnabled": false,
         "role": "Stage-5A 24/5 Near-Lossless guardian (:8799), 5-preset [P]/[L]/[M]/[B]/[S] TV stager, Pine v1.0 HUD, zero-broker arm-watch & 11 MADR 4.0 ADRs"
       },
@@ -120,7 +120,7 @@
       },
       "cc-sota-harness": {
         "url": "https://github.com/native-agent-stack/cc-sota-harness",
-        "baselineSha": "b84d1c932e813a745178bac6e9d32ce8cf369514",
+        "baselineSha": "ea900eb92e290de7dd0c8791c66a18032ca721a2",
         "actionsEnabled": false,
         "role": "L5 Claude lead central orchestrator harness (OMC v2), Stage-B Noesis-Carbon manifest v1.1.0 & 26+ MADR 4.0 ADRs"
       },
@@ -138,13 +138,13 @@
       },
       "tsl": {
         "url": "https://github.com/native-agent-stack/tsl",
-        "baselineSha": "e8e1700bb29d079ace95faf509df097a2b78e429",
+        "baselineSha": "d38bd2365ee49c5f72adc77390a8915d587216a0",
         "actionsEnabled": false,
         "role": "Private Trading Strategy Lab PIT research, two-stage queue/runner convexity & ungated Paper ladder (19+ MADR 4.0 ADRs)"
       },
       "trading-sota": {
         "url": "https://github.com/native-agent-stack/trading-sota",
-        "baselineSha": "e838c5bb825c05b3db31e561f978c03fd8cfb6a9",
+        "baselineSha": "71a3549e211811b768f5990ed7a87fb5ba287040",
         "actionsEnabled": false,
         "role": "Private PIT research archive converged into tsl & sota-compounding-lab (10 ADRs)"
       },

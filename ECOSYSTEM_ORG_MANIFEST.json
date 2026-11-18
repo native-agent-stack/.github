@@ -108,7 +108,7 @@
       },
       "sota-dynamic-trail-c": {
         "url": "https://github.com/native-agent-stack/sota-dynamic-trail-c",
-        "baselineSha": "48d99bd2cec246ac937cea45344e59a02a17214e",
+        "baselineSha": "389a57094d3a89bacf8cb60ceb03de1f417569b7",
         "actionsEnabled": false,
         "role": "Stage-5A 24/5 v1.0.1 Near-Lossless trailing guardian (:8799), [L]/[M]/[B] TV preset stager, dual Pine v6 mount & 10 MADR 4.0 ADRs"
       },

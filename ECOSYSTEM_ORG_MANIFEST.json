@@ -60,7 +60,7 @@
       },
       "native-agent-stack": {
         "url": "https://github.com/native-agent-stack/native-agent-stack",
-        "baselineSha": "f185311f40ec306d401bed2acc73bb2b21859468",
+        "baselineSha": "512570d336cdd45de0f7a706a45a8546b83566e9",
         "role": "Canonical v3.9.8 upstream-first umbrella, H096 dry-powder collar law, 46-skill/18-workflow M1-M4 enactor, dual CC-Lead 48-tool MCP parity & 25 MADR 4.0 ADRs"
       },
       "sota-harness-foundation": {
@@ -70,7 +70,7 @@
       },
       "agy-sota-harness": {
         "url": "https://github.com/native-agent-stack/agy-sota-harness",
-        "baselineSha": "3a45712c3c45e56729f75c166c43179037b63438",
+        "baselineSha": "11f18fe21dc73f57f14e885bfc21c2925f8944d6",
         "role": "Antigravity L0-L13 v3.9.5 harness, 46 SOTA skills, 24-repo Starred Visual Craft Atlas, 7 native agy workflows & 25 MADR 4.0 ADRs"
       },
       "dsh-sota-harness": {
@@ -80,17 +80,17 @@
       },
       "sota-multi-model-workflows": {
         "url": "https://github.com/native-agent-stack/sota-multi-model-workflows",
-        "baselineSha": "49d447af34759d92c3fad8704b597583355147a2",
+        "baselineSha": "ffef6180c8bef8848ee6e9b5faac49cad7833074",
         "role": "17 self-bootstrapping v3.9.5 workflows, sota-workflow 46-skill router, cross-OS sota-cc-hub, two-track versioning & 18 MADR 4.0 ADRs"
       },
       "sota-compounding-lab": {
         "url": "https://github.com/native-agent-stack/sota-compounding-lab",
-        "baselineSha": "b65fe676088700e2e2b94ec6db74f1c47282b905",
+        "baselineSha": "575e0fb90162befdf2c8a95005efeec40e193517",
         "role": "5-stage Sim->PreWall->Paper->EB->Alpaca/IBKR lifecycle engine, ADR-0012 0.15x probation EB throttle, two-track HLZ N>=90 & 12 MADR 4.0 ADRs"
       },
       "sota-upstream-shelf-lock": {
         "url": "https://github.com/native-agent-stack/sota-upstream-shelf-lock",
-        "baselineSha": "4db3a939f88c3355f4c976a27b269280252be089",
+        "baselineSha": "fa016ea2b4e880486d7e8b11f19c4ba80115b35a",
         "role": "18 immutable 40-char Git SHA upstream pins, MinTRL/MDE power gate, RiskAdverseQueueModel synthesis, H094 ablation & 9 MADR 4.0 ADRs"
       },
       "astrolabe": {
@@ -102,13 +102,13 @@
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "bd9f9f45a3cee70f337ef3b70a0a4d3d9ae8d8e9",
+        "baselineSha": "30ebce2f6bd548054312018dba3bba3e646ee7ff",
         "actionsEnabled": false,
         "role": "Stage-3A 3.0s SIP+BOATS radar (:8787), ADR-0024..0025 runner floor, 14/14 Pine indicator-strategy parity, Wave-2 re-entry E2E & 25 MADR 4.0 ADRs"
       },
       "sota-dynamic-trail-c": {
         "url": "https://github.com/native-agent-stack/sota-dynamic-trail-c",
-        "baselineSha": "3f494a01ee910e29533dfdb72be9c2c44aa7f9ab",
+        "baselineSha": "cac8e0fc2d9cefca741586c922fd6934f5da4f9b",
         "actionsEnabled": false,
         "role": "Stage-5A 24/5 Near-Lossless guardian (:8799), ADR-0020..0021 H096 dry-powder collar handoff, Wave-2 re-entry watch ledger & 21 MADR 4.0 ADRs"
       },
@@ -632,8 +632,8 @@
   "orcaLaneHubSchema": "sota-orca-lane-hub.v2",
   "starredVisualCraftAtlas": {
     "schema": "sota-starred-visual-craft.v1",
-    "curatedCount": 24,
-    "ownerTotalStarsAudited": 404,
+    "curatedCount": 32,
+    "ownerTotalStarsAudited": 412,
     "pillars": {
       "editorialDiagrammingAndC4": [
         "tt-a1i/archify",
@@ -668,6 +668,16 @@
         "backnotprop/plannotator",
         "blader/humanizer",
         "ayghri/i-have-adhd"
+      ],
+      "skillEvalRedTeamAndCoreTooling20261118": [
+        "NVIDIA/SkillEvaluator",
+        "elementalsouls/Claude-BugHunter",
+        "openvinotoolkit/openvino",
+        "astral-sh/uv",
+        "solidjs/solid",
+        "getarcaneapp/arcane",
+        "nvm-sh/nvm",
+        "jquery/jquery"
       ]
     }
   }

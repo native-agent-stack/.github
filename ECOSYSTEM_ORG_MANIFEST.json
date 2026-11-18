@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "3.9.5",
+  "schemaVersion": "3.9.6",
   "organization": "native-agent-stack",
   "verifiedDate": "2026-11-18",
   "studyWallDate": "2026-10-15",
@@ -56,12 +56,12 @@
     "publicUnlimitedActionsTier": {
       ".github": {
         "url": "https://github.com/native-agent-stack/.github",
-        "role": "Org profile, v3.9.5 manifest, 21 MADR 4.0 ADRs, 24-repo Starred Visual Craft Atlas, UPSTREAM.md, cross-OS orca.yaml & reusable SHA-pinned CI gate"
+        "role": "Org profile, v3.9.6 manifest, 22 MADR 4.0 ADRs, 24-repo Starred Visual Craft Atlas, UPSTREAM.md, cross-OS orca.yaml & reusable SHA-pinned CI gate"
       },
       "native-agent-stack": {
         "url": "https://github.com/native-agent-stack/native-agent-stack",
-        "baselineSha": "d23f026b7e8c47a105a127b509d681b556404884",
-        "role": "Canonical v3.9.5 upstream-first umbrella, 9-feed PIT ranking, 46-skill/17-workflow enactor, Noesis 4K TV display & 21 MADR 4.0 ADRs"
+        "baselineSha": "cf85fced83fa2275d41ebdc24557048cebb74bc4",
+        "role": "Canonical v3.9.6 upstream-first umbrella, 9-feed PIT ranking, 46-skill/17-workflow enactor, Noesis 4K TV display & 22 MADR 4.0 ADRs"
       },
       "sota-harness-foundation": {
         "url": "https://github.com/native-agent-stack/sota-harness-foundation",
@@ -104,7 +104,7 @@
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
         "baselineSha": "8e01ec178404fc5f18e33a2f3328083be7e35eb4",
         "actionsEnabled": false,
-        "role": "Stage-3A 3.0s SIP+BOATS radar (:8787), ADR-0019 0.15x bleeder probation & BOATS/SEC-PIT guards, ADR-0020 Noesis 4K TV display & 20 MADR 4.0 ADRs"
+        "role": "Stage-3A 3.0s SIP+BOATS radar (:8787), ADR-0019 0.15x probation & BOATS/SEC-PIT guards, ADR-0020..0021 Noesis 4K TV + CTA guard, partial-fill FIFO & 21 MADR 4.0 ADRs"
       },
       "sota-dynamic-trail-c": {
         "url": "https://github.com/native-agent-stack/sota-dynamic-trail-c",
@@ -114,9 +114,9 @@
       },
       "sota-private-vault": {
         "url": "https://github.com/native-agent-stack/sota-private-vault",
-        "baselineSha": "ddea523aa5221dddbfd70bbcb4903cda410ce5a5",
+        "baselineSha": "6e4c0094edef76323b4614881cb984382d442565",
         "actionsEnabled": false,
-        "role": "Stage-5B 94-trial HLZ ledger (t*(95)=4.1858), 74 E1-E4 lessons, v1.10.0/v3.9.5 promotion manifest & 16 MADR 4.0 ADRs"
+        "role": "Stage-5B 94-trial HLZ ledger (t*(95)=4.1858), 77 E1-E4 lessons, v1.11.0/v3.9.6 promotion manifest & 17 MADR 4.0 ADRs"
       },
       "cc-sota-harness": {
         "url": "https://github.com/native-agent-stack/cc-sota-harness",
@@ -207,7 +207,7 @@
     "catalogPath": "docs/adr/CATALOG.md",
     "generatorScript": "scripts/architecture_catalog.py",
     "revisitThresholdDays": 45,
-    "adrCount": 21,
+    "adrCount": 22,
     "records": [
       {
         "id": "ADR-0001",
@@ -558,6 +558,21 @@
           "https://github.com/native-agent-stack/sota-harness-foundation",
           "https://github.com/native-agent-stack/sota-mover-ranker",
           "https://github.com/native-agent-stack/sota-multi-model-workflows"
+        ]
+      },
+      {
+        "id": "ADR-0022",
+        "layer": "Organization Control Plane, 22-Repo 40-Char SHA Manifest & 3-Surface Zero-Lease Convergence (`L0\u2013L13` \u00d7 `P0\u2013P5` \u00d7 `T0\u2013T8`)",
+        "title": "`v3.9.6` CTA/UTP Single-Session Guard (`ADR-0021`), Partial-Fill FIFO Attribution (`8e01ec17`) & 22-Repo Zero-Drift SHA Seal",
+        "status": "Accepted",
+        "date": "2026-11-18",
+        "evidenceGrade": "E4 (`22/22` Exact 40-Char `origin/main` SHA Parity, `9/9` Public GitHub Actions, `94/94` `sota-mover-ranker` `pytest` & `54/54` Synced Checkouts)",
+        "file": "docs/adr/ADR-0022-v396-cta-utp-session-guard-partial-fill-fifo-and-22repo-final-seal.md",
+        "githubUrls": [
+          "https://github.com/native-agent-stack/.github",
+          "https://github.com/native-agent-stack/native-agent-stack",
+          "https://github.com/native-agent-stack/sota-mover-ranker",
+          "https://github.com/native-agent-stack/sota-private-vault"
         ]
       }
     ]

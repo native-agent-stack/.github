@@ -92,6 +92,11 @@
         "url": "https://github.com/native-agent-stack/astrolabe",
         "baselineSha": "f3511522c048ecde5f1a538387d9cf5b77f81262",
         "role": "IBKR NautilusTrader paper-trading lane"
+      },
+      "sota-harness-foundation": {
+        "url": "https://github.com/native-agent-stack/sota-harness-foundation",
+        "baselineSha": "8fd00d5b6af4a33549c4d4d07c18c737a51a7bfa",
+        "role": "Open-core multi-model harness foundation, compounding schema & stateful Hypothesis RuleBasedStateMachine fuzzing"
       }
     },
     "privateExecutionAndVaultTier": {

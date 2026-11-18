@@ -1,7 +1,7 @@
 {
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "3.0.0",
   "organization": "native-agent-stack",
-  "verifiedDate": "2026-11-17",
+  "verifiedDate": "2026-11-18",
   "studyWallDate": "2026-10-15",
   "executionFirewall": {
     "paperOnlyAutonomousExecution": true,
@@ -56,99 +56,133 @@
     "publicUnlimitedActionsTier": {
       ".github": {
         "url": "https://github.com/native-agent-stack/.github",
-        "role": "Org profile, manifest, MADR 4.0 ADRs & reusable CI"
+        "role": "Org profile, manifest, MADR 4.0 ADRs & reusable SHA-pinned CI gate"
       },
       "native-agent-stack": {
         "url": "https://github.com/native-agent-stack/native-agent-stack",
-        "baselineSha": "4b8ca6208e8b2bb656f662df2708f6a70a3c7830",
-        "role": "861-repo convergence catalog & 8-shard validation suite"
+        "baselineSha": "113c695601e8d6fd43d98eaa6c7cfa00d0175b6b",
+        "role": "Canonical v3.0.0 upstream-first umbrella, single-owner layer bijection & supersession lock"
       },
-      "sota-multi-model-workflows": {
-        "url": "https://github.com/native-agent-stack/sota-multi-model-workflows",
-        "baselineSha": "da0f891d81dd6137cd803073b49ef956c02e33c9",
-        "role": "9 LLM-native multi-model workflows, SQLite WAL peer bus & 5-stage promotion gate"
-      },
-      "sota-compounding-lab": {
-        "url": "https://github.com/native-agent-stack/sota-compounding-lab",
-        "baselineSha": "b120671dcc35c44be3370f1681bd7071246f538b",
-        "role": "5-stage Sim->PreWall->Paper->EB->Alpaca/IBKR lifecycle validator & sota-org-doctor"
-      },
-      "sota-upstream-shelf-lock": {
-        "url": "https://github.com/native-agent-stack/sota-upstream-shelf-lock",
-        "baselineSha": "045ddbc676a540906b3e3578d2778824e49a6ab6",
-        "role": "40-char commit-SHA lock & drift auditor for 18 upstream trading clones"
+      "sota-harness-foundation": {
+        "url": "https://github.com/native-agent-stack/sota-harness-foundation",
+        "baselineSha": "6f5dfa0b8d92708d5c39362a59064c7a75badc84",
+        "role": "Open-core multi-runtime harness foundation & Hypothesis stateful fuzzing"
       },
       "agy-sota-harness": {
         "url": "https://github.com/native-agent-stack/agy-sota-harness",
         "baselineSha": "7355520330214d7c44511f654047476c980c5884",
-        "role": "Antigravity L0-L12 harness, 14 MADR 4.0 ADRs & 13-layer probes"
+        "role": "Antigravity L0-L12 harness, pre-wall DuckDB/Polars studies (H02/H04/H06) & 14 MADR 4.0 ADRs"
       },
       "dsh-sota-harness": {
         "url": "https://github.com/native-agent-stack/dsh-sota-harness",
         "baselineSha": "980d47a7703e0a1f250ef6787bea0da2d88abfe6",
-        "role": "DeepSeek Harness cross-peer MCP preset & pre-wall trading firewall"
+        "role": "DeepSeek Harness 10-layer probe suite, MADR 4.0 ADRs & cross-peer MCP triad"
+      },
+      "sota-multi-model-workflows": {
+        "url": "https://github.com/native-agent-stack/sota-multi-model-workflows",
+        "baselineSha": "da0f891d81dd6137cd803073b49ef956c02e33c9",
+        "role": "9 self-bootstrapping multi-model workflows, SQLite WAL peer bus & 5-stage promotion gate"
+      },
+      "sota-compounding-lab": {
+        "url": "https://github.com/native-agent-stack/sota-compounding-lab",
+        "baselineSha": "7cc1010d41cda4bfca7f74949df30b6b591fb166",
+        "role": "5-stage Sim->PreWall->Paper->EB->Alpaca/IBKR lifecycle engine & 4-invariant sota-org-doctor"
+      },
+      "sota-upstream-shelf-lock": {
+        "url": "https://github.com/native-agent-stack/sota-upstream-shelf-lock",
+        "baselineSha": "1be9b36918761b50dff65c0b50605bdf8639f84a",
+        "role": "18 immutable 40-char Git SHA upstream library pins & promotion validator"
       },
       "astrolabe": {
         "url": "https://github.com/native-agent-stack/astrolabe",
-        "baselineSha": "f3511522c048ecde5f1a538387d9cf5b77f81262",
-        "role": "IBKR NautilusTrader paper-trading lane"
-      },
-      "sota-harness-foundation": {
-        "url": "https://github.com/native-agent-stack/sota-harness-foundation",
-        "baselineSha": "8fd00d5b6af4a33549c4d4d07c18c737a51a7bfa",
-        "role": "Open-core multi-model harness foundation, compounding schema & stateful Hypothesis RuleBasedStateMachine fuzzing"
+        "baselineSha": "9c654ea565da3f152f4577b372b87f411a68e326",
+        "role": "Stage-3B IBKR (:4002 DU... paper-only) NautilusTrader execution engine"
       }
     },
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "bae497602334cf8967c2af3491b55f6727fe601f",
-        "role": "3.0s SIP+BOATS whole-market radar (:8787) & 200/min Alpaca + 3,000/min IBKR Paper execution"
+        "baselineSha": "76058d22946b5ca0882f3664db1fc34807e5b2a6",
+        "actionsEnabled": false,
+        "role": "Stage-3A 3.0s SIP+BOATS radar & <=200/min Alpaca / 3,000/min IBKR paper auto-trader"
       },
       "sota-dynamic-trail-c": {
         "url": "https://github.com/native-agent-stack/sota-dynamic-trail-c",
         "baselineSha": "d6e25bf82fb8963c8629f648bafbf84222441f6b",
-        "role": "v0.6.0 24/5 6-14bps Mega-Cap Near-Lossless Scratch Shield, Circuit Breaker & :8799 webhook"
-      },
-      "cc-sota-harness": {
-        "url": "https://github.com/native-agent-stack/cc-sota-harness",
-        "baselineSha": "66d9cf491485ac6e4807e0e4dba413e68cdcba75",
-        "role": "Claude Code + OMC + 24-runtime frontier sibling harness, H05 empirical lake report & 18 MADR 4.0 ADRs"
-      },
-      "meridian": {
-        "url": "https://github.com/native-agent-stack/meridian",
-        "baselineSha": "4dd0c20ef3c87159e783aea8d774759358bf1413",
-        "role": "Stage-1 event-driven simulation engine"
-      },
-      "trading-sota": {
-        "url": "https://github.com/native-agent-stack/trading-sota",
-        "baselineSha": "0d15d8ebcd695fc90717544d2d1e4c1d7c110b7c",
-        "role": "Sim -> Paper -> Live standard & lane-owned promotion gates"
-      },
-      "canon": {
-        "url": "https://github.com/native-agent-stack/canon",
-        "baselineSha": "cf5bc1271bb45045dd72e5b23d513b2bc1968d0c",
-        "role": "Deterministic research, provenance & verification engine"
-      },
-      "tsl": {
-        "url": "https://github.com/native-agent-stack/tsl",
-        "baselineSha": "d7d10808c95b8e39c38ec4da1b4edfa68f4a5236",
-        "role": "Trading Strategy Lab (TSL) pre-wall research archive"
-      },
-      "dsh-plugin-landscape": {
-        "url": "https://github.com/native-agent-stack/dsh-plugin-landscape",
-        "baselineSha": "e3b8370def0a18d444d96c38999ff0e10ab65b72",
-        "role": "DSH plugin landscape & upstream capability matrix"
+        "actionsEnabled": false,
+        "role": "Stage-5A 24/5 sub-50ms Dual-Tranche dynamic trailing guardian (:8799)"
       },
       "sota-private-vault": {
         "url": "https://github.com/native-agent-stack/sota-private-vault",
         "baselineSha": "baf630a49d2ff311e0550450231991df8c1bc4a9",
-        "role": "Scrubbed 82-trial HLZ ledger, 30 E1-E4 lessons, pre-wall priors & strategy promotion manifest"
+        "actionsEnabled": false,
+        "role": "Stage-5B 82-trial HLZ ledger, E1-E4 lessons, Empirical-Bayes priors & broker manifest"
+      },
+      "cc-sota-harness": {
+        "url": "https://github.com/native-agent-stack/cc-sota-harness",
+        "baselineSha": "401ee5ecadd21979c975ee1ec3b6783c90899c33",
+        "actionsEnabled": false,
+        "role": "L5 27-runtime Claude lead harness, H05 tick microstructure study & 19 MADR 4.0 ADRs"
+      },
+      "meridian": {
+        "url": "https://github.com/native-agent-stack/meridian",
+        "baselineSha": "a739e599224ee5795d22330c99accf2111719d18",
+        "actionsEnabled": false,
+        "role": "Stage-1 NautilusTrader v2.0.0rc9 queue-fill parity simulation engine (50 ADRs)"
+      },
+      "canon": {
+        "url": "https://github.com/native-agent-stack/canon",
+        "baselineSha": "87ae843705e1e590dca1dfcc0b451de325a609c3",
+        "actionsEnabled": false,
+        "role": "Stage-2 deterministic causal research & evaluation engine (149 ADRs)"
+      },
+      "tsl": {
+        "url": "https://github.com/native-agent-stack/tsl",
+        "baselineSha": "ca2cc9c779085c302c9a0ab0a26f33ed480730d0",
+        "actionsEnabled": false,
+        "role": "Private Trading Strategy Lab PIT research & ranking automation (16 ADRs)"
+      },
+      "trading-sota": {
+        "url": "https://github.com/native-agent-stack/trading-sota",
+        "baselineSha": "b1922662f4f9561f061eab0dda55b4c62f9fedd9",
+        "actionsEnabled": false,
+        "role": "Private PIT research archive converged into tsl & sota-compounding-lab (10 ADRs)"
+      },
+      "dsh-plugin-landscape": {
+        "url": "https://github.com/native-agent-stack/dsh-plugin-landscape",
+        "baselineSha": "f481b4b8bc464f1dcbace5bc8f882a0059931486",
+        "actionsEnabled": false,
+        "role": "Private offline-verified DSH plugin anchor catalog feeding dsh-sota-harness"
+      }
+    },
+    "coldArchivedSupersededTier": {
+      "legacy-agent-stack-202610": {
+        "url": "https://github.com/native-agent-stack/legacy-agent-stack-202610",
+        "baselineSha": "4b8ca6208e8b2bb656f662df2708f6a70a3c7830",
+        "archived": true,
+        "actionsEnabled": false,
+        "role": "Superseded Sep-Oct 2026 WSL/jcodemunch snapshot (cold-archived PRIVATE, Actions=false)"
+      },
+      "legacy-edge-202611": {
+        "url": "https://github.com/native-agent-stack/legacy-edge-202611",
+        "baselineSha": "064366249313349b82235a92eadd51d21a09f70e",
+        "archived": true,
+        "actionsEnabled": false,
+        "role": "Superseded local edge prototype harvested into ADR-0019 (cold-archived PRIVATE, Actions=false)"
+      },
+      "legacy-movers-202611": {
+        "url": "https://github.com/native-agent-stack/legacy-movers-202611",
+        "baselineSha": "b9ada794259277193f0fbeca33e63890e230ad9f",
+        "archived": true,
+        "actionsEnabled": false,
+        "role": "Superseded local movers prototype harvested into ADR-0019 (cold-archived PRIVATE, Actions=false)"
       },
       "ecosystem-records": {
         "url": "https://github.com/native-agent-stack/ecosystem-records",
         "baselineSha": "265a4d9f6c9d678c2d59fe8d437b9a4ea00581c5",
-        "role": "Cryptographically sealed historical continuity records"
+        "archived": true,
+        "actionsEnabled": false,
+        "role": "Superseded Oct 2026 continuity snapshot replaced by sota-private-vault (cold-archived PRIVATE)"
       }
     }
   },

@@ -60,12 +60,12 @@
       },
       "native-agent-stack": {
         "url": "https://github.com/native-agent-stack/native-agent-stack",
-        "baselineSha": "bf12a5b0ad8cd35539bcfd42139c9dbed3a8dfe4",
+        "baselineSha": "7c36def6c61c222985443129f3b83615ea931e3e",
         "role": "Canonical v3.5.1 upstream-first umbrella, cc-lead central runtime hub, H088/H089 runner convexity synthesis, 424-star matrix & 12 MADR 4.0 ADRs"
       },
       "sota-harness-foundation": {
         "url": "https://github.com/native-agent-stack/sota-harness-foundation",
-        "baselineSha": "6c053bb205f1392ca056de5ef79eb8b523e2b6c0",
+        "baselineSha": "3a6fb403648d53174339ad3f1fa48d8ad429ff97",
         "role": "Open-core multi-runtime harness foundation, 26 MADR 4.0 ADRs, 28 runtimes, cc-lead routing v1.1.0, H088 study & lease-safe Orca v2.0 co-op"
       },
       "agy-sota-harness": {
@@ -75,7 +75,7 @@
       },
       "dsh-sota-harness": {
         "url": "https://github.com/native-agent-stack/dsh-sota-harness",
-        "baselineSha": "967bc312b38100119ffb5fd24c52b8485be2c4c5",
+        "baselineSha": "fb41e95dfb88ec5cfc2998124741420cd313cbac",
         "role": "DeepSeek Harness 10-layer probe suite, cc-lead Channel-5 worker hub & 6 MADR 4.0 ADRs"
       },
       "sota-multi-model-workflows": {
@@ -85,60 +85,60 @@
       },
       "sota-compounding-lab": {
         "url": "https://github.com/native-agent-stack/sota-compounding-lab",
-        "baselineSha": "963ac56bf2223de256b6270513c358c92734b4ba",
+        "baselineSha": "b76cd272bc215c39956b4b3fb3f0103320a75620",
         "role": "5-stage Sim->PreWall->Paper->EB->Alpaca/IBKR lifecycle engine, H088/H089 50/50 runner convexity, dirhash locks & 8 MADR 4.0 ADRs"
       },
       "sota-upstream-shelf-lock": {
         "url": "https://github.com/native-agent-stack/sota-upstream-shelf-lock",
-        "baselineSha": "6901f0d0961f176dc720e1206175aed6074b3bf7",
+        "baselineSha": "425e762bce910926a6d82abe06927b448bdae360",
         "role": "18 immutable 40-char Git SHA upstream pins, MinTRL/MDE power gate, two-stage RiskAdverseQueueModel synthesis & 6 MADR 4.0 ADRs"
       },
       "astrolabe": {
         "url": "https://github.com/native-agent-stack/astrolabe",
-        "baselineSha": "8c56d89a025c437bb510bfa3639ca8d9a39cdfdb",
+        "baselineSha": "49e9b2479f139fc35739869a4f6985a6c901637b",
         "role": "Stage-3B IBKR (:4002 paper-only, 300/min exit reserve) NautilusTrader + RiskAdverseQueueModel 100x round-lot parity engine (5 MADR 4.0 ADRs)"
       }
     },
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "747802be094c95cd14f5bd35255fa293b3f58dfb",
+        "baselineSha": "b5f1d7c398ba9aa0fbb0853a1ca9df3300e46908",
         "actionsEnabled": false,
         "role": "Stage-3A 3.0s SIP+BOATS radar, 7-feed PIT API, 16-tool MCP, post-Gain-Lock 50/50 Core-Harvest + Runner Convexity & 11 MADR 4.0 ADRs"
       },
       "sota-dynamic-trail-c": {
         "url": "https://github.com/native-agent-stack/sota-dynamic-trail-c",
-        "baselineSha": "2be3e67c56697f4c22dbf4df90b0fa2974bb2631",
+        "baselineSha": "83b74ecba05087ea0a78a2656d53c2c5cae1d614",
         "actionsEnabled": false,
         "role": "Stage-5A 24/5 v1.0.1 Near-Lossless trailing guardian (:8799), [L]/[M]/[B] TV preset stager, dual Pine v6 mount & 10 MADR 4.0 ADRs"
       },
       "sota-private-vault": {
         "url": "https://github.com/native-agent-stack/sota-private-vault",
-        "baselineSha": "4f4ac5ae82a4e99fd2972af56010c0b2b6ae468e",
+        "baselineSha": "edab31dd0439ff3958bcb7bb57edf9f7e8870642",
         "actionsEnabled": false,
         "role": "Stage-5B 89-trial HLZ ledger (t*=4.1735), 883-fill runner telemetry, 52 E1-E4 lessons & 9 MADR 4.0 ADRs"
       },
       "cc-sota-harness": {
         "url": "https://github.com/native-agent-stack/cc-sota-harness",
-        "baselineSha": "9e566deb38c576ae749547781d321e681e139b7e",
+        "baselineSha": "b84d1c932e813a745178bac6e9d32ce8cf369514",
         "actionsEnabled": false,
         "role": "L5 Claude lead central orchestrator harness (OMC v2), cross-OS win32/darwin guard, Dual-Machine Orca co-op lane & 24 MADR 4.0 ADRs"
       },
       "meridian": {
         "url": "https://github.com/native-agent-stack/meridian",
-        "baselineSha": "490bd544c81f16bdd4405da557c2b9442ae3516c",
+        "baselineSha": "f8483af9ed19ec55b3478f62be4eab3a5242ad60",
         "actionsEnabled": false,
         "role": "Stage-1 NautilusTrader v2.0.0rc9 simulation engine, 7-feed research convergence, unthrottled Chromium checks & Orca co-op lane (56 MADR 4.0 ADRs)"
       },
       "canon": {
         "url": "https://github.com/native-agent-stack/canon",
-        "baselineSha": "e6a709119e1dd5fe550c89f69fad46fe1949a091",
+        "baselineSha": "1a8749c1fe0414a57f1785c089b6a3b2959e6f9c",
         "actionsEnabled": false,
         "role": "Stage-2 deterministic causal research, BagIt/dirhash snapshots & 150 MADR 4.0 ADRs"
       },
       "tsl": {
         "url": "https://github.com/native-agent-stack/tsl",
-        "baselineSha": "db8deccfa588dc41193dd9486e4aca3c37558a9a",
+        "baselineSha": "e8e1700bb29d079ace95faf509df097a2b78e429",
         "actionsEnabled": false,
         "role": "Private Trading Strategy Lab PIT research & ungated paper/live-closed ladder (17 MADR 4.0 ADRs)"
       },
@@ -150,7 +150,7 @@
       },
       "dsh-plugin-landscape": {
         "url": "https://github.com/native-agent-stack/dsh-plugin-landscape",
-        "baselineSha": "0703d7504731dbc36701a49c6e984e9e10722631",
+        "baselineSha": "45856a72a62b43dc4f6d387ae1949576dbbb25bb",
         "actionsEnabled": false,
         "role": "Private offline-verified DSH plugin anchor catalog & 424-repo research cross-reference (4 MADR 4.0 ADRs)"
       }

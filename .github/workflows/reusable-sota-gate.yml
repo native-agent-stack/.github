@@ -1,0 +1,32 @@
+name: Reusable SOTA Deterministic Gate
+
+on:
+  workflow_call:
+    inputs:
+      python-version:
+        required: false
+        type: string
+        default: "3.12"
+
+permissions: {}
+
+jobs:
+  sota-gate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - name: Harden runner
+        uses: step-security/harden-runner@e14015d583714f6e62063499dc959a02595150a1 # v2.21.1
+        with:
+          egress-policy: audit
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Run Merge Gate & Unit Suite
+        run: |
+          if [ -f scripts/merge_gate.py ]; then python3 scripts/merge_gate.py; fi
+          if [ -d tests ]; then python3 -m unittest discover -s tests -v; fi

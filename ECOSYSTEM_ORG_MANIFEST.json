@@ -1,0 +1,169 @@
+{
+  "schemaVersion": "1.0.0",
+  "organization": "native-agent-stack",
+  "verifiedDate": "2026-11-17",
+  "studyWallDate": "2026-10-15",
+  "executionFirewall": {
+    "paperOnlyAutonomousExecution": true,
+    "liveCapitalHardRefused": true,
+    "forbiddenIbkrLivePorts": [
+      4001,
+      7496
+    ],
+    "sanctionedPaperLanes": {
+      "alpacaPaper": {
+        "prefix": "PA",
+        "maxReqPerMin": 200,
+        "protectiveReservePerMin": 20
+      },
+      "ibkrPaper": {
+        "prefix": "DU",
+        "port": 4002,
+        "maxMsgPerMin": 3000
+      }
+    },
+    "maxInitialStopPctAdr0022": 2.0,
+    "megaCapNearLosslessScratchBps": [
+      6.0,
+      14.0
+    ],
+    "megaCapInstantBreakevenArmBps": [
+      5.0,
+      10.0
+    ],
+    "dailyScratchCircuitBreaker": {
+      "maxConsecutiveScratches": 4,
+      "cooldownMinutes": 15,
+      "maxDailyLossBps": 75.0
+    }
+  },
+  "peerHarnesses": {
+    "P0_antigravity": "Google Antigravity 2.0 + run_workflow + native swarm",
+    "P1_claude_code": "Claude Code + OMC + 24-runtime frontier sibling mesh",
+    "P2_openai_codex": "OpenAI Codex CLI + global MCP & peer_hook_adapter",
+    "P3_deepseek_harness": "DeepSeek Harness v2.2+ quant-prewall profile",
+    "P4_orca_cockpit": "stablyai/orca isolated worktree supervisor",
+    "P5_peer_bus": "Transactional SQLite WAL peer_bus.db + aannoo/hcom live push"
+  },
+  "compoundingPromotionStages": [
+    "STAGE_1_PREWALL_RESEARCH_LE_2026_10_15",
+    "STAGE_2_EVENT_SIM_NAUTILUS_HFTBACKTEST",
+    "STAGE_3_FALSIFICATION_CPCV_DSR_HLZ_2X_IMPACT",
+    "STAGE_4_PAPER_EXECUTION_ALPACA_200RPM_IBKR_3000MPM",
+    "STAGE_5_EMPIRICAL_BAYES_PRIOR_COMPOUNDING"
+  ],
+  "repositories": {
+    "publicUnlimitedActionsTier": {
+      ".github": "https://github.com/native-agent-stack/.github",
+      "native-agent-stack": "https://github.com/native-agent-stack/native-agent-stack",
+      "sota-multi-model-workflows": "https://github.com/native-agent-stack/sota-multi-model-workflows",
+      "sota-compounding-lab": "https://github.com/native-agent-stack/sota-compounding-lab",
+      "sota-harness-foundation": "https://github.com/native-agent-stack/sota-harness-foundation",
+      "sota-upstream-shelf-lock": "https://github.com/native-agent-stack/sota-upstream-shelf-lock",
+      "agy-sota-harness": "https://github.com/native-agent-stack/agy-sota-harness",
+      "dsh-sota-harness": "https://github.com/native-agent-stack/dsh-sota-harness"
+    },
+    "privateExecutionAndVaultTier": {
+      "sota-mover-ranker": "https://github.com/native-agent-stack/sota-mover-ranker",
+      "sota-dynamic-trail-c": "https://github.com/native-agent-stack/sota-dynamic-trail-c",
+      "cc-sota-harness": "https://github.com/native-agent-stack/cc-sota-harness",
+      "sota-private-vault": "https://github.com/native-agent-stack/sota-private-vault",
+      "ecosystem-records": "https://github.com/native-agent-stack/ecosystem-records"
+    }
+  },
+  "adrGovernance": {
+    "format": "MADR-4.0-GitHub-Evidenced",
+    "catalogPath": "docs/adr/CATALOG.md",
+    "generatorScript": "scripts/architecture_catalog.py",
+    "revisitThresholdDays": 45,
+    "adrCount": 6,
+    "records": [
+      {
+        "id": "ADR-0001",
+        "layer": "Org Governance (`L0\u2013L12` \u00d7 `P0\u2013P5`)",
+        "title": "Two-Tier Public Unlimited-CI vs Private Vault Organization Boundary",
+        "status": "Accepted",
+        "date": "2026-11-17",
+        "evidenceGrade": "E4 (Live GitHub Org API & CI Enforced)",
+        "file": "docs/adr/ADR-0001-two-tier-public-ci-and-private-vault-org-boundary.md",
+        "githubUrls": [
+          "https://github.com/native-agent-stack/.github",
+          "https://github.com/native-agent-stack/native-agent-stack",
+          "https://github.com/step-security/harden-runner"
+        ]
+      },
+      {
+        "id": "ADR-0002",
+        "layer": "Multi-Agent Coordination (`P0\u2013P5` \u00d7 `L1` \u00d7 `L5` \u00d7 `L7`)",
+        "title": "Multi-Model Peer Bus, Lease Collision Guard & Isolated Git Worktree Protocol",
+        "status": "Accepted",
+        "date": "2026-11-17",
+        "evidenceGrade": "E4 (Verified Across 5 Concurrent Peer Sessions)",
+        "file": "docs/adr/ADR-0002-multi-model-peer-bus-and-isolated-worktree-protocol.md",
+        "githubUrls": [
+          "https://github.com/aannoo/hcom",
+          "https://github.com/native-agent-stack/sota-multi-model-workflows",
+          "https://github.com/stablyai/orca"
+        ]
+      },
+      {
+        "id": "ADR-0003",
+        "layer": "Quant Research (`L8` \u00d7 `T1\u2013T4`)",
+        "title": "Pre-Wall (`<= 2026-10-15`) Causal Isolation & HLZ / DSR / CPCV Statistical Gates",
+        "status": "Accepted",
+        "date": "2026-11-17",
+        "evidenceGrade": "E4 (82 Pre-Registered Trials Logged)",
+        "file": "docs/adr/ADR-0003-prewall-causal-research-and-hlz-dsr-cpcv-gates.md",
+        "githubUrls": [
+          "https://github.com/duckdb/duckdb",
+          "https://github.com/ml4t/diagnostic",
+          "https://github.com/pola-rs/polars",
+          "https://github.com/skfolio/skfolio"
+        ]
+      },
+      {
+        "id": "ADR-0004",
+        "layer": "Strategy Lifecycle (`T3\u2013T8`)",
+        "title": "Five-Stage Compounding Strategy Promotion Manifest (`Sim -> Backtest -> Paper -> Fine-Tune -> Broker`)",
+        "status": "Accepted",
+        "date": "2026-11-17",
+        "evidenceGrade": "E4 (Live Alpaca Paper `:8787`/`:8799` & IBKR `:4002` Parity)",
+        "file": "docs/adr/ADR-0004-five-stage-compounding-promotion-manifest-alpaca-ibkr.md",
+        "githubUrls": [
+          "https://github.com/alpacahq/alpaca-py",
+          "https://github.com/ib-api-reloaded/ib_async",
+          "https://github.com/nautechsystems/nautilus_trader",
+          "https://github.com/nkaz001/hftbacktest"
+        ]
+      },
+      {
+        "id": "ADR-0005",
+        "layer": "Execution & Risk (`L1` \u00d7 `L8` \u00d7 `L9` \u00d7 `T5`)",
+        "title": "Non-Negotiable Paper-Only Firewall, `ADR-0022 <= 2.00%` Cap & `6\u201314 bps` Near-Lossless Shield",
+        "status": "Accepted",
+        "date": "2026-11-17",
+        "evidenceGrade": "E4 (Runtime & Pre-Wall `CVaR_95` Verified)",
+        "file": "docs/adr/ADR-0005-paper-only-firewall-adr0022-and-near-lossless-shield.md",
+        "githubUrls": [
+          "https://github.com/alpacahq/alpaca-mcp-server",
+          "https://github.com/alpacahq/alpaca-py",
+          "https://github.com/gerrymanoim/exchange_calendars"
+        ]
+      },
+      {
+        "id": "ADR-0006",
+        "layer": "CI/CD & Supply-Chain Security (`L9`)",
+        "title": "Least-Privilege SHA-Pinned GitHub Actions & Reusable Org Gate",
+        "status": "Accepted",
+        "date": "2026-11-17",
+        "evidenceGrade": "E4 (Live GitHub Actions Verified)",
+        "file": "docs/adr/ADR-0006-least-privilege-sha-pinned-github-actions-gate.md",
+        "githubUrls": [
+          "https://github.com/actions/checkout",
+          "https://github.com/gitleaks/gitleaks",
+          "https://github.com/step-security/harden-runner"
+        ]
+      }
+    ]
+  }
+}

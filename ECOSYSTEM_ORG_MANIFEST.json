@@ -70,7 +70,7 @@
       },
       "agy-sota-harness": {
         "url": "https://github.com/native-agent-stack/agy-sota-harness",
-        "baselineSha": "53d5808bd4fd84ee5c309925e7b406b5b51ef9ae",
+        "baselineSha": "5694d0efc34e6490fe790652504c5ccaf3f334ab",
         "role": "Antigravity L0-L12 harness, H089 two-stage hybrid runner study, v3.5.0 ecosystem manifest & 18 MADR 4.0 ADRs"
       },
       "dsh-sota-harness": {

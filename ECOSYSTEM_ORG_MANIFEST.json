@@ -60,7 +60,7 @@
       },
       "native-agent-stack": {
         "url": "https://github.com/native-agent-stack/native-agent-stack",
-        "baselineSha": "7beb78dd40cd254a78819e00924109f5596c173f",
+        "baselineSha": "f185311f40ec306d401bed2acc73bb2b21859468",
         "role": "Canonical v3.9.8 upstream-first umbrella, H096 dry-powder collar law, 46-skill/18-workflow M1-M4 enactor, dual CC-Lead 48-tool MCP parity & 25 MADR 4.0 ADRs"
       },
       "sota-harness-foundation": {
@@ -102,7 +102,7 @@
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "eaaa2a9783f9287916f56db7e075c99ffacd692b",
+        "baselineSha": "bd9f9f45a3cee70f337ef3b70a0a4d3d9ae8d8e9",
         "actionsEnabled": false,
         "role": "Stage-3A 3.0s SIP+BOATS radar (:8787), ADR-0024..0025 runner floor, 14/14 Pine indicator-strategy parity, Wave-2 re-entry E2E & 25 MADR 4.0 ADRs"
       },
@@ -114,7 +114,7 @@
       },
       "sota-private-vault": {
         "url": "https://github.com/native-agent-stack/sota-private-vault",
-        "baselineSha": "0193dbc336d93e790595ab30dd05548f8d603b56",
+        "baselineSha": "c750d9637ce5e41607ce0fe5d4ad076e4c113902",
         "actionsEnabled": false,
         "role": "Stage-5B 96-trial HLZ ledger (t*(97)=4.1905), 85 E1-E4 lessons, H096 joint-necessity law, v1.13.0/v3.9.8 promotion manifest & 20 MADR 4.0 ADRs"
       },

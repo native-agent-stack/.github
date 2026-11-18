@@ -65,7 +65,7 @@
       },
       "sota-harness-foundation": {
         "url": "https://github.com/native-agent-stack/sota-harness-foundation",
-        "baselineSha": "6f5dfa0b8d92708d5c39362a59064c7a75badc84",
+        "baselineSha": "1394175b7fd77c4abb4005fc6ec3834c4fc0a7a6",
         "role": "Open-core multi-runtime harness foundation & Hypothesis stateful fuzzing"
       },
       "agy-sota-harness": {
@@ -80,8 +80,8 @@
       },
       "sota-multi-model-workflows": {
         "url": "https://github.com/native-agent-stack/sota-multi-model-workflows",
-        "baselineSha": "da0f891d81dd6137cd803073b49ef956c02e33c9",
-        "role": "9 self-bootstrapping multi-model workflows, SQLite WAL peer bus & 5-stage promotion gate"
+        "baselineSha": "34d3026ce375ddafc6621326a20518143764022e",
+        "role": "10 self-bootstrapping v3.0.0 multi-model workflows, SQLite WAL peer bus & 5-stage promotion gate"
       },
       "sota-compounding-lab": {
         "url": "https://github.com/native-agent-stack/sota-compounding-lab",
@@ -102,7 +102,7 @@
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "5192afc1ba553901df9969078914be75b39393cb",
+        "baselineSha": "4085cf8ea6737cb3240d7f55c8c9ade7c053a0f5",
         "actionsEnabled": false,
         "role": "Stage-3A 3.0s SIP+BOATS radar & <=200/min Alpaca / 3,000/min IBKR paper auto-trader"
       },
@@ -120,7 +120,7 @@
       },
       "cc-sota-harness": {
         "url": "https://github.com/native-agent-stack/cc-sota-harness",
-        "baselineSha": "401ee5ecadd21979c975ee1ec3b6783c90899c33",
+        "baselineSha": "be14a83a3dcadf74c27001c592c74fcc82135168",
         "actionsEnabled": false,
         "role": "L5 27-runtime Claude lead harness, H05 tick microstructure study & 19 MADR 4.0 ADRs"
       },

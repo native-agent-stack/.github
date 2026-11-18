@@ -70,7 +70,7 @@
       },
       "agy-sota-harness": {
         "url": "https://github.com/native-agent-stack/agy-sota-harness",
-        "baselineSha": "2abf4aeadda4b17b5da918706dda90ebeade2919",
+        "baselineSha": "be002d14a71582a2b4c89ed1ba86dcc7dbce050d",
         "role": "Antigravity L0-L12 harness, pre-wall DuckDB/Polars studies (H02/H04/H06) & 14 MADR 4.0 ADRs"
       },
       "dsh-sota-harness": {
@@ -102,7 +102,7 @@
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "c430de56b6612e1bbb6d78e635ec059f37378042",
+        "baselineSha": "6af53795b5ddd74df4ec3fba06ce9ea1301800dc",
         "actionsEnabled": false,
         "role": "Stage-3A 3.0s SIP+BOATS radar & <=200/min Alpaca / 3,000/min IBKR paper auto-trader"
       },

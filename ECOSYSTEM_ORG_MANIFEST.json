@@ -95,7 +95,7 @@
       },
       "astrolabe": {
         "url": "https://github.com/native-agent-stack/astrolabe",
-        "baselineSha": "e1023b3e568a0a776f9195bfdc18df2fd5245806",
+        "baselineSha": "8c56d89a025c437bb510bfa3639ca8d9a39cdfdb",
         "role": "Stage-3B IBKR (:4002 paper-only, 300/min exit reserve) NautilusTrader + RiskAdverseQueueModel 100x round-lot parity engine (5 MADR 4.0 ADRs)"
       }
     },

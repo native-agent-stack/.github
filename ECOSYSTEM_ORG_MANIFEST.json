@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "3.9.0",
+  "schemaVersion": "3.9.1",
   "organization": "native-agent-stack",
   "verifiedDate": "2026-11-18",
   "studyWallDate": "2026-10-15",
@@ -56,11 +56,11 @@
     "publicUnlimitedActionsTier": {
       ".github": {
         "url": "https://github.com/native-agent-stack/.github",
-        "role": "Org profile, v3.9.0 manifest, 16 MADR 4.0 ADRs, UPSTREAM.md, cross-OS orca.yaml & reusable SHA-pinned CI gate"
+        "role": "Org profile, v3.9.1 manifest, 17 MADR 4.0 ADRs, UPSTREAM.md, cross-OS orca.yaml & reusable SHA-pinned CI gate"
       },
       "native-agent-stack": {
         "url": "https://github.com/native-agent-stack/native-agent-stack",
-        "baselineSha": "0b1323365200f789373a100825f80af8c7d1bf16",
+        "baselineSha": "4b643a257d0ea65ba490755baef1b0358080b057",
         "role": "Canonical v3.8.0 upstream-first umbrella, 9-feed PIT ranking & two-track compounding versioning seal, cross-OS orca.yaml & 15 MADR 4.0 ADRs"
       },
       "sota-harness-foundation": {
@@ -102,7 +102,7 @@
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "f3c77c0dcdba0561505ffc6270d705d9f1d430e5",
+        "baselineSha": "e8eebd7a05702472767d33651db55fa3da4bd2bd",
         "actionsEnabled": false,
         "role": "Stage-3A 3.0s SIP+BOATS radar, 9-feed PIT API (DF1..DF9 + Vega/Tetlock surprise), 17-tool MCP, cross-OS orca.yaml & 14+ MADR 4.0 ADRs"
       },
@@ -114,7 +114,7 @@
       },
       "sota-private-vault": {
         "url": "https://github.com/native-agent-stack/sota-private-vault",
-        "baselineSha": "1b2247689ab2aae1de150f9a978eda710e67cd1a",
+        "baselineSha": "7e305b737fc79a6840f820f0bf0a258f23349caf",
         "actionsEnabled": false,
         "role": "Stage-5B 90-trial HLZ ledger (t*(91)=4.1760, H090 +20.84bps 1x, 5/5 CPCV), 62 E1-E4 lessons, cross-OS orca.yaml & 11 MADR 4.0 ADRs"
       },
@@ -207,7 +207,7 @@
     "catalogPath": "docs/adr/CATALOG.md",
     "generatorScript": "scripts/architecture_catalog.py",
     "revisitThresholdDays": 45,
-    "adrCount": 16,
+    "adrCount": 17,
     "records": [
       {
         "id": "ADR-0001",
@@ -473,6 +473,23 @@
           "https://github.com/native-agent-stack/sota-mover-ranker",
           "https://github.com/native-agent-stack/sota-multi-model-workflows",
           "https://github.com/stablyai/orca"
+        ]
+      },
+      {
+        "id": "ADR-0017",
+        "layer": "Organization Control Plane, 22-Repo 40-Char SHA Manifest, Pre-Wall Volatility-Scaling Governance & Live RTH Reliability (`L0\u2013L13` \u00d7 `P0\u2013P5` \u00d7 `T0\u2013T8`)",
+        "title": "`v3.9.1` `H092`+`H093` Overnight Whipsaw Law (`7,473` Events), Live `:8787` Pipe-Deadlock/Shield Fix & 22-Repo SHA Seal",
+        "status": "Accepted",
+        "date": "2026-11-18",
+        "evidenceGrade": "E4 (`22/22` Exact 40-Char `origin/main` SHA Parity, `9/9` Public GitHub Actions `SUCCESS`, `93` Pre-Registered HLZ Trials, `69` Compiled Lessons & `:8787`/`:8799` `HTTP 200` Verified)",
+        "file": "docs/adr/ADR-0017-v391-h092-h093-overnight-whipsaw-law-mcp-pipe-fix-and-22repo-seal.md",
+        "githubUrls": [
+          "https://github.com/native-agent-stack/.github",
+          "https://github.com/native-agent-stack/dsh-sota-harness",
+          "https://github.com/native-agent-stack/native-agent-stack",
+          "https://github.com/native-agent-stack/sota-compounding-lab",
+          "https://github.com/native-agent-stack/sota-mover-ranker",
+          "https://github.com/native-agent-stack/sota-private-vault"
         ]
       }
     ]

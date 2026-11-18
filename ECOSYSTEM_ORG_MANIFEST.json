@@ -65,8 +65,8 @@
       },
       "sota-harness-foundation": {
         "url": "https://github.com/native-agent-stack/sota-harness-foundation",
-        "baselineSha": "601f58a4fb708181dbc5901a95cc5215b8b2414a",
-        "role": "Open-core multi-runtime harness foundation, 23 MADR 4.0 ADRs, 7-feed PIT & AO vendor/IBKR guards, WSL2 bootstrap & Hypothesis fuzzing"
+        "baselineSha": "0f8d167e9337ef03d446094e5da27b5cbd79d72d",
+        "role": "Open-core multi-runtime harness foundation, 25 MADR 4.0 ADRs, Stage B WSL guard, H088 study & lease-safe Orca v2.0 co-op"
       },
       "agy-sota-harness": {
         "url": "https://github.com/native-agent-stack/agy-sota-harness",

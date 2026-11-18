@@ -17,7 +17,7 @@ Every active repository (`18/18`) enforces upstream-first provenance, MADR 4.0 A
 | **L3 Core Foundation** | [`sota-harness-foundation`](https://github.com/native-agent-stack/sota-harness-foundation) | Open-core multi-runtime foundation, `20` MADR 4.0 ADRs & `Hypothesis` stateful fuzzing |
 | **L4 AGY Harness** | [`agy-sota-harness`](https://github.com/native-agent-stack/agy-sota-harness) | Antigravity `L0–L12` harness, pre-wall DuckDB/Polars studies (`H02/H04/H06`), `14` ADRs & `13/13` probes |
 | **L6 DSH Harness** | [`dsh-sota-harness`](https://github.com/native-agent-stack/dsh-sota-harness) | DeepSeek Harness `10`-layer probe suite, `3` MADR 4.0 ADRs & cross-peer MCP triad |
-| **L7 Workflow Mesh** | [`sota-multi-model-workflows`](https://github.com/native-agent-stack/sota-multi-model-workflows) | `10` self-bootstrapping multi-model workflows (`v3.0.0`), SQLite WAL peer bus & `7` ADRs |
+| **L7 Workflow Mesh** | [`sota-multi-model-workflows`](https://github.com/native-agent-stack/sota-multi-model-workflows) | `11` self-bootstrapping multi-model workflows (`v3.0.0`), SQLite WAL peer bus & `7` ADRs |
 | **Stage 4 Compounding** | [`sota-compounding-lab`](https://github.com/native-agent-stack/sota-compounding-lab) | 5-stage `Sim -> PreWall -> Paper -> Empirical-Bayes -> Broker` engine + 4-invariant `sota-org-doctor` |
 | **Stage 3B IBKR Lane** | [`astrolabe`](https://github.com/native-agent-stack/astrolabe) | IBKR `:4002` (`DU...` paper-only) `NautilusTrader` execution engine (`281/281` tree/gate tests) |
 

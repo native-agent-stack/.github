@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "3.9.3",
+  "schemaVersion": "3.9.4",
   "organization": "native-agent-stack",
   "verifiedDate": "2026-11-18",
   "studyWallDate": "2026-10-15",
@@ -56,12 +56,12 @@
     "publicUnlimitedActionsTier": {
       ".github": {
         "url": "https://github.com/native-agent-stack/.github",
-        "role": "Org profile, v3.9.3 manifest, 19 MADR 4.0 ADRs, 24-repo Starred Visual Craft Atlas, UPSTREAM.md, cross-OS orca.yaml & reusable SHA-pinned CI gate"
+        "role": "Org profile, v3.9.4 manifest, 20 MADR 4.0 ADRs, 24-repo Starred Visual Craft Atlas, UPSTREAM.md, cross-OS orca.yaml & reusable SHA-pinned CI gate"
       },
       "native-agent-stack": {
         "url": "https://github.com/native-agent-stack/native-agent-stack",
-        "baselineSha": "8e70866e0deafb4c6b9a60fd9edf285a89e8c1cb",
-        "role": "Canonical v3.9.3 upstream-first umbrella, 9-feed PIT ranking, Dual-Machine Lane Hub v2, Starred Visual Craft Atlas & 19 MADR 4.0 ADRs"
+        "baselineSha": "ab1ce3bbd4f8256fb878f2922f6134b3bce8f4f4",
+        "role": "Canonical v3.9.4 upstream-first umbrella, 9-feed PIT ranking, Dual-Machine Lane Hub v2, Noesis 4K main TV display seal & 20 MADR 4.0 ADRs"
       },
       "sota-harness-foundation": {
         "url": "https://github.com/native-agent-stack/sota-harness-foundation",
@@ -102,15 +102,15 @@
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "98dfc4e29692d9e64e4e800b08ebe61319eefe11",
+        "baselineSha": "fd572c09fee58366b61ab720e3be59bf32daad7b",
         "actionsEnabled": false,
-        "role": "Stage-3A 3.0s SIP+BOATS radar, 9-feed PIT API (DF1..DF9), ADR-0017 RTH shield, ADR-0018 Win32 computer-use & --read-only-radar, 17-tool MCP & 18 MADR 4.0 ADRs"
+        "role": "Stage-3A 3.0s SIP+BOATS radar, 9-feed PIT API (DF1..DF9), ADR-0018 Win32 computer-use & --read-only-radar, ADR-0020 Noesis 4K primary TV focus routing, 17-tool MCP & 20 MADR 4.0 ADRs"
       },
       "sota-dynamic-trail-c": {
         "url": "https://github.com/native-agent-stack/sota-dynamic-trail-c",
-        "baselineSha": "ec276a3493fa5c2c499333724999b69ce24773b7",
+        "baselineSha": "56121965ef8f8db8f3150294dc4df658ac2ac386",
         "actionsEnabled": false,
-        "role": "Stage-5A 24/5 Near-Lossless guardian (:8799), ADR-0015 Dual-TV WS coexistence, ADR-0016 Dec-6 23/5 SIP shadow probe & 16 MADR 4.0 ADRs"
+        "role": "Stage-5A 24/5 Near-Lossless guardian (:8799), ADR-0015 Dual-TV WS coexistence, ADR-0016 Dec-6 23/5 SIP shadow probe, ADR-0017 Noesis main display contract & 17 MADR 4.0 ADRs"
       },
       "sota-private-vault": {
         "url": "https://github.com/native-agent-stack/sota-private-vault",
@@ -207,7 +207,7 @@
     "catalogPath": "docs/adr/CATALOG.md",
     "generatorScript": "scripts/architecture_catalog.py",
     "revisitThresholdDays": 45,
-    "adrCount": 19,
+    "adrCount": 20,
     "records": [
       {
         "id": "ADR-0001",
@@ -526,6 +526,21 @@
           "https://github.com/native-agent-stack/sota-compounding-lab",
           "https://github.com/native-agent-stack/sota-dynamic-trail-c",
           "https://github.com/tt-a1i/archify"
+        ]
+      },
+      {
+        "id": "ADR-0020",
+        "layer": "Organization Control Plane, 22-Repo 40-Char SHA Manifest, Primary Workstation Display Routing & 3-Surface Parity (`L0\u2013L13` \u00d7 `P0\u2013P5` \u00d7 `T0\u2013T8`)",
+        "title": "`v3.9.4` `Noesis` 4K Primary `TradingView.exe` Display, Auto-Keep-Up & 22-Repo Zero-Drift SHA Seal",
+        "status": "Accepted",
+        "date": "2026-11-18",
+        "evidenceGrade": "E4 (`22/22` `origin/main` 40-Char SHA Parity, `92/92` `sota-mover-ranker` & `52/52` `sota-dynamic-trail-c` `pytest`, `merge_gate.py` & `gitleaks` `0` Leaks)",
+        "file": "docs/adr/ADR-0020-v394-noesis-primary-tradingview-display-and-22repo-zero-drift-seal.md",
+        "githubUrls": [
+          "https://github.com/native-agent-stack/.github",
+          "https://github.com/native-agent-stack/native-agent-stack",
+          "https://github.com/native-agent-stack/sota-dynamic-trail-c",
+          "https://github.com/native-agent-stack/sota-mover-ranker"
         ]
       }
     ]

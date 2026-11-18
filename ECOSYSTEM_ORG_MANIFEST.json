@@ -56,12 +56,12 @@
     "publicUnlimitedActionsTier": {
       ".github": {
         "url": "https://github.com/native-agent-stack/.github",
-        "role": "Org profile, v3.9.8 manifest, 25 MADR 4.0 ADRs, 24-repo Starred Visual Craft Atlas, UPSTREAM.md, cross-OS orca.yaml & reusable SHA-pinned CI gate"
+        "role": "Org profile, v3.9.9 manifest, 27 MADR 4.0 ADRs, 33-repo (413-star) Visual/Eval Craft Atlas, UPSTREAM.md, cross-OS orca.yaml & reusable SHA-pinned CI gate"
       },
       "native-agent-stack": {
         "url": "https://github.com/native-agent-stack/native-agent-stack",
-        "baselineSha": "706e09efdb739aba9e1e74273379fac0e1f4ad53",
-        "role": "Canonical v3.9.8 upstream-first umbrella, H096 dry-powder collar law, 46-skill/18-workflow M1-M4 enactor, dual CC-Lead 48-tool MCP parity & 25 MADR 4.0 ADRs"
+        "baselineSha": "7620785ee62c1cb3bf4bbb6f7b9d6040204fcaa9",
+        "role": "Canonical v3.9.9 upstream-first umbrella, OMC 5.8.6 stop receipts, 2325-vector qmd memory, abnormal RVOL-TOD purge & 27 MADR 4.0 ADRs"
       },
       "sota-harness-foundation": {
         "url": "https://github.com/native-agent-stack/sota-harness-foundation",
@@ -102,9 +102,9 @@
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "25b18cf12eef54e03b6aaf2f11f0120249235acb",
+        "baselineSha": "453eb77a1f609462627b5a84db1ac4e10d9cbe2d",
         "actionsEnabled": false,
-        "role": "Stage-3A 3.0s SIP+BOATS radar (:8787), ADR-0024..0025 runner floor, 14/14 Pine indicator-strategy parity, Wave-2 re-entry E2E & 25 MADR 4.0 ADRs"
+        "role": "Stage-3A 3.0s SIP+BOATS radar (:8787), ADR-0027 whole-market abnormal-rate First Sign & climax reverse-short compounding (27 MADR 4.0 ADRs)"
       },
       "sota-dynamic-trail-c": {
         "url": "https://github.com/native-agent-stack/sota-dynamic-trail-c",
@@ -114,9 +114,9 @@
       },
       "sota-private-vault": {
         "url": "https://github.com/native-agent-stack/sota-private-vault",
-        "baselineSha": "063f9d396fe5671d382a166f00bd6e146a2f4d2f",
+        "baselineSha": "dbc0631698517a69c443c7433b25f79779ebbd3d",
         "actionsEnabled": false,
-        "role": "Stage-5B 96-trial HLZ ledger (t*(97)=4.1905), 85 E1-E4 lessons, H096 joint-necessity law, v1.13.0/v3.9.8 promotion manifest & 20 MADR 4.0 ADRs"
+        "role": "Stage-5B 96-trial HLZ ledger (t*(97)=4.1905), 88 E1-E4 lessons, 2325-vector qmd index, v1.14.0/v3.9.9 promotion manifest & 22 MADR 4.0 ADRs"
       },
       "cc-sota-harness": {
         "url": "https://github.com/native-agent-stack/cc-sota-harness",
@@ -207,7 +207,7 @@
     "catalogPath": "docs/adr/CATALOG.md",
     "generatorScript": "scripts/architecture_catalog.py",
     "revisitThresholdDays": 45,
-    "adrCount": 26,
+    "adrCount": 27,
     "records": [
       {
         "id": "ADR-0001",
@@ -640,6 +640,25 @@
           "https://github.com/native-agent-stack/native-agent-stack",
           "https://github.com/native-agent-stack/sota-multi-model-workflows",
           "https://github.com/parallel-web/parallel-search-evals"
+        ]
+      },
+      {
+        "id": "ADR-0027",
+        "layer": "Organization Control Plane, 22-Repo 40-Char SHA Manifest & 3-Surface Zero-Lease Convergence (`L0\u2013L13` \u00d7 `P0\u2013P5` \u00d7 `T0\u2013T8`)",
+        "title": "`v3.9.9` Final `18/18` Co-Op Convergence \u2014 OMC `5.8.6` Stop Receipts, `2,325`-Vector `qmd` Memory, `:8787` `ADR-0027`, `:4002` `ADR-0013` & 22-Repo Zero-Drift SHA Seal",
+        "status": "Accepted",
+        "date": "2026-11-18",
+        "evidenceGrade": "E4 (`22/22` Exact 40-Char `origin/main` SHA Parity, `9/9` Public GitHub Actions `SUCCESS`, `2,325`-Vector `qmd` Index, `413` Starred Repos, `49` MCP Tools & `54/54` Synced Checkouts)",
+        "file": "docs/adr/ADR-0027-v399-final-18repo-omc-qmd-2325vec-ranker-adr0027-and-22repo-zero-drift-seal.md",
+        "githubUrls": [
+          "https://github.com/native-agent-stack/.github",
+          "https://github.com/native-agent-stack/agy-sota-harness",
+          "https://github.com/native-agent-stack/astrolabe",
+          "https://github.com/native-agent-stack/cc-sota-harness",
+          "https://github.com/native-agent-stack/native-agent-stack",
+          "https://github.com/native-agent-stack/sota-mover-ranker",
+          "https://github.com/native-agent-stack/sota-multi-model-workflows",
+          "https://github.com/native-agent-stack/sota-private-vault"
         ]
       }
     ]

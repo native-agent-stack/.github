@@ -80,7 +80,7 @@
       },
       "sota-multi-model-workflows": {
         "url": "https://github.com/native-agent-stack/sota-multi-model-workflows",
-        "baselineSha": "de121fb6d65d230f17c179512291e6db6fb135a2",
+        "baselineSha": "cb207986ad5331e4b26b2e789fe67b188f1b5a08",
         "role": "19 self-bootstrapping v3.10.2 workflows (WF19 Orca-Lead E2E), DF1..DF12 sota-symbol-ranking-datafeeds.v3.10, cross-OS sota-cc-hub & 24 MADR 4.0 ADRs"
       },
       "sota-compounding-lab": {

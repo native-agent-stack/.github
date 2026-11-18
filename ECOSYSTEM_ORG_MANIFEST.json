@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "3.4.0",
+  "schemaVersion": "3.5.0",
   "organization": "native-agent-stack",
   "verifiedDate": "2026-11-18",
   "studyWallDate": "2026-10-15",
@@ -39,7 +39,7 @@
   },
   "peerHarnesses": {
     "P0_antigravity": "Google Antigravity 2.0 + run_workflow + native swarm",
-    "P1_claude_code": "Claude Code + OMC + 24-runtime frontier sibling mesh",
+    "P1_claude_code": "Claude Code (cc-lead, claude-fable-5-2 xhigh) + OMC Runtime v2 + sota-cc-hub 28-runtime central orchestrator",
     "P2_openai_codex": "OpenAI Codex CLI + global MCP & peer_hook_adapter",
     "P3_deepseek_harness": "DeepSeek Harness v2.2+ quant-prewall profile",
     "P4_orca_cockpit": "stablyai/orca isolated worktree supervisor",
@@ -60,17 +60,17 @@
       },
       "native-agent-stack": {
         "url": "https://github.com/native-agent-stack/native-agent-stack",
-        "baselineSha": "479f7f2d5fc6711b566d8fc575a1f6975bda1827",
-        "role": "Canonical v3.4.0 upstream-first umbrella, 424-star matrix, 7-feed PIT & AO convergence, lease-safe Orca v2.0 co-op mesh & 10 MADR 4.0 ADRs"
+        "baselineSha": "4a90b8318607d0dfdf181319a352e7f6785915b6",
+        "role": "Canonical v3.5.0 upstream-first umbrella, cc-lead central runtime hub, 424-star matrix, 7-feed PIT & AO convergence & 11 MADR 4.0 ADRs"
       },
       "sota-harness-foundation": {
         "url": "https://github.com/native-agent-stack/sota-harness-foundation",
-        "baselineSha": "0f8d167e9337ef03d446094e5da27b5cbd79d72d",
-        "role": "Open-core multi-runtime harness foundation, 25 MADR 4.0 ADRs, Stage B WSL guard, H088 study & lease-safe Orca v2.0 co-op"
+        "baselineSha": "069e47db8824a52c54fff6eb544b515776ec8221",
+        "role": "Open-core multi-runtime harness foundation, 26 MADR 4.0 ADRs, 28 runtimes, cc-lead routing v1.1.0, Stage B WSL guard & lease-safe Orca v2.0 co-op"
       },
       "agy-sota-harness": {
         "url": "https://github.com/native-agent-stack/agy-sota-harness",
-        "baselineSha": "aee8325c22f49d2ac4f8ec8dbc47edfab25ff82c",
+        "baselineSha": "6472b9eaca1e19889cec7e6c6bc0bb75efc50744",
         "role": "Antigravity L0-L12 harness, research-convergence validator, pre-wall DuckDB/Polars studies (H02/H04/H06) & 16 MADR 4.0 ADRs"
       },
       "dsh-sota-harness": {
@@ -80,8 +80,8 @@
       },
       "sota-multi-model-workflows": {
         "url": "https://github.com/native-agent-stack/sota-multi-model-workflows",
-        "baselineSha": "12a653602ae86b216187346f355a0800149aa0f6",
-        "role": "13 self-bootstrapping v3.3.0 multi-model AO & research-convergence workflows, Dual-Machine Orca lane, SQLite WAL peer bus & 5-stage promotion gate"
+        "baselineSha": "2cc19d52cfb52e59a4ef312ad4b779b375d8f4ea",
+        "role": "14 self-bootstrapping v3.5.0 workflows, sota-cc-hub 5-channel runtime orchestrator, AO & 7-feed research convergence, SQLite WAL peer bus & 12 MADR 4.0 ADRs"
       },
       "sota-compounding-lab": {
         "url": "https://github.com/native-agent-stack/sota-compounding-lab",
@@ -114,15 +114,15 @@
       },
       "sota-private-vault": {
         "url": "https://github.com/native-agent-stack/sota-private-vault",
-        "baselineSha": "c10097ee3bb86af4b947f04c1a8b959c66f6bd4e",
+        "baselineSha": "0ad8a059d06320c3f5f2cf9f8fd7620f53d80c45",
         "actionsEnabled": false,
-        "role": "Stage-5B 85-trial HLZ ledger, redacted Meridian session directives, 43 E1-E4 lessons & 9 MADR 4.0 ADRs"
+        "role": "Stage-5B 89-trial HLZ ledger (t*=4.1735), redacted Meridian session directives, 51 E1-E4 lessons & 9 MADR 4.0 ADRs"
       },
       "cc-sota-harness": {
         "url": "https://github.com/native-agent-stack/cc-sota-harness",
-        "baselineSha": "5ab50ed6b3693a1604e414e188b60c1bb1c33d2b",
+        "baselineSha": "d7fe7d3d2fff345c6e758af9306248c17490d2cb",
         "actionsEnabled": false,
-        "role": "L5 27-runtime Claude lead harness, 7-feed PIT & AO guards, Dual-Machine Orca co-op lane & 23 MADR 4.0 ADRs"
+        "role": "L5 28-runtime Claude lead central orchestrator harness, 7-feed PIT & AO guards, Dual-Machine Orca co-op lane & 25 MADR 4.0 ADRs"
       },
       "meridian": {
         "url": "https://github.com/native-agent-stack/meridian",
@@ -207,7 +207,7 @@
     "catalogPath": "docs/adr/CATALOG.md",
     "generatorScript": "scripts/architecture_catalog.py",
     "revisitThresholdDays": 45,
-    "adrCount": 10,
+    "adrCount": 11,
     "records": [
       {
         "id": "ADR-0001",
@@ -360,6 +360,24 @@
           "https://github.com/native-agent-stack/sota-compounding-lab",
           "https://github.com/native-agent-stack/sota-harness-foundation",
           "https://github.com/nkaz001/hftbacktest",
+          "https://github.com/stablyai/orca"
+        ]
+      },
+      {
+        "id": "ADR-0011",
+        "layer": "Full-Ecosystem Multi-Runtime Orchestration, Research & Trading Control Plane (`L0\u2013L12` \u00d7 `P0\u2013P5` \u00d7 `T0\u2013T8`)",
+        "title": "v3.5.0 Claude Code (`cc-lead`) Central Multi-Session Orchestrator, 14-Workflow Hub & 22-Repo Runtime Worker Governance",
+        "status": "Accepted",
+        "date": "2026-11-18",
+        "evidenceGrade": "E4 (14 Workflows, 15/15 Hub Binaries, 28 Runtimes, 89 Trials, 51 Lessons, `sota-doctor` 12/12 & `sota-org-doctor --live` 22/22 Verified)",
+        "file": "docs/adr/ADR-0011-v350-cc-lead-central-orchestrator-14workflow-and-runtime-workers-governance.md",
+        "githubUrls": [
+          "https://github.com/ComposioHQ/agent-orchestrator",
+          "https://github.com/aannoo/hcom",
+          "https://github.com/native-agent-stack/native-agent-stack",
+          "https://github.com/native-agent-stack/sota-compounding-lab",
+          "https://github.com/native-agent-stack/sota-harness-foundation",
+          "https://github.com/native-agent-stack/sota-multi-model-workflows",
           "https://github.com/stablyai/orca"
         ]
       }

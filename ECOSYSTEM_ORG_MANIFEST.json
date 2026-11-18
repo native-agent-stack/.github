@@ -70,7 +70,7 @@
       },
       "agy-sota-harness": {
         "url": "https://github.com/native-agent-stack/agy-sota-harness",
-        "baselineSha": "d8815293a8d28013ec2bd38ae50ab741715363f6",
+        "baselineSha": "e01b55e77b38fa624399bba408f9410c0805f14a",
         "role": "Antigravity L0-L12 harness, pre-wall DuckDB/Polars studies (H02/H04/H06) & 14 MADR 4.0 ADRs"
       },
       "dsh-sota-harness": {
@@ -80,7 +80,7 @@
       },
       "sota-multi-model-workflows": {
         "url": "https://github.com/native-agent-stack/sota-multi-model-workflows",
-        "baselineSha": "34d3026ce375ddafc6621326a20518143764022e",
+        "baselineSha": "dff2f3a6ba0833c9cbc8af61a114ddea46c4002c",
         "role": "10 self-bootstrapping v3.0.0 multi-model workflows, SQLite WAL peer bus & 5-stage promotion gate"
       },
       "sota-compounding-lab": {

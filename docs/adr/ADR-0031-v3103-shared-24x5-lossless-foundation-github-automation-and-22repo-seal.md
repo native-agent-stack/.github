@@ -3,7 +3,7 @@
 - **Status:** Accepted
 - **Date:** 2026-11-18
 - **Layer:** Organization Control Plane, Reusable GitHub Actions Maintenance, Shared Active `24/5` Foundation & `22`-Repo SHA Manifest (`L0–L13` × `P0–P5` × `T0–T8`)
-- **Evidence Grade:** E4 (`22/22` Live 40-Char `origin/main` SHA Parity, `9/9` Public GitHub Actions, `13/13` Private `Actions=false`, `sota-harness-foundation@43b51358` `ADR-0040`, `sota-multi-model-workflows@163d86e7` `ADR-0027`/`WF20`, `sota-mover-ranker@a628552b` `ADR-0031`, `native-agent-stack@c06939d1` `ADR-0031`, `0` Leaks)
+- **Evidence Grade:** E4 (`22/22` Live 40-Char `origin/main` SHA Parity, `9/9` Public GitHub Actions, `13/13` Private `Actions=false`, `sota-harness-foundation@43b51358` `ADR-0040`, `sota-multi-model-workflows@1de975aa` `ADR-0027`/`WF20`, `sota-mover-ranker@a628552b` `ADR-0031`, `native-agent-stack@c06939d1` `ADR-0031`, `0` Leaks)
 - **GitHub Evidence:** https://github.com/native-agent-stack/.github, https://github.com/native-agent-stack/native-agent-stack, https://github.com/native-agent-stack/sota-harness-foundation, https://github.com/native-agent-stack/sota-multi-model-workflows, https://github.com/alpacahq/alpaca-mcp-server, https://github.com/stablyai/orca
 - **Revisit Trigger:** `2026-12-06` (`23/5` SIP cutover) or next `ALPHA_STRATEGY_MINOR` promotion (`t >= 4.1905`, `DSR >= 0.95`)
 
@@ -17,7 +17,7 @@ Seals Master Lead Goal `G_SOTA_DUAL_MACHINE_MERIT_TO_LOSSLESS_LIVE_24X5` (`v3.10
 ## Decision Outcome
 
 - Upgrade `.github/workflows/ci.yml`, `.github/workflows/reusable-sota-gate.yml`, and add `.github/workflows/reusable-sota-lane-maintenance.yml` (all 40-char SHA-pinned, least-privilege).
-- Bump `ECOSYSTEM_ORG_MANIFEST.json` to `v3.10.3`, record `stage5ProvenLosslessLivePolicy` and `sotaGithubAutomationLanes`, and seal fresh 40-char `origin/main` SHAs for `native-agent-stack@c06939d1`, `sota-harness-foundation@43b51358`, `sota-multi-model-workflows@163d86e7`, and `sota-mover-ranker@a628552b`.
+- Bump `ECOSYSTEM_ORG_MANIFEST.json` to `v3.10.3`, record `stage5ProvenLosslessLivePolicy` and `sotaGithubAutomationLanes`, and seal fresh 40-char `origin/main` SHAs for `native-agent-stack@c06939d1`, `sota-harness-foundation@43b51358`, `sota-multi-model-workflows@1de975aa`, and `sota-mover-ranker@a628552b`.
 
 ## Alternatives Considered
 

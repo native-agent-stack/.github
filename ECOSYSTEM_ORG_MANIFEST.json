@@ -93,7 +93,7 @@
       },
       "sota-multi-model-workflows": {
         "url": "https://github.com/native-agent-stack/sota-multi-model-workflows",
-        "baselineSha": "163d86e7d80144806b5dd0d070c3cadff0823bca",
+        "baselineSha": "1de975aa1f7e7fd52d6fc47c9e55d18b7f322503",
         "role": "20 v3.10.3 workflows (incl. WF20 grand-merit-harness), 7-Lane Sim/4-Paper/Stage-5-Live Merit Harness, DF1..DF12 & 27 MADR 4.0 ADRs"
       },
       "sota-compounding-lab": {
@@ -735,7 +735,7 @@
         "title": "`v3.10.3` Shared Active `24/5` Lossless Foundation, SOTA GitHub Maintenance Automation & `22`-Repo Zero-Drift Seal",
         "status": "Accepted",
         "date": "2026-11-18",
-        "evidenceGrade": "E4 (`22/22` Live 40-Char `origin/main` SHA Parity, `9/9` Public GitHub Actions, `13/13` Private `Actions=false`, `sota-harness-foundation@43b51358` `ADR-0040`, `sota-multi-model-workflows@163d86e7` `ADR-0027`/`WF20`, `sota-mover-ranker@a628552b` `ADR-0031`, `native-agent-stack@c06939d1` `ADR-0031`, `0` Leaks)",
+        "evidenceGrade": "E4 (`22/22` Live 40-Char `origin/main` SHA Parity, `9/9` Public GitHub Actions, `13/13` Private `Actions=false`, `sota-harness-foundation@43b51358` `ADR-0040`, `sota-multi-model-workflows@1de975aa` `ADR-0027`/`WF20`, `sota-mover-ranker@a628552b` `ADR-0031`, `native-agent-stack@c06939d1` `ADR-0031`, `0` Leaks)",
         "file": "docs/adr/ADR-0031-v3103-shared-24x5-lossless-foundation-github-automation-and-22repo-seal.md",
         "githubUrls": [
           "https://github.com/alpacahq/alpaca-mcp-server",

@@ -26,7 +26,9 @@ jobs:
         with:
           persist-credentials: false
           fetch-depth: 0
-      - name: Run Merge Gate & Unit Suite
+      - name: Run Merge Gate, ADR Catalog & Unit Suite
         run: |
+          if [ -f scripts/architecture_catalog.py ]; then python3 scripts/architecture_catalog.py --check; fi
+          if [ -f tools/architecture_catalog.py ]; then python3 tools/architecture_catalog.py --check; fi
           if [ -f scripts/merge_gate.py ]; then python3 scripts/merge_gate.py; fi
           if [ -d tests ]; then python3 -m unittest discover -s tests -v; fi

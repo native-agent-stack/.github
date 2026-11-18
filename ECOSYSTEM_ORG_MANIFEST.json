@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "3.5.1",
+  "schemaVersion": "3.6.0",
   "organization": "native-agent-stack",
   "verifiedDate": "2026-11-18",
   "studyWallDate": "2026-10-15",
@@ -60,17 +60,17 @@
       },
       "native-agent-stack": {
         "url": "https://github.com/native-agent-stack/native-agent-stack",
-        "baselineSha": "54164434a09b33044784268831755f57e2dff086",
+        "baselineSha": "bf12a5b0ad8cd35539bcfd42139c9dbed3a8dfe4",
         "role": "Canonical v3.5.1 upstream-first umbrella, cc-lead central runtime hub, H088/H089 runner convexity synthesis, 424-star matrix & 12 MADR 4.0 ADRs"
       },
       "sota-harness-foundation": {
         "url": "https://github.com/native-agent-stack/sota-harness-foundation",
-        "baselineSha": "069e47db8824a52c54fff6eb544b515776ec8221",
+        "baselineSha": "6c053bb205f1392ca056de5ef79eb8b523e2b6c0",
         "role": "Open-core multi-runtime harness foundation, 26 MADR 4.0 ADRs, 28 runtimes, cc-lead routing v1.1.0, H088 study & lease-safe Orca v2.0 co-op"
       },
       "agy-sota-harness": {
         "url": "https://github.com/native-agent-stack/agy-sota-harness",
-        "baselineSha": "81fdbc46ad0ce2300733f8a2e81e5b21e6cf5ead",
+        "baselineSha": "53d5808bd4fd84ee5c309925e7b406b5b51ef9ae",
         "role": "Antigravity L0-L12 harness, H089 two-stage hybrid runner study, v3.5.0 ecosystem manifest & 18 MADR 4.0 ADRs"
       },
       "dsh-sota-harness": {
@@ -102,31 +102,31 @@
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "00f132cfdaf7c89cc00ff4da3016fe37ccaa7ec3",
+        "baselineSha": "05c429e6ee40ee60fd29a77933a4d56730e5f11b",
         "actionsEnabled": false,
         "role": "Stage-3A 3.0s SIP+BOATS radar, 7-feed PIT API, 16-tool MCP, post-Gain-Lock 50/50 Core-Harvest + Runner Convexity & 11 MADR 4.0 ADRs"
       },
       "sota-dynamic-trail-c": {
         "url": "https://github.com/native-agent-stack/sota-dynamic-trail-c",
-        "baselineSha": "fd79ffd8b861fbb3c801eb023dbc3a696aee6e91",
+        "baselineSha": "e03f3bc5d74248b4acc1cb830daa15aec40eb9ee",
         "actionsEnabled": false,
         "role": "Stage-5A 24/5 v1.0.1 Near-Lossless trailing guardian (:8799), [L]/[M]/[B] TV preset stager, dual Pine v6 mount & 10 MADR 4.0 ADRs"
       },
       "sota-private-vault": {
         "url": "https://github.com/native-agent-stack/sota-private-vault",
-        "baselineSha": "f079bba7f645d899c5dc4d8153b2ce563c566668",
+        "baselineSha": "a60d90553bda4dcc4ee77cbc65ab28c99f31f7b5",
         "actionsEnabled": false,
         "role": "Stage-5B 89-trial HLZ ledger (t*=4.1735), 883-fill runner telemetry, 52 E1-E4 lessons & 9 MADR 4.0 ADRs"
       },
       "cc-sota-harness": {
         "url": "https://github.com/native-agent-stack/cc-sota-harness",
-        "baselineSha": "ec89fb12491524f47a258ea8f0c9d9aa7768239a",
+        "baselineSha": "9e566deb38c576ae749547781d321e681e139b7e",
         "actionsEnabled": false,
         "role": "L5 Claude lead central orchestrator harness (OMC v2), cross-OS win32/darwin guard, Dual-Machine Orca co-op lane & 24 MADR 4.0 ADRs"
       },
       "meridian": {
         "url": "https://github.com/native-agent-stack/meridian",
-        "baselineSha": "ce99430fdfa8b7a0d12d013a8fceb64dc3a53c1b",
+        "baselineSha": "490bd544c81f16bdd4405da557c2b9442ae3516c",
         "actionsEnabled": false,
         "role": "Stage-1 NautilusTrader v2.0.0rc9 simulation engine, 7-feed research convergence, unthrottled Chromium checks & Orca co-op lane (56 MADR 4.0 ADRs)"
       },
@@ -144,7 +144,7 @@
       },
       "trading-sota": {
         "url": "https://github.com/native-agent-stack/trading-sota",
-        "baselineSha": "0815498ae90ce62b98a07ee993d0874d136c9f5a",
+        "baselineSha": "e838c5bb825c05b3db31e561f978c03fd8cfb6a9",
         "actionsEnabled": false,
         "role": "Private PIT research archive converged into tsl & sota-compounding-lab (10 ADRs)"
       },
@@ -207,7 +207,7 @@
     "catalogPath": "docs/adr/CATALOG.md",
     "generatorScript": "scripts/architecture_catalog.py",
     "revisitThresholdDays": 45,
-    "adrCount": 12,
+    "adrCount": 13,
     "records": [
       {
         "id": "ADR-0001",
@@ -398,6 +398,25 @@
           "https://github.com/native-agent-stack/sota-harness-foundation",
           "https://github.com/native-agent-stack/sota-multi-model-workflows",
           "https://github.com/native-agent-stack/sota-upstream-shelf-lock"
+        ]
+      },
+      {
+        "id": "ADR-0013",
+        "layer": "Organization-Wide Workflow, DataFeed, Strategy Template, Engine Source & Workstation Control Plane (`L0\u2013L12` \u00d7 `P0\u2013P5` \u00d7 `T0\u2013T8`)",
+        "title": "`v3.6.0` Universal `14/14` + `5/5` Workflow Research-Convergence, 6 DataFeed APIs, 4 Strategy Templates, 8 Engine Sources & 3-Surface Workstation Governance",
+        "status": "Accepted",
+        "date": "2026-11-18",
+        "evidenceGrade": "E4 (`14/14` + `5/5` Workflows Verified, `6` DataFeed APIs, `4` Strategy Templates, `8` Engine Sources, `3` Workstation Surfaces & `22/22` Org Doctor Verified)",
+        "file": "docs/adr/ADR-0013-v360-universal-workflow-datafeed-template-engine-and-3surface-workstation-governance.md",
+        "githubUrls": [
+          "https://github.com/native-agent-stack/.github",
+          "https://github.com/native-agent-stack/agy-sota-harness",
+          "https://github.com/native-agent-stack/astrolabe",
+          "https://github.com/native-agent-stack/native-agent-stack",
+          "https://github.com/native-agent-stack/sota-harness-foundation",
+          "https://github.com/native-agent-stack/sota-multi-model-workflows",
+          "https://github.com/nautechsystems/nautilus_trader",
+          "https://github.com/nkaz001/hftbacktest"
         ]
       }
     ]

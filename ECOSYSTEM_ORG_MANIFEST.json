@@ -115,14 +115,14 @@
       },
       "astrolabe": {
         "url": "https://github.com/native-agent-stack/astrolabe",
-        "baselineSha": "d4f3fe9d747da7659bb205ae917c47b0a51bc2af",
+        "baselineSha": "5014f262b5fe4db1ab8f5418a606bd8ccbb523e5",
         "role": "Stage-3B IBKR (:4002 paper-only, 300/min exit reserve) protective entry shield, DF1..DF12 bitemporal ranking handoff & 14 MADR 4.0 ADRs"
       }
     },
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "2bc8214c94ea46bbc47e3542b2e8728523d31b54",
+        "baselineSha": "ebdb8733745476563a15ab66c3e7e04e08ccfa5b",
         "actionsEnabled": false,
         "role": "Stage-3A/5 3.0s SIP+BOATS radar (:8787 P2), :8797 P3, :8798 Stage-5 Live + ADR-0035..0036 unified shield, SEC debt-vs-equity split, FINRA-4210 1.0x fallback & 36 MADR 4.0 ADRs"
       },
@@ -140,7 +140,7 @@
       },
       "cc-sota-harness": {
         "url": "https://github.com/native-agent-stack/cc-sota-harness",
-        "baselineSha": "04af5164db7301eb4d0124319cbf0db5895f69a5",
+        "baselineSha": "39b39941e542cfba47ce1ff1c294ada4a7149be5",
         "actionsEnabled": false,
         "role": "L5 Claude lead central orchestrator (claude-fable-5-2 xhigh), cross-OS Win32 12-layer doctor (0 errors), zero-kimi v2.3.0 & 38 MADR 4.0 ADRs"
       },
@@ -152,7 +152,7 @@
       },
       "canon": {
         "url": "https://github.com/native-agent-stack/canon",
-        "baselineSha": "edfb508b6c6fe710ecca0256bd7de712654d5b5d",
+        "baselineSha": "f6622ce43b26403ddc19683ac0a852853a9bc193",
         "actionsEnabled": false,
         "role": "Stage-2 deterministic causal research, BagIt/dirhash snapshots, UPSTREAM.md, 0187 DF1..DF12 & deepseek-v4.1-flash lineage (161 MADR 4.0 ADRs)"
       },

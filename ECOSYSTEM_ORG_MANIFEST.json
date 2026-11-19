@@ -100,13 +100,13 @@
       },
       "sota-multi-model-workflows": {
         "url": "https://github.com/native-agent-stack/sota-multi-model-workflows",
-        "baselineSha": "25949f679ab683261119bb2dc0c57012e8a1c26f",
-        "role": "21 v3.10.9 workflows (zero grok/goose), ADR-0034 dual-machine Orca manifests & Nov 19 landscape convergence, 9 cross-OS Win32/macOS/Linux Orca folder hubs (trading-lanes, harness-lanes, 01..07), 10 CANONICAL_ORCA_LANE_LEADS, 60-skill 8-runtime probe parity, 415+8 starred convergence & 34 MADR 4.0 ADRs"
+        "baselineSha": "1fe279731faf4663816e3a49c2c2ba0ed9b0a9db",
+        "role": "21 v3.10.9 workflows (zero grok/goose), ADR-0034 dual-machine Orca manifests & Nov 19 landscape convergence, Dec 6 2026 23/5 SIP cutover drill & fail-closed guards, 9 cross-OS Win32/macOS/Linux Orca folder hubs (trading-lanes, harness-lanes, 01..07), 10 CANONICAL_ORCA_LANE_LEADS, 60-skill 8-runtime probe parity, 415+8 starred convergence & 34 MADR 4.0 ADRs"
       },
       "sota-compounding-lab": {
         "url": "https://github.com/native-agent-stack/sota-compounding-lab",
-        "baselineSha": "71547c11bc728d87d342482087474dddacbefa97",
-        "role": "5-stage Sim->PreWall->Paper->EB->Alpaca/IBKR lifecycle engine, DF1..DF12 guards, ADR-0022 RTX 4090 GPU accelerator + ext4/ramdisk fast-lake + :8794 scoring sidecar, ADR-0023 DF8 45,096-row post-wall quarantine + reproducible SEC clean build + H105/Option-B cleanup + RTX 4090 Trial #102 H106 convergence & 23 MADR 4.0 ADRs"
+        "baselineSha": "41f0fa830a3f9363c2108a9c0f483f0c0b484e96",
+        "role": "5-stage Sim->PreWall->Paper->EB->Alpaca/IBKR lifecycle engine, DF1..DF12 guards, ADR-0022 RTX 4090 GPU accelerator + ext4/ramdisk fast-lake + :8794 scoring sidecar, ADR-0023 DF8 45,096-row post-wall quarantine + RTX 4090 Trial #102 H106 convergence, ADR-0024 Trial #103 H107 SIC sector-neutral liquid RTX 4090 CPCV & 24 MADR 4.0 ADRs"
       },
       "sota-upstream-shelf-lock": {
         "url": "https://github.com/native-agent-stack/sota-upstream-shelf-lock",
@@ -122,9 +122,9 @@
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "0bf90277998be5460483ddc71ee4e82c44ae0e89",
+        "baselineSha": "20060c34a8ce7afc90cbe2739d086c0a89abc31e",
         "actionsEnabled": false,
-        "role": "Stage-3A/5 3.0s SIP+BOATS radar (:8787 P2), :8797 P3, :8798 Interactive Stage-5 1000RPM Live Cockpit (ADR-0046 4-vendor hardened, ADR-0047 Win32 JobObject + direct MCP + GPU sidecar client, ADR-0048 non-blocking WS OFI flush + basket merger + alpaca-py v0.45 parity, ADR-0049 dynamic WS top-mover subs + ghost GTC filter + 429 pacing + KeepAlive AboveNormal priority) + :8796 Live EXT Guardian + IBKR :4002 P4 & 53 MADR 4.0 ADRs (ADR-0050..0053 + full Codex/Claude/Falsifier 4-vendor closure)"
+        "role": "Stage-3A/5 3.0s SIP+BOATS radar (:8787 P2), :8797 P3, :8798 Interactive Stage-5 1000RPM Live Cockpit (ADR-0046..0054: zero-alloc raw WS dispatch, per-strategy merit-to-live routing, symmetric Long/Short Wave-2 re-entry, seamless owner auto-protection, 1000rpm goal parity) + :8796 Live EXT Guardian + IBKR :4002 P4 & 54 MADR 4.0 ADRs"
       },
       "sota-dynamic-trail-c": {
         "url": "https://github.com/native-agent-stack/sota-dynamic-trail-c",

@@ -128,7 +128,7 @@
       },
       "sota-dynamic-trail-c": {
         "url": "https://github.com/native-agent-stack/sota-dynamic-trail-c",
-        "baselineSha": "4c6a75e9d346d0527319268e2f6e620a5ebab755",
+        "baselineSha": "8d67862402f84e3a8d01c2f4d2c74dd6fc908e15",
         "actionsEnabled": false,
         "role": "Stage-5A 24/5 Near-Lossless guardian (:8799), ADR-0025..0026 symmetric Noesis/Mac firewall, DF12 interop, Win32 launcher & dual-desktop-coexist /api/state parity & 26 MADR 4.0 ADRs"
       },
@@ -146,9 +146,9 @@
       },
       "meridian": {
         "url": "https://github.com/native-agent-stack/meridian",
-        "baselineSha": "389a8d8baa2c75a0173b12087a82ba7bf5e77e9f",
+        "baselineSha": "070cbfe0892b3dfb1cfca79632fc50bfb395483d",
         "actionsEnabled": false,
-        "role": "Stage-1 NautilusTrader v2.0.0rc9 simulation engine, 0065 12-feed bitemporal symbol ranking gate & 60+ MADR 4.0 ADRs"
+        "role": "Stage-1 NautilusTrader v2.0.0rc9 simulation engine, 0065 12-feed bitemporal symbol ranking gate & 62 MADR 4.0 ADRs"
       },
       "canon": {
         "url": "https://github.com/native-agent-stack/canon",

@@ -76,12 +76,12 @@
     "publicUnlimitedActionsTier": {
       ".github": {
         "url": "https://github.com/native-agent-stack/.github",
-        "role": "Org profile, v3.10.6 pre-IPO manifest, 33 MADR 4.0 ADRs, weekday scheduled CI + reusable-sota-lane-maintenance.yml & SHA-pinned reusable gate"
+        "role": "Org profile, v3.10.7 5-layer computer-use & seamless workstation landing seal, 34 MADR 4.0 ADRs, weekday scheduled CI + reusable-sota-lane-maintenance.yml & SHA-pinned reusable gate"
       },
       "native-agent-stack": {
         "url": "https://github.com/native-agent-stack/native-agent-stack",
-        "baselineSha": "078403f40b5988ff392aa56a267cd0191ce0ae02",
-        "role": "Canonical v3.10.6 pre-IPO umbrella, P0-1..6 unified shield, 10 Orca lane leads across 7/7 domain hubs & 33 MADR 4.0 ADRs"
+        "baselineSha": "ed9e797c2be6f9b0f699296d05f52c90b469604a",
+        "role": "Canonical v3.10.7 umbrella, ADR-0034 5-layer computer-use runtime stack & seamless workstation landing seal, P0-1..6 unified shield, 10 Orca lane leads across 7/7 domain hubs & 34 MADR 4.0 ADRs"
       },
       "sota-harness-foundation": {
         "url": "https://github.com/native-agent-stack/sota-harness-foundation",
@@ -100,8 +100,8 @@
       },
       "sota-multi-model-workflows": {
         "url": "https://github.com/native-agent-stack/sota-multi-model-workflows",
-        "baselineSha": "82d931319e2b8b106edabb69126a1b9773072d52",
-        "role": "20 v3.10.6 workflows (20/20 CLI dry-run pass), 7 Full-Ecosystem Domain Orca Lane Hubs, 10 CANONICAL_ORCA_LANE_LEADS (read-only T5/D5), ET overnight BOATS decision_ns & port-binding (ADR-0031) & 31 MADR 4.31 ADRs"
+        "baselineSha": "2eebb67621619894838f12f5ff3a91937681b8c3",
+        "role": "20 v3.10.7 workflows (20/20 CLI dry-run pass), 7 Full-Ecosystem Domain Orca Lane Hubs, 10 CANONICAL_ORCA_LANE_LEADS (read-only T5/D5), dual-machine advanced computer-use runtime rollout (ADR-0032), ET overnight BOATS decision_ns & port-binding (ADR-0031) & 32 MADR 4.0 ADRs"
       },
       "sota-compounding-lab": {
         "url": "https://github.com/native-agent-stack/sota-compounding-lab",
@@ -227,7 +227,7 @@
     "catalogPath": "docs/adr/CATALOG.md",
     "generatorScript": "scripts/architecture_catalog.py",
     "revisitThresholdDays": 45,
-    "adrCount": 33,
+    "adrCount": 34,
     "records": [
       {
         "id": "ADR-0001",
@@ -785,6 +785,30 @@
           "https://github.com/native-agent-stack/sota-harness-foundation",
           "https://github.com/native-agent-stack/sota-multi-model-workflows",
           "https://github.com/stablyai/orca"
+        ]
+      },
+      {
+        "id": "ADR-0034",
+        "layer": "Organization Control Plane, Hybrid 5-Layer Computer-Use Runtime Stack (`L1\u2013L4`), Tiered Zero-Friction Permissions & Full Dual-Workstation Handoff (`L0\u2013L13` \u00d7 `H1\u2013H3`)",
+        "title": "`v3.10.7` Advanced 5-Layer Computer-Use Runtime Stack & Seamless Workstation Landing Org Seal",
+        "status": "Accepted",
+        "date": "2026-11-18",
+        "evidenceGrade": "E4 (`sota-harness-foundation@52ce4c73` `ADR-0042` `computer_use_contract.py`, `cc-sota-harness@4590c995` `ADR-0040`, `agy-sota-harness@2f56eadf` `ADR-0033`, `sota-multi-model-workflows@2eebb676` `ADR-0032`, `native-agent-stack@ed9e797c` `ADR-0034`, `34/34` MADR 4.0 ADRs, `merge_gate.py` + `unittest` + `gitleaks` `0` Leaks)",
+        "file": "docs/adr/ADR-0034-v3107-advanced-computer-use-runtime-stack-and-seamless-workstation-landing-org-seal.md",
+        "githubUrls": [
+          "https://github.com/HKUDS/CLI-Anything",
+          "https://github.com/mediar-ai/terminator",
+          "https://github.com/microsoft/playwright-mcp",
+          "https://github.com/native-agent-stack/.github",
+          "https://github.com/native-agent-stack/agy-sota-harness",
+          "https://github.com/native-agent-stack/cc-sota-harness",
+          "https://github.com/native-agent-stack/native-agent-stack",
+          "https://github.com/native-agent-stack/sota-harness-foundation",
+          "https://github.com/native-agent-stack/sota-multi-model-workflows",
+          "https://github.com/simular-ai/Agent-S",
+          "https://github.com/stablyai/orca",
+          "https://github.com/steipete/peekaboo",
+          "https://github.com/vercel-labs/agent-browser"
         ]
       }
     ]

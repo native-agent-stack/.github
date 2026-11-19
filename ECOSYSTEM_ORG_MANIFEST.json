@@ -140,9 +140,9 @@
       },
       "cc-sota-harness": {
         "url": "https://github.com/native-agent-stack/cc-sota-harness",
-        "baselineSha": "f6d81a2bcdeae72909e4aaa9bbf652bd8287c12f",
+        "baselineSha": "9e6908c3158d08837707734e21cde94b90f1808c",
         "actionsEnabled": false,
-        "role": "L5 Claude lead central orchestrator (claude-fable-5-2 xhigh), cross-OS Win32 12-layer doctor (0 errors, retired grok/goose purged), runtime hygiene (ADR-0039), dual-machine Orca computer-use & cross-OS orca.yaml parity (ADR-0040), v3.10.8 Red-Team/SkillEvaluator & 60-skill/21-workflow convergence (ADR-0041) & 41 MADR 4.0 ADRs"
+        "role": "L5 Claude lead central orchestrator (claude-fable-5-2 xhigh), cross-OS Win32 12-layer doctor (0 errors, retired grok/goose purged, direct Win32 node.exe check), runtime hygiene (ADR-0039), dual-machine Orca computer-use & cross-OS orca.yaml parity (ADR-0040), v3.10.8 Red-Team/SkillEvaluator & 60-skill/21-workflow convergence (ADR-0041), v3.10.9 Claude Code zero-hook-error resolution, lean 9-plugin default tier + 4 on-demand profile overlays, deduped MCPs & synced bloat closure (ADR-0042) & 42 MADR 4.0 ADRs"
       },
       "meridian": {
         "url": "https://github.com/native-agent-stack/meridian",

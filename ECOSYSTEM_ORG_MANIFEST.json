@@ -122,7 +122,7 @@
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "90e39446476c9bd3dd0eb8838599c074de11a72d",
+        "baselineSha": "861713757920872f4c3dd1fcd9c27e03d9d2db9e",
         "actionsEnabled": false,
         "role": "Stage-3A/5 3.0s SIP+BOATS radar (:8787 P2), :8797 P3, :8798 Stage-5 Live + isolated :8796 EXT Guardian + ADR-0035..0043 unified shield, IBKR P4 lossless trail, lock-free /api/scan, session-aware auto SIP/BOATS WS sidecar, Win32 OS-vault live bridge, 4-port positive host-lease Win32 firewall & 43 MADR 4.0 ADRs"
       },

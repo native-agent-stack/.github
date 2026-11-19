@@ -78,12 +78,12 @@
       },
       "sota-harness-foundation": {
         "url": "https://github.com/native-agent-stack/sota-harness-foundation",
-        "baselineSha": "43b51358af05a65aef9761b71abed26ff3dc2594",
+        "baselineSha": "0629fd82aaf8b2d36613fcc6e10224910036db32",
         "role": "Open-core multi-runtime harness foundation, ADR-0040 Shared Active 24/5 Lossless Foundation (Paper==Live), upstream-first bindings & 40 MADR 4.0 ADRs"
       },
       "agy-sota-harness": {
         "url": "https://github.com/native-agent-stack/agy-sota-harness",
-        "baselineSha": "617f37ce43deef41f000858423112e0db781c54d",
+        "baselineSha": "f47ba6f46e8a4ea285d1c1d05da3ae8760af0156",
         "role": "Antigravity L0-L13 v3.10.2 harness, 57 canonical skills, 10 native agy workflows (DAG #10 Orca-Lead E2E CI green) & 31 MADR 4.0 ADRs"
       },
       "dsh-sota-harness": {
@@ -93,12 +93,12 @@
       },
       "sota-multi-model-workflows": {
         "url": "https://github.com/native-agent-stack/sota-multi-model-workflows",
-        "baselineSha": "1de975aa1f7e7fd52d6fc47c9e55d18b7f322503",
+        "baselineSha": "ee7647efda70d194bca94d7e1806bfbe0c1b296c",
         "role": "20 v3.10.3 workflows (incl. WF20 grand-merit-harness), 7-Lane Sim/4-Paper/Stage-5-Live Merit Harness, DF1..DF12 & 27 MADR 4.0 ADRs"
       },
       "sota-compounding-lab": {
         "url": "https://github.com/native-agent-stack/sota-compounding-lab",
-        "baselineSha": "bad31e233899d8d31bec17252b5d507cac7d7601",
+        "baselineSha": "54497df18255e625a98b589302682e3accddfd08",
         "role": "5-stage Sim->PreWall->Paper->EB->Alpaca/IBKR lifecycle engine, DF1..DF12 symbol_ranking_v310, two-track HLZ N>=96 & 16 MADR 4.0 ADRs"
       },
       "sota-upstream-shelf-lock": {
@@ -115,13 +115,13 @@
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "a628552bed37cb97ff2276c65f3fbdfa0debe105",
+        "baselineSha": "a21c30e9243df09f2ee54169605d89642609ff91",
         "actionsEnabled": false,
         "role": "Stage-3A/5 3.0s SIP+BOATS radar (:8787 P2), :8797 P3 Account A Aggressive Crucible, /api/merit_farm_status, :8798 Stage-5 Lossless Live Lane & 31 MADR 4.0 ADRs"
       },
       "sota-dynamic-trail-c": {
         "url": "https://github.com/native-agent-stack/sota-dynamic-trail-c",
-        "baselineSha": "00b8ecc69a97915a7c76c7495795cfc95b92a6c5",
+        "baselineSha": "2e3d96b5e5fc7d64c9739624e1f1cfe0d7fc3299",
         "actionsEnabled": false,
         "role": "Stage-5A 24/5 Near-Lossless guardian (:8799), ADR-0020..0024 H096 collar, Wave-2 re-entry, DF1..DF12 & Dec-6 23/5 SIP cutover readiness envelope & 24 MADR 4.0 ADRs"
       },

@@ -100,8 +100,8 @@
       },
       "sota-multi-model-workflows": {
         "url": "https://github.com/native-agent-stack/sota-multi-model-workflows",
-        "baselineSha": "1c44f198ffeb26f5c1203cc8d05ac6d6f8543f5b",
-        "role": "20 v3.10.7 workflows (20/20 CLI dry-run pass), 9 cross-OS Win32/macOS/Linux Orca folder hubs (trading-lanes, harness-lanes, 01..07), 10 CANONICAL_ORCA_LANE_LEADS (read-only T5/D5, zero retired workers), 57-skill 8-runtime probe parity, dual-machine computer-use runtime rollout (ADR-0032), ET overnight BOATS decision_ns & port-binding (ADR-0031) & 32 MADR 4.0 ADRs"
+        "baselineSha": "3f7f4ff968460025531004e461f2bce675059beb",
+        "role": "20 v3.10.7 workflows (20/20 CLI dry-run pass), 9 cross-OS Win32/macOS/Linux Orca folder hubs (trading-lanes, harness-lanes, 01..07, singleActiveBrokerHostOnly=true & LULD/Reg-M/ADR-0022 invariants), 10 CANONICAL_ORCA_LANE_LEADS (read-only T5/D5, zero retired workers), 57-skill 8-runtime probe parity, dual-machine computer-use runtime rollout (ADR-0032), ET overnight BOATS decision_ns & port-binding (ADR-0031) & 32 MADR 4.0 ADRs"
       },
       "sota-compounding-lab": {
         "url": "https://github.com/native-agent-stack/sota-compounding-lab",
@@ -122,9 +122,9 @@
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "73495da47fbd465c04dd9bf2546acd0484296525",
+        "baselineSha": "26ab89e254cfe3efbe1052998785b9f6307d9224",
         "actionsEnabled": false,
-        "role": "Stage-3A/5 3.0s SIP+BOATS radar (:8787 P2), :8797 P3, :8798 Interactive Stage-5 1000RPM Live Cockpit (4x pyramid/single-shot readiness plans) + isolated :8796 EXT Guardian (direct owner E2E launch & window-gated keepalive) + ADR-0035..0045 unified shield, persistent IBKR P4 (:4002 DU) lossless trail, pre-IPO flatten gate, SOTA 6+5 strategy & 18+3 engine hub, pre-wall 28-IPO L1 sim & 45 MADR 4.0 ADRs"
+        "role": "Stage-3A/5 3.0s SIP+BOATS radar (:8787 P2), :8797 P3, :8798 Interactive Stage-5 1000RPM Live Cockpit (3-vendor red-team P0/P1 hardened: 429 exit-reserve floor, 4x IPO-only lock, OTO stop pyramid exemption, Decimal fractional flatten, LULD Q halt, read-only status, 18/18 UPSTREAM.md parity) + isolated :8796 EXT Guardian + ADR-0035..0045 unified shield, persistent IBKR P4 (:4002 DU) lossless trail, pre-IPO flatten gate, SOTA 6+5 strategy & 18+3 engine hub, pre-wall 28-IPO L1 sim & 45 MADR 4.0 ADRs"
       },
       "sota-dynamic-trail-c": {
         "url": "https://github.com/native-agent-stack/sota-dynamic-trail-c",

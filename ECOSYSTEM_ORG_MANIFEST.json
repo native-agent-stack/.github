@@ -122,7 +122,7 @@
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "6176445e48c5498d6096db87bb30c1b3557877ec",
+        "baselineSha": "3ab733f150be4c1a3ba792ac0162c81fc4876333",
         "actionsEnabled": false,
         "role": "Stage-3A/5 3.0s SIP+BOATS radar (:8787 P2), :8797 P3, :8798 Stage-5 Live + ADR-0035..0036 unified shield, SEC debt-vs-equity split, FINRA-4210 1.0x fallback & 36 MADR 4.0 ADRs"
       },

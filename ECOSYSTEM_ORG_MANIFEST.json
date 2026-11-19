@@ -100,7 +100,7 @@
       },
       "sota-multi-model-workflows": {
         "url": "https://github.com/native-agent-stack/sota-multi-model-workflows",
-        "baselineSha": "88af5a07b9d77b1eff0e1e3e2e5e4d0ce0467190",
+        "baselineSha": "82d931319e2b8b106edabb69126a1b9773072d52",
         "role": "20 v3.10.6 workflows (20/20 CLI dry-run pass), 7 Full-Ecosystem Domain Orca Lane Hubs, 10 CANONICAL_ORCA_LANE_LEADS (read-only T5/D5), ET overnight BOATS decision_ns & port-binding (ADR-0031) & 31 MADR 4.31 ADRs"
       },
       "sota-compounding-lab": {
@@ -122,7 +122,7 @@
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "d02a12ea584a95ceda0209a9c206660c47002746",
+        "baselineSha": "907d7a58401c9d3cc81cf391cce36dc5ab4e6d9d",
         "actionsEnabled": false,
         "role": "Stage-3A/5 3.0s SIP+BOATS radar (:8787 P2), :8797 P3, :8798 Stage-5 Live + ADR-0035..0040 unified shield, cross-OS uv/OS-vault .mcp.json, atomic EXT stop persistence, 4-port positive host-lease Win32 firewall & 40 MADR 4.0 ADRs"
       },

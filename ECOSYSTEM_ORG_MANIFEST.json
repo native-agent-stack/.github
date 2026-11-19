@@ -122,7 +122,7 @@
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "5fae5dbb5b5ec6bcaaa5cf2de0c0b8f952db26c7",
+        "baselineSha": "1d7c17f6eb16d92929ab9ecf26360405d40ee262",
         "actionsEnabled": false,
         "role": "Stage-3A/5 3.0s SIP+BOATS radar (:8787 P2), :8797 P3, :8798 Interactive Stage-5 1000RPM Live Cockpit + isolated :8796 EXT Guardian + ADR-0035..0045 unified shield, persistent IBKR P4 (:4002 DU) lossless trail, pre-IPO flatten gate, SOTA 6+5 strategy & 18+3 engine hub, pre-wall 28-IPO L1 sim & 45 MADR 4.0 ADRs"
       },

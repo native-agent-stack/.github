@@ -105,8 +105,8 @@
       },
       "sota-compounding-lab": {
         "url": "https://github.com/native-agent-stack/sota-compounding-lab",
-        "baselineSha": "81e0cce882b0954d207240d0c1958fcc6e945207",
-        "role": "5-stage Sim->PreWall->Paper->EB->Alpaca/IBKR lifecycle engine, DF1..DF12 guards (ADR-0017), bitemporal ts_recv_ns sidecar (ADR-0018), ET overnight parity & Win32 ZoneInfo fallback (ADR-0019), converged 6-archetype factory (ADR-0021) & 21 MADR 4.0 ADRs"
+        "baselineSha": "695efcc775188bef2ce13850f478ad68394606bf",
+        "role": "5-stage Sim->PreWall->Paper->EB->Alpaca/IBKR lifecycle engine, DF1..DF12 guards (ADR-0017), bitemporal ts_recv_ns sidecar (ADR-0018), ET overnight parity & Win32 ZoneInfo fallback (ADR-0019), converged 6-archetype factory & Option B DF10/DF6/RTX4090/hftbacktest H103-H104 runner (ADR-0021) & 21 MADR 4.0 ADRs"
       },
       "sota-upstream-shelf-lock": {
         "url": "https://github.com/native-agent-stack/sota-upstream-shelf-lock",

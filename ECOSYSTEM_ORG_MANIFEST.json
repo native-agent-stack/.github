@@ -80,12 +80,12 @@
       },
       "native-agent-stack": {
         "url": "https://github.com/native-agent-stack/native-agent-stack",
-        "baselineSha": "63798ba1ca3ba1c77b2b4f628894fb47a4d71ec2",
+        "baselineSha": "9da1665b446aa8a996e48618dacf17d36ab625b9",
         "role": "Canonical v3.10.8 umbrella, ADR-0035 60-skill Red-Team/SkillEvaluator, 21 workflows, 15 Orca automations & 415+8 starred convergence seal, P0-1..6 unified shield, 10 Orca lane leads across 7/7 domain hubs & 35 MADR 4.0 ADRs"
       },
       "sota-harness-foundation": {
         "url": "https://github.com/native-agent-stack/sota-harness-foundation",
-        "baselineSha": "da6b90a3010fdbc3e79a594f870dd31fe5ac481e",
+        "baselineSha": "d130720f6ee3ae868b950fd2bb264682abc3ebfb",
         "role": "Open-core multi-runtime harness foundation, ADR-0043 Red-Team BugHunter & 4-Tier SkillEvaluator contract, ADR-0040..0042 Shared Active 24/5 Foundation + 5-Layer Computer-Use & Tiered Zero-Friction Permissions & 43 MADR 4.0 ADRs"
       },
       "agy-sota-harness": {
@@ -817,7 +817,7 @@
         "title": "`v3.10.8` 22-Repo Zero-Drift Orca SOTA Worker Defaults, 60-Skill Red-Team/SkillEvaluator & 415-Starred Org Seal",
         "status": "Accepted",
         "date": "2026-11-19",
-        "evidenceGrade": "E4 (`sota-harness-foundation@da6b90a3` `ADR-0043`, `sota-multi-model-workflows@3e60a76c` `ADR-0033`, `sota-upstream-shelf-lock@ce5f5ac6` `ADR-0015`, `agy-sota-harness@ed05b00c` `ADR-0034`, `cc-sota-harness@fa053bfc` `ADR-0041`, `native-agent-stack@63798ba1` `ADR-0035`, `35/35` MADR 4.0 ADRs, `merge_gate.py` + `unittest` + `gitleaks` `0` Leaks)",
+        "evidenceGrade": "E4 (`sota-harness-foundation@d130720f` `ADR-0043`, `sota-multi-model-workflows@3e60a76c` `ADR-0033`, `sota-upstream-shelf-lock@ce5f5ac6` `ADR-0015`, `agy-sota-harness@ed05b00c` `ADR-0034`, `cc-sota-harness@fa053bfc` `ADR-0041`, `native-agent-stack@9da1665b` `ADR-0035`, `35/35` MADR 4.0 ADRs, `merge_gate.py` + `unittest` + `gitleaks` `0` Leaks)",
         "file": "docs/adr/ADR-0035-v3108-22repo-zero-drift-orca-sota-defaults-60skill-redteam-skilleval-and-415-starred-org-seal.md",
         "githubUrls": [
           "https://github.com/NVIDIA/SkillEvaluator",

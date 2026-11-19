@@ -100,12 +100,12 @@
       },
       "sota-multi-model-workflows": {
         "url": "https://github.com/native-agent-stack/sota-multi-model-workflows",
-        "baselineSha": "ff3d11d1f8b42733741a0fabfc0b8b45475c007f",
+        "baselineSha": "7cecdc69af9a5be5f83ab3cadeee1f3f4c1bfbe7",
         "role": "20 v3.10.6 workflows, 7 Full-Ecosystem Domain Orca Lane Hubs, 10 CANONICAL_ORCA_LANE_LEADS (read-only T5/D5) & 30 MADR 4.0 ADRs"
       },
       "sota-compounding-lab": {
         "url": "https://github.com/native-agent-stack/sota-compounding-lab",
-        "baselineSha": "502572d6096f61781b5dd7f8ecf8aee51ba6d18b",
+        "baselineSha": "ea300407f28706aa9f60fef84231d3dde22dafe5",
         "role": "5-stage Sim->PreWall->Paper->EB->Alpaca/IBKR lifecycle engine, DF1..DF12 guards (ADR-0017), bitemporal ts_recv_ns sidecar (ADR-0018) & 18 MADR 4.0 ADRs"
       },
       "sota-upstream-shelf-lock": {
@@ -122,7 +122,7 @@
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "ebdb8733745476563a15ab66c3e7e04e08ccfa5b",
+        "baselineSha": "6176445e48c5498d6096db87bb30c1b3557877ec",
         "actionsEnabled": false,
         "role": "Stage-3A/5 3.0s SIP+BOATS radar (:8787 P2), :8797 P3, :8798 Stage-5 Live + ADR-0035..0036 unified shield, SEC debt-vs-equity split, FINRA-4210 1.0x fallback & 36 MADR 4.0 ADRs"
       },

@@ -33,7 +33,7 @@ class TestOrgControlPlane(unittest.TestCase):
 
     def test_v3103_shared_24x5_foundation_and_github_maintenance_workflows(self) -> None:
         m = json.loads((ROOT / "ECOSYSTEM_ORG_MANIFEST.json").read_text(encoding="utf-8"))
-        self.assertEqual(m["schemaVersion"], "3.10.3")
+        self.assertEqual(m["schemaVersion"], "3.10.5")
         pol = m["executionFirewall"]["stage5ProvenLosslessLivePolicy"]
         self.assertEqual(pol["goalId"], "G_SOTA_DUAL_MACHINE_MERIT_TO_LOSSLESS_LIVE_24X5")
         self.assertEqual(pol["simLanesNeverGated"], 2)
@@ -41,6 +41,15 @@ class TestOrgControlPlane(unittest.TestCase):
         self.assertEqual(pol["alpacaPaperAccounts"], 3)
         self.assertEqual(pol["ibkrPaperAccounts"], 1)
         self.assertTrue(pol["paperAndLiveShareSame24x5Foundation"])
+        self.assertEqual(pol["primarySovereignHost"], "stationary_noesis_win32")
+        self.assertEqual(pol["portableFailoverHost"], "portable_mac_m5_max")
+        self.assertTrue(pol["singleActiveBrokerHostOnly"])
+        self.assertEqual(pol["dedicatedLiveExtGuardianPort"], 8796)
+        self.assertTrue(pol["canonicalOrcaLaneLeadsReadOnlyT5"])
+        self.assertEqual(m["canonicalWorkflowsCount"], 20)
+        self.assertEqual(m["dualMachineOrcaFolderHubsCount"], 18)
+        self.assertEqual(m["dualMachineOrcaAutomationsCount"], 14)
+        self.assertEqual(len(m["sevenDomainOrcaLaneHubs"]), 7)
         self.assertTrue((ROOT / ".github" / "workflows" / "reusable-sota-lane-maintenance.yml").is_file())
         ci_txt = (ROOT / ".github" / "workflows" / "ci.yml").read_text(encoding="utf-8")
         self.assertIn("schedule:", ci_txt)

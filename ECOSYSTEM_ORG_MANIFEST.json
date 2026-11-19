@@ -140,7 +140,7 @@
       },
       "cc-sota-harness": {
         "url": "https://github.com/native-agent-stack/cc-sota-harness",
-        "baselineSha": "fa053bfc3730105ee9bff267e88192bfbc1d0015",
+        "baselineSha": "f6d81a2bcdeae72909e4aaa9bbf652bd8287c12f",
         "actionsEnabled": false,
         "role": "L5 Claude lead central orchestrator (claude-fable-5-2 xhigh), cross-OS Win32 12-layer doctor (0 errors, retired grok/goose purged), runtime hygiene (ADR-0039), dual-machine Orca computer-use & cross-OS orca.yaml parity (ADR-0040), v3.10.8 Red-Team/SkillEvaluator & 60-skill/21-workflow convergence (ADR-0041) & 41 MADR 4.0 ADRs"
       },

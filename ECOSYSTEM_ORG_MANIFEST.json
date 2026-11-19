@@ -85,7 +85,7 @@
       },
       "sota-harness-foundation": {
         "url": "https://github.com/native-agent-stack/sota-harness-foundation",
-        "baselineSha": "e3e8d9cfabcff9af073c8fce54692972e9d327a4",
+        "baselineSha": "52ce4c735d161d169244495ed6a944f928417909",
         "role": "Open-core multi-runtime harness foundation, ADR-0040..0042 Shared Active 24/5 Foundation + 5-Layer Computer-Use & Tiered Zero-Friction Permissions & 42 MADR 4.0 ADRs"
       },
       "agy-sota-harness": {

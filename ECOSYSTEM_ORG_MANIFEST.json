@@ -1,7 +1,7 @@
 {
   "schemaVersion": "3.10.6",
   "organization": "native-agent-stack",
-  "verifiedDate": "2026-11-18",
+  "verifiedDate": "2026-11-19",
   "studyWallDate": "2026-10-15",
   "executionFirewall": {
     "paperOnlyAutonomousExecution": true,
@@ -85,7 +85,7 @@
       },
       "sota-harness-foundation": {
         "url": "https://github.com/native-agent-stack/sota-harness-foundation",
-        "baselineSha": "52ce4c735d161d169244495ed6a944f928417909",
+        "baselineSha": "6af3fe3108a118b705c95b4aa9fafd530791d41a",
         "role": "Open-core multi-runtime harness foundation, ADR-0040..0042 Shared Active 24/5 Foundation + 5-Layer Computer-Use & Tiered Zero-Friction Permissions & 42 MADR 4.0 ADRs"
       },
       "agy-sota-harness": {
@@ -106,7 +106,7 @@
       "sota-compounding-lab": {
         "url": "https://github.com/native-agent-stack/sota-compounding-lab",
         "baselineSha": "81e0cce882b0954d207240d0c1958fcc6e945207",
-        "role": "5-stage Sim->PreWall->Paper->EB->Alpaca/IBKR lifecycle engine, DF1..DF12 guards (ADR-0017), bitemporal ts_recv_ns sidecar (ADR-0018), ET overnight parity & Win32 ZoneInfo fallback (ADR-0019) & 19 MADR 4.20 ADRs"
+        "role": "5-stage Sim->PreWall->Paper->EB->Alpaca/IBKR lifecycle engine, DF1..DF12 guards (ADR-0017), bitemporal ts_recv_ns sidecar (ADR-0018), ET overnight parity & Win32 ZoneInfo fallback (ADR-0019), converged 6-archetype factory (ADR-0021) & 21 MADR 4.0 ADRs"
       },
       "sota-upstream-shelf-lock": {
         "url": "https://github.com/native-agent-stack/sota-upstream-shelf-lock",
@@ -122,15 +122,15 @@
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "f4e4babd5d4778ea1c6f7275babb4c43251e2429",
+        "baselineSha": "76b36ef8b9cd736f936cfbcf217247968a129f39",
         "actionsEnabled": false,
-        "role": "Stage-3A/5 3.0s SIP+BOATS radar (:8787 P2), :8797 P3, :8798 Stage-5 Live + ADR-0035..0040 unified shield, cross-OS uv/OS-vault .mcp.json, atomic EXT stop persistence, 4-port positive host-lease Win32 firewall & 40 MADR 4.0 ADRs"
+        "role": "Stage-3A/5 3.0s SIP+BOATS radar (:8787 P2), :8797 P3, :8798 Stage-5 Live + ADR-0035..0042 unified shield, IBKR P4 lossless trail, lock-free /api/scan, session-aware auto SIP/BOATS WS sidecar, 4-port positive host-lease Win32 firewall & 42 MADR 4.0 ADRs"
       },
       "sota-dynamic-trail-c": {
         "url": "https://github.com/native-agent-stack/sota-dynamic-trail-c",
-        "baselineSha": "0248d18b1d2fdf85264aea85208d1df2f7b8b398",
+        "baselineSha": "1b2e90e060c75dfb9a694c9425837c856b3afa0d",
         "actionsEnabled": false,
-        "role": "Stage-5A 24/5 Near-Lossless guardian (:8799), ADR-0025..0026 symmetric Noesis/Mac firewall, DF12 interop, Win32 launcher & 26 MADR 4.0 ADRs"
+        "role": "Stage-5A 24/5 Near-Lossless guardian (:8799), ADR-0025..0026 symmetric Noesis/Mac firewall, DF12 interop, Win32 launcher & dual-desktop-coexist /api/state parity & 26 MADR 4.0 ADRs"
       },
       "sota-private-vault": {
         "url": "https://github.com/native-agent-stack/sota-private-vault",
@@ -140,9 +140,9 @@
       },
       "cc-sota-harness": {
         "url": "https://github.com/native-agent-stack/cc-sota-harness",
-        "baselineSha": "4590c9954d982e77257a50b575aef7b1dd744520",
+        "baselineSha": "7b30efca64548c92185820e6dcb60962f788a7e9",
         "actionsEnabled": false,
-        "role": "L5 Claude lead central orchestrator (claude-fable-5-2 xhigh), cross-OS Win32 12-layer doctor (0 errors), runtime hygiene (ADR-0039), dual-machine Orca computer-use & zero-friction gated-action resolution (ADR-0040) & 40 MADR 4.0 ADRs"
+        "role": "L5 Claude lead central orchestrator (claude-fable-5-2 xhigh), cross-OS Win32 12-layer doctor (0 errors), runtime hygiene (ADR-0039), dual-machine Orca computer-use & cross-OS orca.yaml parity (ADR-0040) & 40 MADR 4.0 ADRs"
       },
       "meridian": {
         "url": "https://github.com/native-agent-stack/meridian",

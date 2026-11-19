@@ -122,9 +122,9 @@
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "26ab89e254cfe3efbe1052998785b9f6307d9224",
+        "baselineSha": "aafda8abd37cf8eec724e6ca476294ae2ebe0113",
         "actionsEnabled": false,
-        "role": "Stage-3A/5 3.0s SIP+BOATS radar (:8787 P2), :8797 P3, :8798 Interactive Stage-5 1000RPM Live Cockpit (3-vendor red-team P0/P1 hardened: 429 exit-reserve floor, 4x IPO-only lock, OTO stop pyramid exemption, Decimal fractional flatten, LULD Q halt, read-only status, 18/18 UPSTREAM.md parity) + isolated :8796 EXT Guardian + ADR-0035..0045 unified shield, persistent IBKR P4 (:4002 DU) lossless trail, pre-IPO flatten gate, SOTA 6+5 strategy & 18+3 engine hub, pre-wall 28-IPO L1 sim & 45 MADR 4.0 ADRs"
+        "role": "Stage-3A/5 3.0s SIP+BOATS radar (:8787 P2), :8797 P3, :8798 Interactive Stage-5 1000RPM Live Cockpit (4-vendor red-team ADR-0046 hardened: strict Live/Paper isolation, :8796 tracked-only legacy guard + fail-closed + dedup, pure 100/min exit reserve, RTH OTO cancel-before-exit, Day-1 IPO shield, CTA Tape A/B halts, LULD Sec V.B arithmetic mean, owner-guarded Live 1000RPM SPY/Large-Cap Canary E2E) + isolated :8796 EXT Guardian + persistent IBKR P4 (:4002 DU) lossless trail, pre-IPO flatten gate, SOTA 6+5 strategy & 18+3 engine hub, pre-wall 28-IPO L1 sim & 46 MADR 4.0 ADRs"
       },
       "sota-dynamic-trail-c": {
         "url": "https://github.com/native-agent-stack/sota-dynamic-trail-c",

@@ -128,7 +128,7 @@
       },
       "sota-dynamic-trail-c": {
         "url": "https://github.com/native-agent-stack/sota-dynamic-trail-c",
-        "baselineSha": "2e3d96b5e5fc7d64c9739624e1f1cfe0d7fc3299",
+        "baselineSha": "0248d18b1d2fdf85264aea85208d1df2f7b8b398",
         "actionsEnabled": false,
         "role": "Stage-5A 24/5 Near-Lossless guardian (:8799), ADR-0025..0026 symmetric Noesis/Mac firewall, DF12 interop, Win32 launcher & 26 MADR 4.0 ADRs"
       },

@@ -93,7 +93,7 @@
       },
       "sota-multi-model-workflows": {
         "url": "https://github.com/native-agent-stack/sota-multi-model-workflows",
-        "baselineSha": "ee7647efda70d194bca94d7e1806bfbe0c1b296c",
+        "baselineSha": "938decb24440b73b41c1e8d1a27e2fcd12a76545",
         "role": "20 v3.10.3 workflows (incl. WF20 grand-merit-harness), 7-Lane Sim/4-Paper/Stage-5-Live Merit Harness, DF1..DF12 & 27 MADR 4.0 ADRs"
       },
       "sota-compounding-lab": {
@@ -115,7 +115,7 @@
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "a21c30e9243df09f2ee54169605d89642609ff91",
+        "baselineSha": "2010a9e157c8810750411dc16486004c010b8757",
         "actionsEnabled": false,
         "role": "Stage-3A/5 3.0s SIP+BOATS radar (:8787 P2), :8797 P3 Account A Aggressive Crucible, /api/merit_farm_status, :8798 Stage-5 Lossless Live Lane & 31 MADR 4.0 ADRs"
       },

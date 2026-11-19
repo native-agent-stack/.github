@@ -140,9 +140,9 @@
       },
       "cc-sota-harness": {
         "url": "https://github.com/native-agent-stack/cc-sota-harness",
-        "baselineSha": "39b39941e542cfba47ce1ff1c294ada4a7149be5",
+        "baselineSha": "bfe075dc546e77d086dd561c83524a8ef47b2183",
         "actionsEnabled": false,
-        "role": "L5 Claude lead central orchestrator (claude-fable-5-2 xhigh), cross-OS Win32 12-layer doctor (0 errors), zero-kimi v2.3.0 & 38 MADR 4.0 ADRs"
+        "role": "L5 Claude lead central orchestrator (claude-fable-5-2 xhigh), cross-OS Win32 12-layer doctor (0 errors), runtime hygiene sync (ADR-0039), zero-kimi v2.3.0 & 39 MADR 4.0 ADRs"
       },
       "meridian": {
         "url": "https://github.com/native-agent-stack/meridian",

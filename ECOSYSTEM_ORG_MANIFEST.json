@@ -85,13 +85,13 @@
       },
       "sota-harness-foundation": {
         "url": "https://github.com/native-agent-stack/sota-harness-foundation",
-        "baselineSha": "0629fd82aaf8b2d36613fcc6e10224910036db32",
-        "role": "Open-core multi-runtime harness foundation, ADR-0040..0041 Shared Active 24/5 Foundation (Noesis primary / Mac failover) & 41 MADR 4.0 ADRs"
+        "baselineSha": "e3e8d9cfabcff9af073c8fce54692972e9d327a4",
+        "role": "Open-core multi-runtime harness foundation, ADR-0040..0042 Shared Active 24/5 Foundation + 5-Layer Computer-Use & Tiered Zero-Friction Permissions & 42 MADR 4.0 ADRs"
       },
       "agy-sota-harness": {
         "url": "https://github.com/native-agent-stack/agy-sota-harness",
-        "baselineSha": "f47ba6f46e8a4ea285d1c1d05da3ae8760af0156",
-        "role": "Antigravity L0-L13 v3.10.4 harness, 57 canonical skills, 10 native agy workflows (DAG #10 fail-closed) & 32 MADR 4.0 ADRs"
+        "baselineSha": "2f56eadf150cc4f14060ab9d57714c88b8f96ac7",
+        "role": "Antigravity L0-L13 v3.10.7 harness, 57 canonical skills, 10 native agy workflows, hybrid 5-layer computer-use escalation (ADR-0033) & 33 MADR 4.0 ADRs"
       },
       "dsh-sota-harness": {
         "url": "https://github.com/native-agent-stack/dsh-sota-harness",
@@ -140,9 +140,9 @@
       },
       "cc-sota-harness": {
         "url": "https://github.com/native-agent-stack/cc-sota-harness",
-        "baselineSha": "9b1b5c4dc90731c263a5386f79dc791bf14ee1c1",
+        "baselineSha": "4590c9954d982e77257a50b575aef7b1dd744520",
         "actionsEnabled": false,
-        "role": "L5 Claude lead central orchestrator (claude-fable-5-2 xhigh), cross-OS Win32 12-layer doctor (0 errors), runtime hygiene sync (ADR-0039), zero-kimi v2.3.0 & 39 MADR 4.39 ADRs"
+        "role": "L5 Claude lead central orchestrator (claude-fable-5-2 xhigh), cross-OS Win32 12-layer doctor (0 errors), runtime hygiene (ADR-0039), dual-machine Orca computer-use & zero-friction gated-action resolution (ADR-0040) & 40 MADR 4.0 ADRs"
       },
       "meridian": {
         "url": "https://github.com/native-agent-stack/meridian",

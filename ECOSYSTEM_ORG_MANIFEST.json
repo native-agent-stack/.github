@@ -80,7 +80,7 @@
       },
       "native-agent-stack": {
         "url": "https://github.com/native-agent-stack/native-agent-stack",
-        "baselineSha": "9da1665b446aa8a996e48618dacf17d36ab625b9",
+        "baselineSha": "cf805e8521f9c62a7d1229191a9194e81c60b7de",
         "role": "Canonical v3.10.8 umbrella, ADR-0035 60-skill Red-Team/SkillEvaluator, 21 workflows, 15 Orca automations & 415+8 starred convergence seal, P0-1..6 unified shield, 10 Orca lane leads across 7/7 domain hubs & 35 MADR 4.0 ADRs"
       },
       "sota-harness-foundation": {
@@ -105,7 +105,7 @@
       },
       "sota-compounding-lab": {
         "url": "https://github.com/native-agent-stack/sota-compounding-lab",
-        "baselineSha": "c56a166776f3c2c7daa6fe5864c9e8947c10c419",
+        "baselineSha": "1f6aa7dc98417d321dfdefe36b6dc7677ca369ef",
         "role": "5-stage Sim->PreWall->Paper->EB->Alpaca/IBKR lifecycle engine, DF1..DF12 guards (ADR-0017), bitemporal ts_recv_ns sidecar (ADR-0018), ET overnight parity & Win32 ZoneInfo fallback (ADR-0019), converged 6-archetype factory & Option B DF10/DF6/RTX4090/hftbacktest H103-H104 runner (ADR-0021) & 21 MADR 4.0 ADRs"
       },
       "sota-upstream-shelf-lock": {
@@ -122,7 +122,7 @@
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "dc364a08278be65aafe3a05cf611866ce43bcbd1",
+        "baselineSha": "1801b2053e931e863634a6faf12b8a2f96af5b12",
         "actionsEnabled": false,
         "role": "Stage-3A/5 3.0s SIP+BOATS radar (:8787 P2), :8797 P3, :8798 Interactive Stage-5 1000RPM Live Cockpit (4-vendor red-team ADR-0046 + Codex #243/#473 + Opus 5.5 hardened: strict Live/Paper isolation with zero :8799 polling, pre-submit EXT stop persistence, :8796 tracked-only legacy guard + fail-closed + dedup, pure 100/min exit reserve, RTH OTO cancel-before-exit, Day-1 IPO broker-verified 1x cash gate & shield, CTA Tape A/B halts, LULD Sec V.B arithmetic mean, wall-matched pre-wall cache, owner-guarded dimensionless Live 1000RPM SPY/Large-Cap Canary E2E) + isolated :8796 EXT Guardian + persistent IBKR P4 (:4002 DU) lossless trail, pre-IPO flatten gate, SOTA 6+5 strategy & 18+3 engine hub, pre-wall 28-IPO L1 sim & 46 MADR 4.0 ADRs"
       },

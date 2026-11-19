@@ -100,8 +100,8 @@
       },
       "sota-multi-model-workflows": {
         "url": "https://github.com/native-agent-stack/sota-multi-model-workflows",
-        "baselineSha": "678f849cfcd1eb7aa99ec777aeeeedafae5b431c",
-        "role": "20 v3.10.7 workflows (20/20 CLI dry-run pass), 7 Full-Ecosystem Domain Orca Lane Hubs, 10 CANONICAL_ORCA_LANE_LEADS (read-only T5/D5), dual-machine advanced computer-use runtime rollout (ADR-0032), ET overnight BOATS decision_ns & port-binding (ADR-0031) & 32 MADR 4.0 ADRs"
+        "baselineSha": "1c44f198ffeb26f5c1203cc8d05ac6d6f8543f5b",
+        "role": "20 v3.10.7 workflows (20/20 CLI dry-run pass), 9 cross-OS Win32/macOS/Linux Orca folder hubs (trading-lanes, harness-lanes, 01..07), 10 CANONICAL_ORCA_LANE_LEADS (read-only T5/D5, zero retired workers), 57-skill 8-runtime probe parity, dual-machine computer-use runtime rollout (ADR-0032), ET overnight BOATS decision_ns & port-binding (ADR-0031) & 32 MADR 4.0 ADRs"
       },
       "sota-compounding-lab": {
         "url": "https://github.com/native-agent-stack/sota-compounding-lab",

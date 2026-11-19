@@ -80,32 +80,32 @@
       },
       "native-agent-stack": {
         "url": "https://github.com/native-agent-stack/native-agent-stack",
-        "baselineSha": "ed9e797c2be6f9b0f699296d05f52c90b469604a",
+        "baselineSha": "c04aa50bf126c2f51847a0d18296849d2be7fac8",
         "role": "Canonical v3.10.7 umbrella, ADR-0034 5-layer computer-use runtime stack & seamless workstation landing seal, P0-1..6 unified shield, 10 Orca lane leads across 7/7 domain hubs & 34 MADR 4.0 ADRs"
       },
       "sota-harness-foundation": {
         "url": "https://github.com/native-agent-stack/sota-harness-foundation",
-        "baselineSha": "6af3fe3108a118b705c95b4aa9fafd530791d41a",
+        "baselineSha": "14bb9e9981e46e0d8db6e3bdd97b6410ffd57f2d",
         "role": "Open-core multi-runtime harness foundation, ADR-0040..0042 Shared Active 24/5 Foundation + 5-Layer Computer-Use & Tiered Zero-Friction Permissions & 42 MADR 4.0 ADRs"
       },
       "agy-sota-harness": {
         "url": "https://github.com/native-agent-stack/agy-sota-harness",
-        "baselineSha": "2f56eadf150cc4f14060ab9d57714c88b8f96ac7",
+        "baselineSha": "02800d88d61a3267aca3f69478428ddd384047d1",
         "role": "Antigravity L0-L13 v3.10.7 harness, 57 canonical skills, 10 native agy workflows, hybrid 5-layer computer-use escalation (ADR-0033) & 33 MADR 4.0 ADRs"
       },
       "dsh-sota-harness": {
         "url": "https://github.com/native-agent-stack/dsh-sota-harness",
-        "baselineSha": "1fe6b0390d099085d2738c26e968030f39621d6d",
+        "baselineSha": "f243dd885f5ba5ae2c44595e6dcdf88a2d45c678",
         "role": "DeepSeek Harness (deepseek-v4.1-flash / deepseek-flash) 10-layer probe suite, cross-OS MCP launcher & 15 MADR 4.0 ADRs"
       },
       "sota-multi-model-workflows": {
         "url": "https://github.com/native-agent-stack/sota-multi-model-workflows",
-        "baselineSha": "2eebb67621619894838f12f5ff3a91937681b8c3",
+        "baselineSha": "678f849cfcd1eb7aa99ec777aeeeedafae5b431c",
         "role": "20 v3.10.7 workflows (20/20 CLI dry-run pass), 7 Full-Ecosystem Domain Orca Lane Hubs, 10 CANONICAL_ORCA_LANE_LEADS (read-only T5/D5), dual-machine advanced computer-use runtime rollout (ADR-0032), ET overnight BOATS decision_ns & port-binding (ADR-0031) & 32 MADR 4.0 ADRs"
       },
       "sota-compounding-lab": {
         "url": "https://github.com/native-agent-stack/sota-compounding-lab",
-        "baselineSha": "695efcc775188bef2ce13850f478ad68394606bf",
+        "baselineSha": "c56a166776f3c2c7daa6fe5864c9e8947c10c419",
         "role": "5-stage Sim->PreWall->Paper->EB->Alpaca/IBKR lifecycle engine, DF1..DF12 guards (ADR-0017), bitemporal ts_recv_ns sidecar (ADR-0018), ET overnight parity & Win32 ZoneInfo fallback (ADR-0019), converged 6-archetype factory & Option B DF10/DF6/RTX4090/hftbacktest H103-H104 runner (ADR-0021) & 21 MADR 4.0 ADRs"
       },
       "sota-upstream-shelf-lock": {
@@ -128,7 +128,7 @@
       },
       "sota-dynamic-trail-c": {
         "url": "https://github.com/native-agent-stack/sota-dynamic-trail-c",
-        "baselineSha": "1b2e90e060c75dfb9a694c9425837c856b3afa0d",
+        "baselineSha": "4c6a75e9d346d0527319268e2f6e620a5ebab755",
         "actionsEnabled": false,
         "role": "Stage-5A 24/5 Near-Lossless guardian (:8799), ADR-0025..0026 symmetric Noesis/Mac firewall, DF12 interop, Win32 launcher & dual-desktop-coexist /api/state parity & 26 MADR 4.0 ADRs"
       },
@@ -170,7 +170,7 @@
       },
       "dsh-plugin-landscape": {
         "url": "https://github.com/native-agent-stack/dsh-plugin-landscape",
-        "baselineSha": "90aca2cef56e7ffb225f1b0f9374367b5ac6cc5f",
+        "baselineSha": "52fbc6da3b9421b64f4894e71b2e1629be36a24c",
         "actionsEnabled": false,
         "role": "Private offline-verified DSH plugin anchor catalog, deepseek-flash parity & 413+6 SOTA research matrix (11 MADR 4.0 ADRs)"
       }

@@ -100,7 +100,7 @@
       },
       "sota-multi-model-workflows": {
         "url": "https://github.com/native-agent-stack/sota-multi-model-workflows",
-        "baselineSha": "0c8f0929f8b06b6542e36cd1707f2d1449d39baa",
+        "baselineSha": "85ba878d0c4a991fc5f36110cb1e0984ed04d4cf",
         "role": "21 v3.10.9 workflows (zero grok/goose), ADR-0034 dual-machine Orca manifests & Nov 19 landscape convergence, 9 cross-OS Win32/macOS/Linux Orca folder hubs (trading-lanes, harness-lanes, 01..07), 10 CANONICAL_ORCA_LANE_LEADS, 60-skill 8-runtime probe parity, 415+8 starred convergence & 34 MADR 4.0 ADRs"
       },
       "sota-compounding-lab": {
@@ -122,9 +122,9 @@
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "c55446a0fc64c33068b94dd7b9c408383f7d5464",
+        "baselineSha": "5c7571569d9c26c603e12cf72688d13bc8c77b2b",
         "actionsEnabled": false,
-        "role": "Stage-3A/5 3.0s SIP+BOATS radar (:8787 P2), :8797 P3, :8798 Interactive Stage-5 1000RPM Live Cockpit (ADR-0046 4-vendor hardened, ADR-0047 Win32 JobObject + direct MCP + GPU sidecar client, ADR-0048 non-blocking WS OFI flush + basket merger + alpaca-py v0.45 parity, ADR-0049 dynamic WS top-mover subs + ghost GTC filter + 429 pacing + KeepAlive AboveNormal priority) + :8796 Live EXT Guardian + IBKR :4002 P4 & 49 MADR 4.0 ADRs"
+        "role": "Stage-3A/5 3.0s SIP+BOATS radar (:8787 P2), :8797 P3, :8798 Interactive Stage-5 1000RPM Live Cockpit (ADR-0046 4-vendor hardened, ADR-0047 Win32 JobObject + direct MCP + GPU sidecar client, ADR-0048 non-blocking WS OFI flush + basket merger + alpaca-py v0.45 parity, ADR-0049 dynamic WS top-mover subs + ghost GTC filter + 429 pacing + KeepAlive AboveNormal priority) + :8796 Live EXT Guardian + IBKR :4002 P4 & 50 MADR 4.0 ADRs (ADR-0050 + 4-vendor Codex/Claude/Falsifier closure)"
       },
       "sota-dynamic-trail-c": {
         "url": "https://github.com/native-agent-stack/sota-dynamic-trail-c",

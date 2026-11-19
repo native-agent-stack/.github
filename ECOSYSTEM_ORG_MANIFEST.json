@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "3.10.5",
+  "schemaVersion": "3.10.6",
   "organization": "native-agent-stack",
   "verifiedDate": "2026-11-18",
   "studyWallDate": "2026-10-15",
@@ -22,7 +22,9 @@
       "portableFailoverHost": "portable_mac_m5_max",
       "singleActiveBrokerHostOnly": true,
       "dedicatedLiveExtGuardianPort": 8796,
-      "canonicalOrcaLaneLeadsReadOnlyT5": true
+      "canonicalOrcaLaneLeadsReadOnlyT5": true,
+      "adr0035UnifiedShieldActive": true,
+      "failClosed8796DirectCallDefault": true
     },
     "forbiddenIbkrLivePorts": [
       4001,
@@ -74,12 +76,12 @@
     "publicUnlimitedActionsTier": {
       ".github": {
         "url": "https://github.com/native-agent-stack/.github",
-        "role": "Org profile, v3.10.5 manifest, 32 MADR 4.0 ADRs, weekday scheduled CI + reusable-sota-lane-maintenance.yml & SHA-pinned reusable gate"
+        "role": "Org profile, v3.10.6 pre-IPO manifest, 33 MADR 4.0 ADRs, weekday scheduled CI + reusable-sota-lane-maintenance.yml & SHA-pinned reusable gate"
       },
       "native-agent-stack": {
         "url": "https://github.com/native-agent-stack/native-agent-stack",
-        "baselineSha": "d6ed68bb2294a893a8b348d5242d2168d55b5c74",
-        "role": "Canonical v3.10.5 upstream-first umbrella, Stationary Noesis primary 24/5 host, 7-Domain Orca Lane Hubs & 32 MADR 4.0 ADRs"
+        "baselineSha": "078403f40b5988ff392aa56a267cd0191ce0ae02",
+        "role": "Canonical v3.10.6 pre-IPO umbrella, P0-1..6 unified shield, 10 Orca lane leads across 7/7 domain hubs & 33 MADR 4.0 ADRs"
       },
       "sota-harness-foundation": {
         "url": "https://github.com/native-agent-stack/sota-harness-foundation",
@@ -98,8 +100,8 @@
       },
       "sota-multi-model-workflows": {
         "url": "https://github.com/native-agent-stack/sota-multi-model-workflows",
-        "baselineSha": "938decb24440b73b41c1e8d1a27e2fcd12a76545",
-        "role": "20 v3.10.5 workflows (WF20 grand-merit-harness), 7 Full-Ecosystem Domain Orca Lane Hubs, CANONICAL_ORCA_LANE_LEADS (read-only T5) & 29 MADR 4.0 ADRs"
+        "baselineSha": "ff3d11d1f8b42733741a0fabfc0b8b45475c007f",
+        "role": "20 v3.10.6 workflows, 7 Full-Ecosystem Domain Orca Lane Hubs, 10 CANONICAL_ORCA_LANE_LEADS (read-only T5/D5) & 30 MADR 4.0 ADRs"
       },
       "sota-compounding-lab": {
         "url": "https://github.com/native-agent-stack/sota-compounding-lab",
@@ -120,9 +122,9 @@
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "2010a9e157c8810750411dc16486004c010b8757",
+        "baselineSha": "39be1fde517aaaf00ea4bd1cbafa7b57ec899506",
         "actionsEnabled": false,
-        "role": "Stage-3A/5 3.0s SIP+BOATS radar (:8787 P2), :8797 P3, :8798 Stage-5 Live + ADR-0034 :8796 Live EXT Guardian isolation, cross-OS Win32 CredReadW & 34 MADR 4.0 ADRs"
+        "role": "Stage-3A/5 3.0s SIP+BOATS radar (:8787 P2), :8797 P3, :8798 Stage-5 Live + ADR-0035 P0-1..6 unified ADR-0017/0019 shield, fail-closed :8796 & 35 MADR 4.0 ADRs"
       },
       "sota-dynamic-trail-c": {
         "url": "https://github.com/native-agent-stack/sota-dynamic-trail-c",
@@ -138,7 +140,7 @@
       },
       "cc-sota-harness": {
         "url": "https://github.com/native-agent-stack/cc-sota-harness",
-        "baselineSha": "3c71b57d6e7926bb52e9ca7e22ae5d4c0f993c59",
+        "baselineSha": "04af5164db7301eb4d0124319cbf0db5895f69a5",
         "actionsEnabled": false,
         "role": "L5 Claude lead central orchestrator (claude-fable-5-2 xhigh), cross-OS Win32 12-layer doctor (0 errors), zero-kimi v2.3.0 & 38 MADR 4.0 ADRs"
       },
@@ -225,7 +227,7 @@
     "catalogPath": "docs/adr/CATALOG.md",
     "generatorScript": "scripts/architecture_catalog.py",
     "revisitThresholdDays": 45,
-    "adrCount": 32,
+    "adrCount": 33,
     "records": [
       {
         "id": "ADR-0001",
@@ -768,6 +770,22 @@
           "https://github.com/native-agent-stack/sota-multi-model-workflows",
           "https://github.com/stablyai/orca"
         ]
+      },
+      {
+        "id": "ADR-0033",
+        "layer": "Organization Control Plane, Pre-IPO `2026-11-19` Execution Firewall, `10`-Lead Multi-Model Orca Fleet & `22`-Repo 40-Char SHA Manifest (`L0\u2013L13` \u00d7 `P0\u2013P5` \u00d7 `T0\u2013T8`)",
+        "title": "`v3.10.6` Pre-IPO `2026-11-19` `22`-Repo Zero-Drift Org Seal \u2014 `ADR-0035` `P0-1..6` Unified Shield & `10`-Lead Multi-Model Orca Fleet",
+        "status": "Accepted",
+        "date": "2026-11-18",
+        "evidenceGrade": "E4 (`22/22` Live 40-Char `origin/main` SHA Parity, `9/9` Public GitHub Actions, `13/13` Private `Actions=false`, `sota-mover-ranker@4de58ade` `ADR-0035` `137/137 pytest`, `sota-multi-model-workflows` `ADR-0030` `10/10` Leads / `28/28 pytest`, Live Orca Run `run_5c51382bc888` `4` Active Multi-Model Workers, `0` Leaks)",
+        "file": "docs/adr/ADR-0033-v3106-pre-ipo-22repo-zero-drift-p0-shield-and-ten-orca-leads-org-seal.md",
+        "githubUrls": [
+          "https://github.com/native-agent-stack/.github",
+          "https://github.com/native-agent-stack/native-agent-stack",
+          "https://github.com/native-agent-stack/sota-harness-foundation",
+          "https://github.com/native-agent-stack/sota-multi-model-workflows",
+          "https://github.com/stablyai/orca"
+        ]
       }
     ]
   },
@@ -876,5 +894,7 @@
       "noesisFolderId": "folder:a827635e-269c-4058-9aa8-de6246707266",
       "macFolderId": "folder:7627512d-13bb-4125-b0a3-b1e9c2921914"
     }
-  }
+  },
+  "canonicalOrcaLaneLeadsCount": 10,
+  "preIpoOrcaRunId": "run_5c51382bc888"
 }

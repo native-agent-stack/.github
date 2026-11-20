@@ -154,7 +154,7 @@
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "13a4aeaa9879f1ddcc5233bf30b31f3810e4a292",
+        "baselineSha": "4fd9b84cc85e34122978aee4bf762b35900c4833",
         "actionsEnabled": false,
         "role": "Stage-3A/5 3.0s SIP+BOATS radar (:8787 P2), :8797 P3, :8798 Interactive Stage-5 1000RPM Live Cockpit & :8796 Live EXT Guardian (ADR-0062..0080: Post-ANT 6-pillar DF1..DF12 merit engine, ADR-0067..0073 fast-sync TV Cloud MCP + OpenBB :6900 KeepAlive + seamless L1..L5 layouts + #756 Day-2+ fix + 6-pass Red-Team closure, ADR-0074 1000RPM 12s/8s anti-adverse-selection TTL + Fixed-Share Hedge + Conformal PID + Trial #105 BOATS fade guard + W5 cohort, ADR-0075..0077 elevated reload guard + native pwsh 7+ zero-PS5.1 & uv venv child-PID reload parity, ADR-0078..0079 14 uncapped Pine v6 strategies + VIX Dual L/S visual indicator + 700d pre-wall empirical performance manifest v3.16.0, ADR-0080 full 19-active 14+H090 SOTA strategy resolution, LosslessProtectionKernel v2 true near-lossless 5-10bps BE+ / 6-14bps micro-trail & -50/-75bps two-stage drawdown clamp, 1000RPM 4-pool allocator 100/350/350/200 + live _bridge_call telemetry & 46-symbol 1.836M-bar pre-wall empirical per-symbol fine-tune API /per_symbol_1000rpm_finetune v3.17.1) + live IBKR :4002 P4 (IBC v3.24.2 persistent) & 80 MADR 4.0 ADRs"
       },

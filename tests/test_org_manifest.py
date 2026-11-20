@@ -46,7 +46,7 @@ class TestOrgControlPlane(unittest.TestCase):
         self.assertEqual(pub["agy-sota-harness"]["baselineSha"], "e25e6320d974ce0d446d3a3400bed6db24bf4de9")
         self.assertEqual(pub["astrolabe"]["baselineSha"], "801efa5a5706c606a60fe0c9577702624056b26e")
         self.assertEqual(priv["sota-dynamic-trail-c"]["baselineSha"], "94c302ef096fc8152cb08d1b482cb28b295a871f")
-        self.assertEqual(priv["sota-mover-ranker"]["baselineSha"], "13a4aeaa9879f1ddcc5233bf30b31f3810e4a292")
+        self.assertEqual(priv["sota-mover-ranker"]["baselineSha"], "4fd9b84cc85e34122978aee4bf762b35900c4833")
         self.assertEqual(priv["sota-private-vault"]["baselineSha"], "51f4b1818b42e5c91e69f0345a73afff72177bd4")
         tlg = m["terminalLandscapeGovernance"]
         self.assertEqual(tlg["schemaVersion"], "sota-terminal-platform-taxonomy.v1")

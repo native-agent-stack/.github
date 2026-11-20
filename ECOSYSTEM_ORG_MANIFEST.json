@@ -137,7 +137,7 @@
       },
       "sota-compounding-lab": {
         "url": "https://github.com/native-agent-stack/sota-compounding-lab",
-        "baselineSha": "8f67c48c62e48f57728a793460b0c82b6830606a",
+        "baselineSha": "e56e70234fc654cae4ab9a9caebb871ce1af85bd",
         "role": "5-stage Sim->PreWall->Paper->EB->Alpaca/IBKR lifecycle engine, DF1..DF12 guards, ADR-0022..0027 RTX 4090 GPU accelerator, canonical XNYS next_session_date pre-join lake (7.039M rows <= 2026-10-15), ADR-0028 Post-ANT consolidation, ADR-0029 Hansen SPA/MCS + Conformal PID (<=2.00%) + Fixed-Share Hedge + Hierarchical EB + H109..H114, ADR-0030 Advanced Backtest Playback Performance Manifest (W1 679d / W2 1707d / W3 655d), ADR-0031 Quality-First Experimental SOTA Policy, ADR-0032 Trial #105 (H109 512d BOATS+SIP), ADR-0033 Trial #106 (H112 700d 424B5 dilution short), ADR-0034 Trial #107 (H110 700d residual lead-lag/LETF close-flow, receipt 0da40118, FAILED) & unified fail-closed Sim->Paper->Live Real Performance & Merit Resolution Manifest (SHA 19d7bf6cf34183e1) & 34 MADR 4.0 ADRs"
       },
       "sota-upstream-shelf-lock": {
@@ -154,7 +154,7 @@
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "62827004cc414e60b65465ce8857c301877421b9",
+        "baselineSha": "72b93292c4605e16205b71caac11d3ab44c310f2",
         "actionsEnabled": false,
         "role": "Stage-3A/5 3.0s SIP+BOATS radar (:8787 P2), :8797 P3, :8798 Interactive Stage-5 1000RPM Live Cockpit & :8796 Live EXT Guardian (ADR-0062..0081: Post-ANT 6-pillar DF1..DF12 merit engine, ADR-0067..0073 fast-sync TV Cloud MCP + OpenBB :6900 KeepAlive + seamless L1..L5 layouts + #756 Day-2+ fix + 6-pass Red-Team closure, ADR-0074..0079 1000RPM TTL + native pwsh 7+ + 14 uncapped Pine v6 strategies + VIX Dual L/S visual indicator, ADR-0080 full 19-active 14+H090 SOTA strategy resolution, true near-lossless 5-10bps BE+ / 6-14bps micro-trail, -50/-75bps drawdown clamp, 1000RPM 4-pool allocator + 46-symbol 1.836M-bar pre-wall empirical per-symbol fine-tune API v3.17.1, ADR-0081 live 3-leg Cboe ^VIX9D/^VIX/^VIX3M/^VVIX + 7-dim breadth short engine, P3 Long+Short fix, Stage-5 symmetric short candidate resolution, 1000RPM 10% exit reserve, IBKR P4 VIX risk-off short & LULD halt guard) + live IBKR :4002 P4 (IBC v3.24.2 persistent) & 81 MADR 4.0 ADRs"
       },

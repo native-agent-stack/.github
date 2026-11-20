@@ -46,7 +46,7 @@ class TestOrgControlPlane(unittest.TestCase):
         self.assertEqual(pub["agy-sota-harness"]["baselineSha"], "e25e6320d974ce0d446d3a3400bed6db24bf4de9")
         self.assertEqual(pub["astrolabe"]["baselineSha"], "f854c9b4488c1d7f210e204a9dbe193ee0962488")
         self.assertEqual(priv["sota-dynamic-trail-c"]["baselineSha"], "7401ce4644192c75ddc2d9bf329324a47ea9cf14")
-        self.assertEqual(priv["sota-mover-ranker"]["baselineSha"], "2307f8676de2d99daab0a151d531541227346446")
+        self.assertEqual(priv["sota-mover-ranker"]["baselineSha"], "90b95777835ea876ddabe27b8b287a46772b6e23")
         self.assertEqual(priv["sota-private-vault"]["baselineSha"], "556363d8ed62e0f181f98aeb5378cc906768a124")
         frp = m["fullResolutionBackbonePolicy"]
         self.assertTrue(frp["fullResolutionVerified"])

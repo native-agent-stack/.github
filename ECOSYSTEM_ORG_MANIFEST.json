@@ -110,7 +110,8 @@
       "sota-upstream-shelf-lock/ADR-0025",
       "sota-compounding-lab/ADR-0038",
       "sota-dynamic-trail-c/ADR-0034",
-      "sota-mover-ranker/ADR-0095"
+      "sota-mover-ranker/ADR-0095",
+      "sota-mover-ranker/ADR-0096"
     ],
     "fullResolutionVerified": true,
     "allowSilentFallback": false,
@@ -173,9 +174,9 @@
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "2307f8676de2d99daab0a151d531541227346446",
+        "baselineSha": "90b95777835ea876ddabe27b8b287a46772b6e23",
         "actionsEnabled": false,
-        "role": "Stage-3A/5 3.0s SIP+BOATS radar (:8787 P2), :8797 P3, :8798 Interactive Stage-5 1000RPM Live Cockpit & :8796 Live EXT Guardian + live IBKR :4002 P4 (ADR-0062..0091 Post-ANT 6-pillar DF1..DF12 + 1000RPM lossless + bidirectional tournament, ADR-0092..0093 Tier-0 SOTA-Source-Only firewall & zero-placeholder merge_gate, ADR-0094 direct NautilusTrader v2.0.0rc9 + VectorBT v1.2.0 pre-wall bridge, ADR-0095 full-resolution backbone SHA-256 client, strict GPU zero-fallback mode, :8787 /api/full_resolution_backbone & AST empty-stub merge_gate) & 95 MADR 4.0 ADRs"
+        "role": "Stage-3A/5 3.0s SIP+BOATS radar (:8787 P2), :8797 P3, :8798 Interactive Stage-5 1000RPM Live Cockpit & :8796 Live EXT Guardian + live IBKR :4002 P4 (ADR-0062..0091 Post-ANT 6-pillar DF1..DF12 + 1000RPM lossless + bidirectional tournament, ADR-0092..0093 Tier-0 SOTA-Source-Only firewall & zero-placeholder merge_gate, ADR-0094 direct NautilusTrader v2.0.0rc9 + VectorBT v1.2.0 pre-wall bridge, ADR-0095..0096 full-resolution backbone SHA-256 client + zero-redirect loopback guard + P2/P3/P4 :8794 consumption + Codex/Opus audit safety closure & AST/shelf_lock merge_gate) & 96 MADR 4.0 ADRs"
       },
       "sota-dynamic-trail-c": {
         "url": "https://github.com/native-agent-stack/sota-dynamic-trail-c",

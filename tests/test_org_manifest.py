@@ -33,14 +33,16 @@ class TestOrgControlPlane(unittest.TestCase):
 
     def test_v3103_shared_24x5_foundation_and_github_maintenance_workflows(self) -> None:
         m = json.loads((ROOT / "ECOSYSTEM_ORG_MANIFEST.json").read_text(encoding="utf-8"))
-        self.assertEqual(m["schemaVersion"], "3.11.0")
+        self.assertEqual(m["schemaVersion"], "3.11.1")
         pub = m["repositories"]["publicUnlimitedActionsTier"]
         priv = m["repositories"]["privateExecutionAndVaultTier"]
-        self.assertEqual(pub["native-agent-stack"]["baselineSha"], "8edc98a4393786b1d1c7f3a040462851a4504fc0")
+        self.assertEqual(pub["native-agent-stack"]["baselineSha"], "1135dd7f30d3c588edecc2679f5f7e9fb6d58a53")
         self.assertEqual(pub["sota-upstream-shelf-lock"]["baselineSha"], "e3549753294874eaf4d388119ff7053c308794dd")
-        self.assertEqual(pub["sota-compounding-lab"]["baselineSha"], "00178c12fbf318dbf4ae5ab9e59a374ba5a3a921")
-        self.assertEqual(priv["sota-dynamic-trail-c"]["baselineSha"], "d89ce3acf0ff9c4468b790c2df4fffb8a99c3879")
-        self.assertEqual(priv["sota-mover-ranker"]["baselineSha"], "67f786382ad81c0de3a518c23330552d55592530")
+        self.assertEqual(pub["sota-compounding-lab"]["baselineSha"], "2235a8273060cf2336a0b38d3a11fba9ac89f13a")
+        self.assertEqual(pub["sota-multi-model-workflows"]["baselineSha"], "3b08855f9c39a8b77d0ff24d872ef97cd1a66eed")
+        self.assertEqual(pub["astrolabe"]["baselineSha"], "801efa5a5706c606a60fe0c9577702624056b26e")
+        self.assertEqual(priv["sota-dynamic-trail-c"]["baselineSha"], "cc4348cfd1d2c78749f505a73cbbfd65b5d05cff")
+        self.assertEqual(priv["sota-mover-ranker"]["baselineSha"], "dd5a65aa4bd99a8b09b808154beb797e5f1280df")
         pol = m["executionFirewall"]["stage5ProvenLosslessLivePolicy"]
         self.assertEqual(pol["goalId"], "G_SOTA_DUAL_MACHINE_MERIT_TO_LOSSLESS_LIVE_24X5")
         self.assertEqual(pol["simLanesNeverGated"], 2)

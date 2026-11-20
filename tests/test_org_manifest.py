@@ -48,6 +48,16 @@ class TestOrgControlPlane(unittest.TestCase):
         self.assertEqual(priv["sota-dynamic-trail-c"]["baselineSha"], "94c302ef096fc8152cb08d1b482cb28b295a871f")
         self.assertEqual(priv["sota-mover-ranker"]["baselineSha"], "c6fd4639d171056a16eb6cc64ab0a1e1bafe7dd3")
         self.assertEqual(priv["sota-private-vault"]["baselineSha"], "51f4b1818b42e5c91e69f0345a73afff72177bd4")
+        tlg = m["terminalLandscapeGovernance"]
+        self.assertEqual(tlg["schemaVersion"], "sota-terminal-platform-taxonomy.v1")
+        self.assertEqual(tlg["canonicalOwnerRepo"], "sota-upstream-shelf-lock")
+        self.assertEqual(tlg["taxonomySha256"], "2c81665b9dba2590db3649f00dae309bf5c33704d641faa19160741c54b8c61d")
+        self.assertEqual(tlg["classesCount"], 4)
+        self.assertEqual(tlg["namedSurfacesCount"], 14)
+        self.assertEqual(tlg["immutableCorePinsPreserved"], 18)
+        self.assertTrue(set(tlg["paperOnlySanctionedPorts"]).isdisjoint(set(tlg["liveProtectedRefusedPorts"])))
+        self.assertEqual(tlg["dualPoolComputeGovernanceSchema"], "sota-anthropic-keybank.v1")
+        self.assertTrue(tlg["publicCiOnlyApiSecretFirewall"])
         pol = m["executionFirewall"]["stage5ProvenLosslessLivePolicy"]
         self.assertEqual(pol["goalId"], "G_SOTA_DUAL_MACHINE_MERIT_TO_LOSSLESS_LIVE_24X5")
         self.assertEqual(pol["simLanesNeverGated"], 2)

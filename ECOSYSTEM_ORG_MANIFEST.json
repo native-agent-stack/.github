@@ -72,6 +72,38 @@
     "STAGE_4_PAPER_EXECUTION_ALPACA_200RPM_IBKR_3000MPM",
     "STAGE_5_EMPIRICAL_BAYES_PRIOR_COMPOUNDING"
   ],
+  "terminalLandscapeGovernance": {
+    "schemaVersion": "sota-terminal-platform-taxonomy.v1",
+    "canonicalOwnerRepo": "sota-upstream-shelf-lock",
+    "canonicalOwnerAdr": "ADR-0017",
+    "shelfCommit": "546cdef91ba72c7679969a8bd879058c51e70ec0",
+    "taxonomySha256": "2c81665b9dba2590db3649f00dae309bf5c33704d641faa19160741c54b8c61d",
+    "classesCount": 4,
+    "namedSurfacesCount": 14,
+    "immutableCorePinsPreserved": 18,
+    "chartAssetDualProvenance": {
+      "upstreamShelfPinVersion": "5.3.0",
+      "upstreamShelfCommitPrefix": "c29c51e1",
+      "deployedOfflineBrowserAssetVersion": "5.0.8",
+      "deployedOfflineAssetSha256": "bcdca2a528db7c9b386918c99c544bde3eda3f0204ec2d23a64411d4cb4686c9"
+    },
+    "paperOnlySanctionedPorts": [
+      4002,
+      8787,
+      8797,
+      8799
+    ],
+    "liveProtectedRefusedPorts": [
+      4001,
+      7496,
+      8796,
+      8798
+    ],
+    "sip23x5CutoverDateEt": "2026-12-06",
+    "sip23x5CutoverStatus": "PRE_CUTOVER_READINESS_CONTRACT",
+    "dualPoolComputeGovernanceSchema": "sota-anthropic-keybank.v1",
+    "publicCiOnlyApiSecretFirewall": true
+  },
   "repositories": {
     "publicUnlimitedActionsTier": {
       ".github": {

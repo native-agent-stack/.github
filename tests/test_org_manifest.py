@@ -37,8 +37,8 @@ class TestOrgControlPlane(unittest.TestCase):
         pub = m["repositories"]["publicUnlimitedActionsTier"]
         priv = m["repositories"]["privateExecutionAndVaultTier"]
         self.assertEqual(pub["native-agent-stack"]["baselineSha"], "1135dd7f30d3c588edecc2679f5f7e9fb6d58a53")
-        self.assertEqual(pub["sota-upstream-shelf-lock"]["baselineSha"], "7461236a9fba1e76b56e452aa6bff4b75f9630b1")
-        self.assertEqual(pub["sota-compounding-lab"]["baselineSha"], "2235a8273060cf2336a0b38d3a11fba9ac89f13a")
+        self.assertEqual(pub["sota-upstream-shelf-lock"]["baselineSha"], "a6a6e85e6a481824c7c70d4040921dbe75e6e0ac")
+        self.assertEqual(pub["sota-compounding-lab"]["baselineSha"], "825cb460d0c28cac495dfd9134071fe4c2d0aa81")
         self.assertEqual(pub["sota-multi-model-workflows"]["baselineSha"], "3b08855f9c39a8b77d0ff24d872ef97cd1a66eed")
         self.assertEqual(pub["astrolabe"]["baselineSha"], "801efa5a5706c606a60fe0c9577702624056b26e")
         self.assertEqual(priv["sota-dynamic-trail-c"]["baselineSha"], "cc4348cfd1d2c78749f505a73cbbfd65b5d05cff")

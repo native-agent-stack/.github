@@ -105,13 +105,13 @@
       },
       "sota-compounding-lab": {
         "url": "https://github.com/native-agent-stack/sota-compounding-lab",
-        "baselineSha": "2235a8273060cf2336a0b38d3a11fba9ac89f13a",
+        "baselineSha": "825cb460d0c28cac495dfd9134071fe4c2d0aa81",
         "role": "5-stage Sim->PreWall->Paper->EB->Alpaca/IBKR lifecycle engine, DF1..DF12 guards, ADR-0022..0027 RTX 4090 GPU accelerator, canonical XNYS next_session_date pre-join lake (7.039M rows <= 2026-10-15), S1+S2 Trial #104 honest FAILED -> PROTECTIVE_FILTER_OR_GOVERNANCE, ADR-0028 Post-ANT strict ADR-0064 strategy-id/symbol reflection validation & Noise-VWAP <3.0 bps spread floor preservation & 28 MADR 4.0 ADRs"
       },
       "sota-upstream-shelf-lock": {
         "url": "https://github.com/native-agent-stack/sota-upstream-shelf-lock",
-        "baselineSha": "7461236a9fba1e76b56e452aa6bff4b75f9630b1",
-        "role": "18 immutable 40-char Git SHA core upstream pins preserved, ADR-0017 terminal taxonomy, ADR-0018 microsoft/qlib (MIT) & OpenBB-finance/backends-for-openbb (MIT, companion AGPL-3.0-only OpenBB non-bundled) pins, v3.10.8 STARRED_CONVERGENCE_CATALOG.json (415 starred + 8 beyond-starred), MinTRL/MDE power gate, RiskAdverseQueueModel synthesis & 19 MADR 4.0 ADRs"
+        "baselineSha": "a6a6e85e6a481824c7c70d4040921dbe75e6e0ac",
+        "role": "18 immutable 40-char Git SHA core upstream pins preserved, ADR-0017 terminal taxonomy, ADR-0018 microsoft/qlib (MIT) & OpenBB-finance/backends-for-openbb (MIT, companion AGPL-3.0-only OpenBB non-bundled) pins, v3.10.8 STARRED_CONVERGENCE_CATALOG.json (415 starred + 8 beyond-starred), MinTRL/MDE power gate, RiskAdverseQueueModel synthesis & 20 MADR 4.0 ADRs"
       },
       "astrolabe": {
         "url": "https://github.com/native-agent-stack/astrolabe",

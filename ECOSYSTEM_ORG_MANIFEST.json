@@ -105,8 +105,8 @@
       },
       "sota-compounding-lab": {
         "url": "https://github.com/native-agent-stack/sota-compounding-lab",
-        "baselineSha": "379cafae44e9cd4abfbc3302b98c66450195dcb7",
-        "role": "5-stage Sim->PreWall->Paper->EB->Alpaca/IBKR lifecycle engine, DF1..DF12 guards, ADR-0022..0027 RTX 4090 GPU accelerator, canonical XNYS next_session_date pre-join lake (7.039M rows <= 2026-10-15), ADR-0028 Post-ANT consolidation, ADR-0029 Hansen SPA/MCS + Conformal PID (<=2.00%) + Fixed-Share Hedge + Hierarchical EB + H109..H114, ADR-0030 Advanced Backtest Playback Performance Manifest (W1 679d / W2 1707d / W3 655d), ADR-0031 Quality-First Experimental SOTA Policy (unblocks cvxportfolio/ArcticDB/timesfm/xtdb/ml4t/uni2ts/cudf; retains technical-only low-quality purge) & 31 MADR 4.0 ADRs"
+        "baselineSha": "fba98a9bdbd31ba7664828f16480b6d9428393b3",
+        "role": "5-stage Sim->PreWall->Paper->EB->Alpaca/IBKR lifecycle engine, DF1..DF12 guards, ADR-0022..0027 RTX 4090 GPU accelerator, canonical XNYS next_session_date pre-join lake (7.039M rows <= 2026-10-15), ADR-0028 Post-ANT consolidation, ADR-0029 Hansen SPA/MCS + Conformal PID (<=2.00%) + Fixed-Share Hedge + Hierarchical EB + H109..H114, ADR-0030 Advanced Backtest Playback Performance Manifest (W1 679d / W2 1707d / W3 655d), ADR-0031 Quality-First Experimental SOTA Policy, ADR-0032 Pre-Registered Trial #105 (H109) 512d Pre-Wall BOATS+SIP Empirical Outcome (Leg A falsified -22.41bps 2x t=-5.02; Leg B +11.19bps 1x governance filter, receipt 79d8e91c...) & 32 MADR 4.0 ADRs"
       },
       "sota-upstream-shelf-lock": {
         "url": "https://github.com/native-agent-stack/sota-upstream-shelf-lock",
@@ -122,9 +122,9 @@
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "be397d93d5121bc3f8677b975d7bdff5e7aa7e65",
+        "baselineSha": "f31790297bcc418831b04793db730560edcc27a6",
         "actionsEnabled": false,
-        "role": "Stage-3A/5 3.0s SIP+BOATS radar (:8787 P2), :8797 P3, :8798 Interactive Stage-5 1000RPM Live Cockpit & :8796 Live EXT Guardian (ADR-0062..0072: Post-ANT 6-pillar DF1..DF12 merit engine, ADR-0067 fast-sync TV Cloud MCP + Alpaca watchlists, ADR-0068 upstream Pine v6 suite, ADR-0069 backtest playback hygiene, ADR-0070 TV multi-layout 6-14bps micro-trail & 1000rpm coordinator, ADR-0071 LIVE P0 BOATS stager/exit-reserve fixes & owner-GO P2/P4 shorts/Wave-2/IBKR P4 controller wiring, ADR-0072 v3.12.0 Real Ecosystem Finalization Manifest, QUALITY_AND_SOTA_ONLY_NO_LICENSE_EXCLUSION convergence, OpenBB 8-widget 4-tab layout backend & seamless L1..L5 TradingView+OpenBB layout import bundles) + IBKR :4002 P4 & 72 MADR 4.0 ADRs"
+        "role": "Stage-3A/5 3.0s SIP+BOATS radar (:8787 P2), :8797 P3, :8798 Interactive Stage-5 1000RPM Live Cockpit & :8796 Live EXT Guardian (ADR-0062..0073: Post-ANT 6-pillar DF1..DF12 merit engine, ADR-0067 fast-sync TV Cloud MCP + Alpaca watchlists, ADR-0068 upstream Pine v6 suite, ADR-0069 backtest playback hygiene, ADR-0070 TV multi-layout 6-14bps micro-trail & 1000rpm coordinator, ADR-0071 LIVE P0 BOATS stager/exit-reserve fixes & owner-GO P2/P4 shorts/Wave-2/IBKR P4 controller wiring, ADR-0072 v3.12.0 Real Ecosystem Finalization Manifest + OpenBB 8-widget 4-tab backend + seamless L1..L5 layouts, #756 Day-2+ Stage-5 Gate #7 fix + Win32 UIA TradingView.exe readiness, ADR-0073 retired legacy 10-list TV Cloud quota burn, true 00:00 UTC daily latch & direct ADR-0067 fast-sync wired in scanner/server) + IBKR :4002 P4 & 73 MADR 4.0 ADRs"
       },
       "sota-dynamic-trail-c": {
         "url": "https://github.com/native-agent-stack/sota-dynamic-trail-c",

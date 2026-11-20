@@ -40,11 +40,11 @@ class TestOrgControlPlane(unittest.TestCase):
         priv = m["repositories"]["privateExecutionAndVaultTier"]
         self.assertEqual(pub["native-agent-stack"]["baselineSha"], "1135dd7f30d3c588edecc2679f5f7e9fb6d58a53")
         self.assertEqual(pub["sota-upstream-shelf-lock"]["baselineSha"], "505b149c0acce21a2bd9661256c11c450c8660fb")
-        self.assertEqual(pub["sota-compounding-lab"]["baselineSha"], "379cafae44e9cd4abfbc3302b98c66450195dcb7")
+        self.assertEqual(pub["sota-compounding-lab"]["baselineSha"], "fba98a9bdbd31ba7664828f16480b6d9428393b3")
         self.assertEqual(pub["sota-multi-model-workflows"]["baselineSha"], "1cca7989d01ac3f4cbd778bc58c3ca5ea9b23134")
         self.assertEqual(pub["astrolabe"]["baselineSha"], "801efa5a5706c606a60fe0c9577702624056b26e")
         self.assertEqual(priv["sota-dynamic-trail-c"]["baselineSha"], "94c302ef096fc8152cb08d1b482cb28b295a871f")
-        self.assertEqual(priv["sota-mover-ranker"]["baselineSha"], "be397d93d5121bc3f8677b975d7bdff5e7aa7e65")
+        self.assertEqual(priv["sota-mover-ranker"]["baselineSha"], "f31790297bcc418831b04793db730560edcc27a6")
         pol = m["executionFirewall"]["stage5ProvenLosslessLivePolicy"]
         self.assertEqual(pol["goalId"], "G_SOTA_DUAL_MACHINE_MERIT_TO_LOSSLESS_LIVE_24X5")
         self.assertEqual(pol["simLanesNeverGated"], 2)

@@ -105,13 +105,13 @@
       },
       "sota-compounding-lab": {
         "url": "https://github.com/native-agent-stack/sota-compounding-lab",
-        "baselineSha": "825cb460d0c28cac495dfd9134071fe4c2d0aa81",
-        "role": "5-stage Sim->PreWall->Paper->EB->Alpaca/IBKR lifecycle engine, DF1..DF12 guards, ADR-0022..0027 RTX 4090 GPU accelerator, canonical XNYS next_session_date pre-join lake (7.039M rows <= 2026-10-15), S1+S2 Trial #104 honest FAILED -> PROTECTIVE_FILTER_OR_GOVERNANCE, ADR-0028 Post-ANT strict ADR-0064 strategy-id/symbol reflection validation & Noise-VWAP <3.0 bps spread floor preservation & 28 MADR 4.0 ADRs"
+        "baselineSha": "6ec67acd1009b022244b08d5dc7862f506174821",
+        "role": "5-stage Sim->PreWall->Paper->EB->Alpaca/IBKR lifecycle engine, DF1..DF12 guards, ADR-0022..0027 RTX 4090 GPU accelerator, canonical XNYS next_session_date pre-join lake (7.039M rows <= 2026-10-15), ADR-0028 Post-ANT consolidation, ADR-0029 Hansen SPA/MCS + Conformal PID (<=2.00%) + Fixed-Share Hedge + Hierarchical EB + H109..H114, ADR-0030 Advanced Backtest Playback Performance Manifest (W1 679d / W2 1707d / W3 655d) & 14-point low-quality practice purge & 30 MADR 4.0 ADRs"
       },
       "sota-upstream-shelf-lock": {
         "url": "https://github.com/native-agent-stack/sota-upstream-shelf-lock",
-        "baselineSha": "a6a6e85e6a481824c7c70d4040921dbe75e6e0ac",
-        "role": "18 immutable 40-char Git SHA core upstream pins preserved, ADR-0017 terminal taxonomy, ADR-0018 microsoft/qlib (MIT) & OpenBB-finance/backends-for-openbb (MIT, companion AGPL-3.0-only OpenBB non-bundled) pins, v3.10.8 STARRED_CONVERGENCE_CATALOG.json (415 starred + 8 beyond-starred), MinTRL/MDE power gate, RiskAdverseQueueModel synthesis & 20 MADR 4.0 ADRs"
+        "baselineSha": "efacf5f45132ce4d32053f2ae11c256deafc8200",
+        "role": "18 immutable 40-char Git SHA core upstream pins preserved, ADR-0017 terminal taxonomy, ADR-0018/0021 refreshed qlib v0.9.8 + openbq-org/OpenBB v5.0.0 Apache-2.0 + openbq-org/backends-for-openbb, ADR-0020/0021 4-tier source coverage (7 official, 18 core, 18 frontier OSS, 19 official/community/beyond; 50/50 elite repos starred; NCSA/BSD-2-Clause OSI validator expansion; 15-source low-quality/copyleft/scraper purge firewall) & 21 MADR 4.0 ADRs"
       },
       "astrolabe": {
         "url": "https://github.com/native-agent-stack/astrolabe",
@@ -122,9 +122,9 @@
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "56803fb039bce57a517e40f88840a8bed31714b6",
+        "baselineSha": "5d0ed8c5fab1502def160d254434e559caf92ad4",
         "actionsEnabled": false,
-        "role": "Stage-3A/5 3.0s SIP+BOATS radar (:8787 P2), :8797 P3, :8798 Interactive Stage-5 1000RPM Live Cockpit & :8796 Live EXT Guardian (ADR-0062..0068: Post-ANT 6-pillar DF1..DF12 whole-market merit engine with fail-closed quote/SEC/regime/TCA gates, strict ADR-0064 strategy binding, live DataFeed.BOATS 24/5 hot-swap, OpenBB Workspace FastAPI backend :6900 & /api/openbb/*, canonical sota.active-market-targets.v1, hard-retired /api/pine/live_ranker HTTP 410, shared LosslessProtectionKernel, SOTA_FULL_LANDSCAPE_MANIFEST e9e92588..., live Paper OVERNIGHT_BOATS QQQ E2E receipt w/ 0 42210000 rejections) + IBKR :4002 P4 & 68 MADR 4.0 ADRs"
+        "role": "Stage-3A/5 3.0s SIP+BOATS radar (:8787 P2), :8797 P3, :8798 Interactive Stage-5 1000RPM Live Cockpit & :8796 Live EXT Guardian (ADR-0062..0069: Post-ANT 6-pillar DF1..DF12 whole-market merit engine, ADR-0067 fast-sync TV Cloud MCP + Alpaca watchlists, ADR-0068 upstream Pine v6 suite, ADR-0069 backtest playback hygiene & low-quality purge: <=2.00% stop everywhere, uncapped 3-tier Chandelier, 8/16 bps 1x/2x cost, calendar-day AR(1) Sharpe, quarantined bleeders & UCB1 purged) + IBKR :4002 P4 & 69 MADR 4.0 ADRs"
       },
       "sota-dynamic-trail-c": {
         "url": "https://github.com/native-agent-stack/sota-dynamic-trail-c",

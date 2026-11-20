@@ -154,9 +154,9 @@
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "c6fd4639d171056a16eb6cc64ab0a1e1bafe7dd3",
+        "baselineSha": "be324a7d0de8bbde36fa670b96377bd85619038e",
         "actionsEnabled": false,
-        "role": "Stage-3A/5 3.0s SIP+BOATS radar (:8787 P2), :8797 P3, :8798 Interactive Stage-5 1000RPM Live Cockpit & :8796 Live EXT Guardian (ADR-0062..0075: Post-ANT 6-pillar DF1..DF12 merit engine, ADR-0067..0073 fast-sync TV Cloud MCP + zero-TV-quota Alpaca mirror + 00:00 UTC daily latch + OpenBB :6900 KeepAlive 8-widget 4-tab backend + seamless L1..L5 layouts + #756 Day-2+ Stage-5 Gate #7 fix, ADR-0074 1000RPM 12s/8s anti-adverse-selection TTL + Fixed-Share Hedge + Conformal PID <=2.00% + ADR-0070 micro-trail/Wave-2 + Trial #105 BOATS fade guard + clean W5 cohort, ADR-0075 fail-closed Stage-5 elevated reload guard & v3.12.0 finalization sync, plus unanimous 9-pass audited B4+B5+B7 frame-clock hardening) + live IBKR :4002 P4 (IBC v3.24.2 persistent) & 75 MADR 4.0 ADRs"
+        "role": "Stage-3A/5 3.0s SIP+BOATS radar (:8787 P2), :8797 P3, :8798 Interactive Stage-5 1000RPM Live Cockpit & :8796 Live EXT Guardian (ADR-0062..0077: Post-ANT 6-pillar DF1..DF12 merit engine, ADR-0067..0073 fast-sync TV Cloud MCP + zero-TV-quota Alpaca mirror + 00:00 UTC daily latch + OpenBB :6900 KeepAlive 8-widget 4-tab backend + seamless L1..L5 layouts + #756 Day-2+ Stage-5 Gate #7 fix, ADR-0074 1000RPM 12s/8s anti-adverse-selection TTL + Fixed-Share Hedge + Conformal PID <=2.00% + ADR-0070 micro-trail/Wave-2 + Trial #105 BOATS fade guard + clean W5 cohort, ADR-0075 fail-closed Stage-5 elevated reload guard & v3.12.0 finalization sync, unanimous 9-pass audited B4+B5+B7 frame-clock hardening, ADR-0076 TV Pine v6 stack provenance & L1..L5 quickbar presets v3.14.0, ADR-0077 native pwsh 7+ zero-PS5.1 & uv venv child-PID reload parity + non-disruptive -DisciplineGateOnly) + live IBKR :4002 P4 (IBC v3.24.2 persistent) & 77 MADR 4.0 ADRs"
       },
       "sota-dynamic-trail-c": {
         "url": "https://github.com/native-agent-stack/sota-dynamic-trail-c",

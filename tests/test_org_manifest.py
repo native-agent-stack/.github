@@ -33,7 +33,7 @@ class TestOrgControlPlane(unittest.TestCase):
 
     def test_v3103_shared_24x5_foundation_and_github_maintenance_workflows(self) -> None:
         m = json.loads((ROOT / "ECOSYSTEM_ORG_MANIFEST.json").read_text(encoding="utf-8"))
-        self.assertEqual(m["schemaVersion"], "3.10.8")
+        self.assertEqual(m["schemaVersion"], "3.10.10")
         pol = m["executionFirewall"]["stage5ProvenLosslessLivePolicy"]
         self.assertEqual(pol["goalId"], "G_SOTA_DUAL_MACHINE_MERIT_TO_LOSSLESS_LIVE_24X5")
         self.assertEqual(pol["simLanesNeverGated"], 2)

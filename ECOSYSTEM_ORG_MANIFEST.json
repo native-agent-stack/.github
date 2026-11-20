@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "3.10.8",
+  "schemaVersion": "3.10.10",
   "organization": "native-agent-stack",
   "verifiedDate": "2026-11-19",
   "studyWallDate": "2026-10-15",
@@ -76,27 +76,27 @@
     "publicUnlimitedActionsTier": {
       ".github": {
         "url": "https://github.com/native-agent-stack/.github",
-        "role": "Org profile, v3.10.8 Orca SOTA worker defaults, 60-skill Red-Team/SkillEvaluator, 21 workflows, 15 dual-machine Orca automations & 415+8 starred seal, 35 MADR 4.0 ADRs, weekday scheduled CI + reusable-sota-lane-maintenance.yml & SHA-pinned reusable gate"
+        "role": "Org profile, v3.10.10 Cross-Vendor Landscape Audit & 8-Runtime Firewalls Org Seal (ADR-0036), 3-OS home-path merge_gate.py, 60-skill Tier-3 full-manifest SkillEvaluator, 21 workflows, 15 dual-machine Orca automations & 415+8 starred seal, 36 MADR 4.0 ADRs, weekday scheduled CI + reusable-sota-lane-maintenance.yml & SHA-pinned reusable gate"
       },
       "native-agent-stack": {
         "url": "https://github.com/native-agent-stack/native-agent-stack",
-        "baselineSha": "03d90aed7f2aa887e50b2a2e74f14d96e7f0d353",
-        "role": "Canonical v3.10.10 umbrella, ADR-0036 RTX 4090 GPU-first compute & Win32 JobObject MCP isolation, ADR-0037 Nov 19 upstream audit & Orca manifest parity, ADR-0038 Post-IPO NASDAQ:ANT consolidation, universal zero-gap 4x live lossless foundation (ADR-0060) & causal TCA queue-parity stack, 60 skills, 21 workflows, 15 Orca automations & 415+8 starred convergence seal & 38 MADR 4.0 ADRs"
+        "baselineSha": "bfad87a924a0ff976e9d6604ec9b8d12b4aa5437",
+        "role": "Canonical v3.10.10 umbrella, ADR-0036..0039 RTX 4090 GPU-first compute, Post-IPO NASDAQ:ANT consolidation, universal zero-gap 4x live lossless foundation (ADR-0060), cross-vendor full-landscape audit & 8-runtime explicit-allow firewalls seal, 60 skills, 21 workflows, 15 Orca automations & 39 MADR 4.0 ADRs"
       },
       "sota-harness-foundation": {
         "url": "https://github.com/native-agent-stack/sota-harness-foundation",
-        "baselineSha": "aaf4268c3ef0290acbb51d402e50c3c575364a56",
-        "role": "Open-core multi-runtime harness foundation, v3.10.9 zero-stale mise/orca parity (goose retired), ADR-0043 Red-Team BugHunter & 4-Tier SkillEvaluator contract, ADR-0040..0042 Shared Active 24/5 Foundation + 5-Layer Computer-Use & Tiered Zero-Friction Permissions & 43 MADR 4.0 ADRs"
+        "baselineSha": "8b2ce5352018d377e32b3e234d7106a843d68285",
+        "role": "Open-core multi-runtime harness foundation, ADR-0043..0044 Red-Team BugHunter & 4-Tier Full-Manifest 8-Runtime SkillEvaluator Mount Parity + Python AST gate + zero-stale hardening, ADR-0040..0042 Shared Active 24/5 Foundation + 5-Layer Computer-Use & 44 MADR 4.0 ADRs"
       },
       "agy-sota-harness": {
         "url": "https://github.com/native-agent-stack/agy-sota-harness",
-        "baselineSha": "8442a40f2997fdfe1541449137d1677d457cc407",
-        "role": "Antigravity L0-L13 v3.10.8 harness, 60 canonical skills, 10 native agy workflows, ADR-0034 Red-Team/SkillEvaluator & 415+8 starred convergence, hybrid 5-layer computer-use escalation (ADR-0033) & 34 MADR 4.0 ADRs"
+        "baselineSha": "df8e6b7dd92c508947cd228243b260a482a80fe8",
+        "role": "Antigravity L0-L13 v3.10.10 harness, 60 canonical skills, 10 native agy workflows, ADR-0035 fail-closed DAG #10 E1 offline fallback honesty, 3-OS privacy merge gate & 8-runtime firewall manifest parity, hybrid 5-layer computer-use escalation (ADR-0033) & 35 MADR 4.0 ADRs"
       },
       "dsh-sota-harness": {
         "url": "https://github.com/native-agent-stack/dsh-sota-harness",
-        "baselineSha": "6d31d8091e72b97b3d45b1baf3eb634248835364",
-        "role": "DeepSeek Harness (deepseek-v4.1-flash / deepseek-flash) 10-layer probe suite, cross-OS MCP launcher & 15 MADR 4.0 ADRs"
+        "baselineSha": "ab0e5ff84f3ef6cd79d817bd611653179e8292b2",
+        "role": "DeepSeek Harness (deepseek-v4.1-flash / deepseek-flash) 10-layer probe suite, 4-server MCP parity (codebase-memory), isolated DSH PreToolUse safety firewall, 3-OS privacy gate (ADR-0016) & 16 MADR 4.0 ADRs"
       },
       "sota-multi-model-workflows": {
         "url": "https://github.com/native-agent-stack/sota-multi-model-workflows",
@@ -140,9 +140,9 @@
       },
       "cc-sota-harness": {
         "url": "https://github.com/native-agent-stack/cc-sota-harness",
-        "baselineSha": "89c583bacf4b5c5e9c7a8bac10cae9bce2a62e58",
+        "baselineSha": "85f54cd1b0b9a0bc6686559dd1b693e4a9376c92",
         "actionsEnabled": false,
-        "role": "L5 Claude lead central orchestrator (claude-fable-5-2 xhigh), cross-OS Win32 12-layer doctor (0 errors, retired grok/goose purged, direct Win32 node.exe check), runtime hygiene (ADR-0039), dual-machine Orca computer-use & cross-OS orca.yaml parity (ADR-0040), v3.10.8 Red-Team/SkillEvaluator & 60-skill/21-workflow convergence (ADR-0041), v3.10.9 Claude Code zero-hook-error resolution, lean 9-plugin default tier + 4 on-demand profile overlays, deduped MCPs & synced bloat closure (ADR-0042) & 42 MADR 4.0 ADRs"
+        "role": "L5 Claude lead central orchestrator (claude-fable-5-2 xhigh), cross-OS Win32/WSL2/Mac 6/6 doctor parity, runtime hygiene (ADR-0039), dual-machine Orca computer-use (ADR-0040), v3.10.8 Red-Team/SkillEvaluator (ADR-0041), v3.10.9 lean plugin tiers & zero hook errors (ADR-0042), v3.10.10 cross-surface 8-runtime upstream-native explicit-allow firewalls, WSL2 18/18 marketplace hydration & hardened guard/gitleaks regressions (ADR-0043) & 43 MADR 4.0 ADRs"
       },
       "meridian": {
         "url": "https://github.com/native-agent-stack/meridian",
@@ -227,7 +227,7 @@
     "catalogPath": "docs/adr/CATALOG.md",
     "generatorScript": "scripts/architecture_catalog.py",
     "revisitThresholdDays": 45,
-    "adrCount": 35,
+    "adrCount": 36,
     "records": [
       {
         "id": "ADR-0001",
@@ -830,6 +830,26 @@
           "https://github.com/native-agent-stack/sota-harness-foundation",
           "https://github.com/native-agent-stack/sota-multi-model-workflows",
           "https://github.com/native-agent-stack/sota-upstream-shelf-lock"
+        ]
+      },
+      {
+        "id": "ADR-0036",
+        "layer": "Organization Control Plane, 3-OS Privacy Merge Gate (`L9`), 8-Runtime Upstream-Native Firewalls (`L4`/`L9`), Tier-3 Full-Manifest SkillEvaluator (`L8`), & `22`-Repo 40-Char SHA Manifest (`L0\u2013L13` \u00d7 `H1\u2013H3`)",
+        "title": "`v3.10.10` Cross-Vendor Full-Landscape Audit, 8-Runtime Firewalls, 3-OS Privacy Merge Gate & 22-Repo Org Seal",
+        "status": "Accepted",
+        "date": "2026-11-19",
+        "evidenceGrade": "E4 (`cc-sota-harness@85f54cd1` `ADR-0043` `43/43` ADRs, `sota-harness-foundation@8b2ce535` `ADR-0044` `44/44` ADRs, `agy-sota-harness@df8e6b7d` `ADR-0035` `35/35` ADRs, `dsh-sota-harness@ab0e5ff8` `ADR-0016` `16/16` ADRs, `native-agent-stack@bfad87a9` `ADR-0039` `39/39` ADRs, `36/36` Org MADR 4.0 ADRs, OpenAI Codex `gpt-6.2-astra` Cross-Vendor Red-Team Closed `0` P0/P1, `sota-doctor` `18/18` Win32 & WSL2, `evaluate_skills.py --check-mounts` `60/60` across `8/8` mounts, `merge_gate.py` + `unittest` + `gitleaks` `0` Leaks)",
+        "file": "docs/adr/ADR-0036-v31010-cross-vendor-landscape-audit-8runtime-firewalls-and-org-seal.md",
+        "githubUrls": [
+          "https://github.com/NVIDIA/SkillEvaluator",
+          "https://github.com/anomalyco/opencode",
+          "https://github.com/google-gemini/gemini-cli",
+          "https://github.com/native-agent-stack/.github",
+          "https://github.com/native-agent-stack/agy-sota-harness",
+          "https://github.com/native-agent-stack/cc-sota-harness",
+          "https://github.com/native-agent-stack/dsh-sota-harness",
+          "https://github.com/native-agent-stack/native-agent-stack",
+          "https://github.com/native-agent-stack/sota-harness-foundation"
         ]
       }
     ]

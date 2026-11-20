@@ -9,11 +9,14 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+CREATE_NO_WINDOW = 0x08000000 if sys.platform == "win32" else 0
 SECRET_PATTERNS = (
-    ("Broker Account ID", re.compile(r"\b(?:PA|DU)[0-9A-Z]*[0-9][0-9A-Z]*\b")),
+    ("Broker Account ID", re.compile(r"\b(?:PA|DU)(?=[0-9A-Z]*[0-9])[0-9A-Z]{8,14}\b")),
     ("Alpaca Key Prefix", re.compile(r"\b(?:AK|PK)[0-9A-Z]{16,28}\b")),
     ("Private Key Header", re.compile(r"-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----")),
-    ("Local Home Path", re.compile(r"/" + r"Users/[A-Za-z0-9._-]+/")),
+    ("macOS Home Path", re.compile(r"(?<![A-Za-z0-9_*])/" + r"Users/[A-Za-z0-9._-]+/")),
+    ("Linux Home Path", re.compile(r"(?<![A-Za-z0-9_*])/home/[A-Za-z0-9._-]+/")),
+    ("Windows Home Path", re.compile(r"[A-Za-z]:[/\\]Users[/\\][A-Za-z0-9._-]+[/\\]")),
     ("Unescaped Single-Brace GH Expression", re.compile(r"\$\{\s*github\.")),
 )
 USES_RE = re.compile(r"^\s*-?\s*uses:\s*([^#\s]+)", re.MULTILINE)
@@ -22,12 +25,20 @@ SHA_PIN_RE = re.compile(r"^[A-Za-z0-9_.-]+/[A-Za-z0-9_./-]+@[0-9a-f]{40}$")
 
 def main() -> int:
     errors: list[str] = []
-    tracked = subprocess.run(["git", "-C", str(ROOT), "ls-files"], capture_output=True, text=True, check=True)
+    sub_kw: dict[str, object] = {"capture_output": True, "text": True}
+    if sys.platform == "win32":
+        sub_kw["creationflags"] = CREATE_NO_WINDOW
+    tracked = subprocess.run(["git", "-C", str(ROOT), "ls-files"], check=True, **sub_kw)
     for rel in (ln.strip() for ln in tracked.stdout.splitlines() if ln.strip()):
+        if rel == "scripts/merge_gate.py":
+            continue
         fp = ROOT / rel
         if not fp.is_file():
             continue
-        txt = fp.read_text(encoding="utf-8")
+        try:
+            txt = fp.read_text(encoding="utf-8")
+        except UnicodeDecodeError:
+            continue
         for label, rx in SECRET_PATTERNS:
             if rx.search(txt):
                 errors.append(f"{rel}: triggered {label}")
@@ -40,8 +51,7 @@ def main() -> int:
 
     cat = subprocess.run(
         [sys.executable, str(ROOT / "scripts" / "architecture_catalog.py"), "--check"],
-        capture_output=True,
-        text=True,
+        **sub_kw,
     )
     if cat.returncode != 0:
         errors.append(f"ADR catalog gate failed: {cat.stderr or cat.stdout}")

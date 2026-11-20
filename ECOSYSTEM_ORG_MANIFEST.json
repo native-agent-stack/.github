@@ -110,7 +110,7 @@
       },
       "sota-upstream-shelf-lock": {
         "url": "https://github.com/native-agent-stack/sota-upstream-shelf-lock",
-        "baselineSha": "b82bd522a305a92f4414a838c4a8a96392a7cd15",
+        "baselineSha": "546cdef91ba72c7679969a8bd879058c51e70ec0",
         "role": "18 immutable 40-char Git SHA upstream pins, ADR-0016 Nov 19 upstream landscape release audit & UPSTREAM.md v3.10.9, v3.10.8 STARRED_CONVERGENCE_CATALOG.json (415 starred + 8 beyond-starred PHILOSOPHY_ONLY), MinTRL/MDE power gate, RiskAdverseQueueModel synthesis & 16 MADR 4.0 ADRs"
       },
       "astrolabe": {

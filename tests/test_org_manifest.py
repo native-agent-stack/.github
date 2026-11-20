@@ -44,7 +44,7 @@ class TestOrgControlPlane(unittest.TestCase):
         self.assertEqual(pub["sota-multi-model-workflows"]["baselineSha"], "1cca7989d01ac3f4cbd778bc58c3ca5ea9b23134")
         self.assertEqual(pub["astrolabe"]["baselineSha"], "801efa5a5706c606a60fe0c9577702624056b26e")
         self.assertEqual(priv["sota-dynamic-trail-c"]["baselineSha"], "94c302ef096fc8152cb08d1b482cb28b295a871f")
-        self.assertEqual(priv["sota-mover-ranker"]["baselineSha"], "16d8e9ac53a21203248a6a2d7b7537b38e65b16a")
+        self.assertEqual(priv["sota-mover-ranker"]["baselineSha"], "be397d93d5121bc3f8677b975d7bdff5e7aa7e65")
         pol = m["executionFirewall"]["stage5ProvenLosslessLivePolicy"]
         self.assertEqual(pol["goalId"], "G_SOTA_DUAL_MACHINE_MERIT_TO_LOSSLESS_LIVE_24X5")
         self.assertEqual(pol["simLanesNeverGated"], 2)

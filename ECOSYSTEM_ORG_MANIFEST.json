@@ -80,7 +80,7 @@
       },
       "native-agent-stack": {
         "url": "https://github.com/native-agent-stack/native-agent-stack",
-        "baselineSha": "bfad87a924a0ff976e9d6604ec9b8d12b4aa5437",
+        "baselineSha": "62c355804cf0a04380159a49ae5f511714dfc2bf",
         "role": "Canonical v3.10.10 umbrella, ADR-0036..0039 RTX 4090 GPU-first compute, Post-IPO NASDAQ:ANT consolidation, universal zero-gap 4x live lossless foundation (ADR-0060), cross-vendor full-landscape audit & 8-runtime explicit-allow firewalls seal, 60 skills, 21 workflows, 15 Orca automations & 39 MADR 4.0 ADRs"
       },
       "sota-harness-foundation": {
@@ -128,7 +128,7 @@
       },
       "sota-dynamic-trail-c": {
         "url": "https://github.com/native-agent-stack/sota-dynamic-trail-c",
-        "baselineSha": "e4cccdf60596232f568822148278e439bd503574",
+        "baselineSha": "ea209ac48728b3339313256bcd27e343ecc2d9eb",
         "actionsEnabled": false,
         "role": "Stage-5A 24/5 Near-Lossless guardian (:8799), ADR-0025..0028 symmetric Noesis/Mac firewall, DF12 interop, P1/P4 lossless parity, zero-lookahead TcaMarkoutTracker (/api/tca & /api/unified-blotter-feed), Win32 launcher & dual-desktop-coexist /api/state parity & 28 MADR 4.0 ADRs"
       },

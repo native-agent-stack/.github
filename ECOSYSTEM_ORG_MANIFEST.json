@@ -137,8 +137,8 @@
       },
       "sota-compounding-lab": {
         "url": "https://github.com/native-agent-stack/sota-compounding-lab",
-        "baselineSha": "1c0f48027479ebb9b800eeb5c27c5ba0a1bc7ccf",
-        "role": "5-stage Sim->PreWall->Paper->EB->Alpaca/IBKR lifecycle engine, DF1..DF12 guards, ADR-0022..0027 RTX 4090 GPU accelerator, canonical XNYS next_session_date pre-join lake (7.039M rows <= 2026-10-15), ADR-0028 Post-ANT consolidation, ADR-0029 Hansen SPA/MCS + Conformal PID (<=2.00%) + Fixed-Share Hedge + Hierarchical EB + H109..H114, ADR-0030 Advanced Backtest Playback Performance Manifest (W1 679d / W2 1707d / W3 655d), ADR-0031 Quality-First Experimental SOTA Policy, ADR-0032 Trial #105 (H109 512d BOATS+SIP), ADR-0033 Trial #106 (H112 700d 424B5 dilution short: +45.78bps/3d unclamped validates Long dilution shield, 2% stop whipsaw falsifies standalone short -17.75bps 2x & anti-truncation law) & 33 MADR 4.0 ADRs"
+        "baselineSha": "8f67c48c62e48f57728a793460b0c82b6830606a",
+        "role": "5-stage Sim->PreWall->Paper->EB->Alpaca/IBKR lifecycle engine, DF1..DF12 guards, ADR-0022..0027 RTX 4090 GPU accelerator, canonical XNYS next_session_date pre-join lake (7.039M rows <= 2026-10-15), ADR-0028 Post-ANT consolidation, ADR-0029 Hansen SPA/MCS + Conformal PID (<=2.00%) + Fixed-Share Hedge + Hierarchical EB + H109..H114, ADR-0030 Advanced Backtest Playback Performance Manifest (W1 679d / W2 1707d / W3 655d), ADR-0031 Quality-First Experimental SOTA Policy, ADR-0032 Trial #105 (H109 512d BOATS+SIP), ADR-0033 Trial #106 (H112 700d 424B5 dilution short), ADR-0034 Trial #107 (H110 700d residual lead-lag/LETF close-flow, receipt 0da40118, FAILED) & unified fail-closed Sim->Paper->Live Real Performance & Merit Resolution Manifest (SHA 19d7bf6cf34183e1) & 34 MADR 4.0 ADRs"
       },
       "sota-upstream-shelf-lock": {
         "url": "https://github.com/native-agent-stack/sota-upstream-shelf-lock",
@@ -154,15 +154,15 @@
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "4fd9b84cc85e34122978aee4bf762b35900c4833",
+        "baselineSha": "62827004cc414e60b65465ce8857c301877421b9",
         "actionsEnabled": false,
-        "role": "Stage-3A/5 3.0s SIP+BOATS radar (:8787 P2), :8797 P3, :8798 Interactive Stage-5 1000RPM Live Cockpit & :8796 Live EXT Guardian (ADR-0062..0080: Post-ANT 6-pillar DF1..DF12 merit engine, ADR-0067..0073 fast-sync TV Cloud MCP + OpenBB :6900 KeepAlive + seamless L1..L5 layouts + #756 Day-2+ fix + 6-pass Red-Team closure, ADR-0074 1000RPM 12s/8s anti-adverse-selection TTL + Fixed-Share Hedge + Conformal PID + Trial #105 BOATS fade guard + W5 cohort, ADR-0075..0077 elevated reload guard + native pwsh 7+ zero-PS5.1 & uv venv child-PID reload parity, ADR-0078..0079 14 uncapped Pine v6 strategies + VIX Dual L/S visual indicator + 700d pre-wall empirical performance manifest v3.16.0, ADR-0080 full 19-active 14+H090 SOTA strategy resolution, LosslessProtectionKernel v2 true near-lossless 5-10bps BE+ / 6-14bps micro-trail & -50/-75bps two-stage drawdown clamp, 1000RPM 4-pool allocator 100/350/350/200 + live _bridge_call telemetry & 46-symbol 1.836M-bar pre-wall empirical per-symbol fine-tune API /per_symbol_1000rpm_finetune v3.17.1) + live IBKR :4002 P4 (IBC v3.24.2 persistent) & 80 MADR 4.0 ADRs"
+        "role": "Stage-3A/5 3.0s SIP+BOATS radar (:8787 P2), :8797 P3, :8798 Interactive Stage-5 1000RPM Live Cockpit & :8796 Live EXT Guardian (ADR-0062..0081: Post-ANT 6-pillar DF1..DF12 merit engine, ADR-0067..0073 fast-sync TV Cloud MCP + OpenBB :6900 KeepAlive + seamless L1..L5 layouts + #756 Day-2+ fix + 6-pass Red-Team closure, ADR-0074..0079 1000RPM TTL + native pwsh 7+ + 14 uncapped Pine v6 strategies + VIX Dual L/S visual indicator, ADR-0080 full 19-active 14+H090 SOTA strategy resolution, true near-lossless 5-10bps BE+ / 6-14bps micro-trail, -50/-75bps drawdown clamp, 1000RPM 4-pool allocator + 46-symbol 1.836M-bar pre-wall empirical per-symbol fine-tune API v3.17.1, ADR-0081 live 3-leg Cboe ^VIX9D/^VIX/^VIX3M/^VVIX + 7-dim breadth short engine, P3 Long+Short fix, Stage-5 symmetric short candidate resolution, 1000RPM 10% exit reserve, IBKR P4 VIX risk-off short & LULD halt guard) + live IBKR :4002 P4 (IBC v3.24.2 persistent) & 81 MADR 4.0 ADRs"
       },
       "sota-dynamic-trail-c": {
         "url": "https://github.com/native-agent-stack/sota-dynamic-trail-c",
-        "baselineSha": "94c302ef096fc8152cb08d1b482cb28b295a871f",
+        "baselineSha": "f6c6eab16d8d87391866b0ba64b57a5874636d15",
         "actionsEnabled": false,
-        "role": "Stage-5A 24/5 Near-Lossless guardian (:8799), ADR-0029..0030 shared LosslessProtectionKernel (exact Decimal ROUND_FLOOR, 4x leverage cap, >=10% exit reserve, crossed-NBBO/Rule-612 red-team hardening), Post-ANT dynamic merit-feed hydration (zero SPCX anchors) & DataFeed.BOATS parity, zero-lookahead TcaMarkoutTracker (/api/tca & /api/unified-blotter-feed), Win32 launcher & dual-desktop-coexist /api/state parity & 30 MADR 4.0 ADRs"
+        "role": "Stage-5A 24/5 Near-Lossless guardian (:8799), ADR-0029..0031 shared LosslessProtectionKernel (exact Decimal ROUND_FLOOR, 4x leverage cap, >=10% exit reserve, crossed-NBBO/Rule-612 red-team hardening, 1,000 RPM dual-deque isolated-exit pacer, ADR-0080 5-10bps BE+ / 6-14bps micro-trail parity & fail-closed pre-wall 24/5 per-symbol loader), Post-ANT dynamic merit-feed hydration & DataFeed.BOATS parity, zero-lookahead TcaMarkoutTracker & 31 MADR 4.0 ADRs"
       },
       "sota-private-vault": {
         "url": "https://github.com/native-agent-stack/sota-private-vault",

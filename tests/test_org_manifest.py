@@ -40,13 +40,13 @@ class TestOrgControlPlane(unittest.TestCase):
         priv = m["repositories"]["privateExecutionAndVaultTier"]
         self.assertEqual(pub["native-agent-stack"]["baselineSha"], "dea7154d380d062c70224ac2fe45075f64fc0056")
         self.assertEqual(pub["sota-upstream-shelf-lock"]["baselineSha"], "505b149c0acce21a2bd9661256c11c450c8660fb")
-        self.assertEqual(pub["sota-compounding-lab"]["baselineSha"], "1c0f48027479ebb9b800eeb5c27c5ba0a1bc7ccf")
+        self.assertEqual(pub["sota-compounding-lab"]["baselineSha"], "8f67c48c62e48f57728a793460b0c82b6830606a")
         self.assertEqual(pub["sota-multi-model-workflows"]["baselineSha"], "1cca7989d01ac3f4cbd778bc58c3ca5ea9b23134")
         self.assertEqual(pub["sota-harness-foundation"]["baselineSha"], "c23b618848f2639dccf7ba8f859b1201c639c9f4")
         self.assertEqual(pub["agy-sota-harness"]["baselineSha"], "e25e6320d974ce0d446d3a3400bed6db24bf4de9")
         self.assertEqual(pub["astrolabe"]["baselineSha"], "801efa5a5706c606a60fe0c9577702624056b26e")
-        self.assertEqual(priv["sota-dynamic-trail-c"]["baselineSha"], "94c302ef096fc8152cb08d1b482cb28b295a871f")
-        self.assertEqual(priv["sota-mover-ranker"]["baselineSha"], "4fd9b84cc85e34122978aee4bf762b35900c4833")
+        self.assertEqual(priv["sota-dynamic-trail-c"]["baselineSha"], "f6c6eab16d8d87391866b0ba64b57a5874636d15")
+        self.assertEqual(priv["sota-mover-ranker"]["baselineSha"], "62827004cc414e60b65465ce8857c301877421b9")
         self.assertEqual(priv["sota-private-vault"]["baselineSha"], "51f4b1818b42e5c91e69f0345a73afff72177bd4")
         tlg = m["terminalLandscapeGovernance"]
         self.assertEqual(tlg["schemaVersion"], "sota-terminal-platform-taxonomy.v1")

@@ -44,13 +44,14 @@ def main() -> int:
                 errors.append(f"{rel}: triggered {label}")
         if rel.startswith(".github/workflows/") and rel.endswith((".yml", ".yaml")):
             for target in USES_RE.findall(txt):
-                if target.startswith("./") or target.startswith("native-agent-stack/.github/"):
+                if target.startswith(("./", "native-agent-stack/.github/")):
                     continue
                 if not SHA_PIN_RE.match(target):
                     errors.append(f"{rel}: unpinned GitHub Action '{target}' (must use 40-char SHA)")
 
     cat = subprocess.run(
         [sys.executable, str(ROOT / "scripts" / "architecture_catalog.py"), "--check"],
+        check=False,
         **sub_kw,
     )
     if cat.returncode != 0:

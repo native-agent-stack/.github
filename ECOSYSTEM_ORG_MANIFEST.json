@@ -122,13 +122,13 @@
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "1d3205f6b5e5c59c84898fe19d0925b9e51adcdf",
+        "baselineSha": "d061fc265a5a45e7f56f69f5f56e2721c9a2e6f2",
         "actionsEnabled": false,
-        "role": "Stage-3A/5 3.0s SIP+BOATS radar (:8787 P2), :8797 P3, :8798 Interactive Stage-5 1000RPM Live Cockpit & :8796 Live EXT Guardian (ADR-0062..0069: Post-ANT 6-pillar DF1..DF12 whole-market merit engine, ADR-0067 fast-sync TV Cloud MCP + Alpaca watchlists, ADR-0068 upstream Pine v6 suite, ADR-0069 backtest playback hygiene & low-quality purge: <=2.00% stop everywhere, uncapped 3-tier Chandelier, 8/16 bps 1x/2x cost, calendar-day AR(1) Sharpe, quarantined bleeders & UCB1 purged) + IBKR :4002 P4 & 69 MADR 4.0 ADRs"
+        "role": "Stage-3A/5 3.0s SIP+BOATS radar (:8787 P2), :8797 P3, :8798 Interactive Stage-5 1000RPM Live Cockpit & :8796 Live EXT Guardian (ADR-0062..0071: Post-ANT 6-pillar DF1..DF12 merit engine, ADR-0067 fast-sync TV Cloud MCP + Alpaca watchlists, ADR-0068 upstream Pine v6 suite, ADR-0069 backtest playback hygiene, ADR-0070 TV multi-layout 6-14bps micro-trail & 1000rpm coordinator, ADR-0071 LIVE P0 BOATS stager/exit-reserve fixes & owner-GO P2/P4 shorts, Wave-2 & IBKR P4 controller wiring) + IBKR :4002 P4 & 71 MADR 4.0 ADRs"
       },
       "sota-dynamic-trail-c": {
         "url": "https://github.com/native-agent-stack/sota-dynamic-trail-c",
-        "baselineSha": "97796a0e88e89bdea2689e2c6f863d6e43637a8c",
+        "baselineSha": "94c302ef096fc8152cb08d1b482cb28b295a871f",
         "actionsEnabled": false,
         "role": "Stage-5A 24/5 Near-Lossless guardian (:8799), ADR-0029..0030 shared LosslessProtectionKernel (exact Decimal ROUND_FLOOR, 4x leverage cap, >=10% exit reserve), Post-ANT dynamic merit-feed hydration (zero SPCX anchors) & DataFeed.BOATS parity, zero-lookahead TcaMarkoutTracker (/api/tca & /api/unified-blotter-feed), Win32 launcher & dual-desktop-coexist /api/state parity & 30 MADR 4.0 ADRs"
       },

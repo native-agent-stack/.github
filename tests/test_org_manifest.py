@@ -28,7 +28,9 @@ class TestOrgControlPlane(unittest.TestCase):
         self.assertNotIn("sota-dynamic-trail-c", pub)
 
     def test_adr_catalog_and_merge_gate_pass(self) -> None:
-        r = subprocess.run([sys.executable, str(ROOT / "scripts" / "merge_gate.py")], capture_output=True, text=True)
+        r = subprocess.run(
+            [sys.executable, str(ROOT / "scripts" / "merge_gate.py")], check=False, capture_output=True, text=True
+        )
         self.assertEqual(r.returncode, 0, msg=r.stderr or r.stdout)
 
     def test_v3103_shared_24x5_foundation_and_github_maintenance_workflows(self) -> None:
@@ -41,8 +43,8 @@ class TestOrgControlPlane(unittest.TestCase):
         self.assertEqual(pub["sota-compounding-lab"]["baselineSha"], "379cafae44e9cd4abfbc3302b98c66450195dcb7")
         self.assertEqual(pub["sota-multi-model-workflows"]["baselineSha"], "1cca7989d01ac3f4cbd778bc58c3ca5ea9b23134")
         self.assertEqual(pub["astrolabe"]["baselineSha"], "801efa5a5706c606a60fe0c9577702624056b26e")
-        self.assertEqual(priv["sota-dynamic-trail-c"]["baselineSha"], "97796a0e88e89bdea2689e2c6f863d6e43637a8c")
-        self.assertEqual(priv["sota-mover-ranker"]["baselineSha"], "1d3205f6b5e5c59c84898fe19d0925b9e51adcdf")
+        self.assertEqual(priv["sota-dynamic-trail-c"]["baselineSha"], "94c302ef096fc8152cb08d1b482cb28b295a871f")
+        self.assertEqual(priv["sota-mover-ranker"]["baselineSha"], "d061fc265a5a45e7f56f69f5f56e2721c9a2e6f2")
         pol = m["executionFirewall"]["stage5ProvenLosslessLivePolicy"]
         self.assertEqual(pol["goalId"], "G_SOTA_DUAL_MACHINE_MERIT_TO_LOSSLESS_LIVE_24X5")
         self.assertEqual(pol["simLanesNeverGated"], 2)

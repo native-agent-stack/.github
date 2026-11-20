@@ -80,8 +80,8 @@
       },
       "native-agent-stack": {
         "url": "https://github.com/native-agent-stack/native-agent-stack",
-        "baselineSha": "b27b14f89b0bad9f47b038d016cdb4e40bea4555",
-        "role": "Canonical v3.10.9 umbrella, ADR-0036 RTX 4090 GPU-first compute & Win32 JobObject MCP isolation, ADR-0037 Nov 19 upstream audit & Orca manifest parity, 60 skills, 21 workflows, 15 Orca automations & 415+8 starred convergence seal & 37 MADR 4.0 ADRs"
+        "baselineSha": "ab59da95e2b9afa28ee78b3f8d22f095efed438b",
+        "role": "Canonical v3.10.10 umbrella, ADR-0036 RTX 4090 GPU-first compute & Win32 JobObject MCP isolation, ADR-0037 Nov 19 upstream audit & Orca manifest parity, ADR-0038 Post-IPO NASDAQ:ANT consolidation, universal zero-gap 4x live lossless foundation (ADR-0060) & causal TCA queue-parity stack, 60 skills, 21 workflows, 15 Orca automations & 415+8 starred convergence seal & 38 MADR 4.0 ADRs"
       },
       "sota-harness-foundation": {
         "url": "https://github.com/native-agent-stack/sota-harness-foundation",
@@ -122,9 +122,9 @@
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "b2d54f2946b4010c729a4feb08dbd8a91b0de275",
+        "baselineSha": "630a4e6ba0bf13ccd6e9cb6833abc843dda78a40",
         "actionsEnabled": false,
-        "role": "Stage-3A/5 3.0s SIP+BOATS radar (:8787 P2), :8797 P3, :8798 Interactive Stage-5 1000RPM Live Cockpit (ADR-0046..0059: zero-alloc raw WS dispatch, WS priority + SIP wildcard statuses, CKS scale-invariant OFI, per-strategy merit-to-live routing, symmetric Long/Short Wave-2 re-entry, seamless owner auto-protection, 1000rpm goal parity, offline @perspective-dev@5.9.2 WASM unified 4-account OMS/TCA cockpit & fail-closed PaperTicketFirewall) + :8796 Live EXT Guardian + IBKR :4002 P4 & 59 MADR 4.0 ADRs"
+        "role": "Stage-3A/5 3.0s SIP+BOATS radar (:8787 P2), :8797 P3, :8798 Interactive Stage-5 1000RPM Live Cockpit (ADR-0046..0060: zero-alloc raw WS dispatch, WS priority + SIP wildcard statuses, CKS scale-invariant OFI, per-strategy merit-to-live routing, symmetric Long/Short Wave-2 re-entry, seamless owner auto-protection, offline @perspective-dev@5.9.2 WASM unified 4-account OMS/TCA cockpit & fail-closed PaperTicketFirewall, Post-IPO NASDAQ:ANT Day-2+ 30d seasoning + Universal Zero-Gap 4x Live Lossless Foundation with cross-process exit lock & confirmed-fill co-mingled debit, whole-market SOTA ranking & Codex/Astra P0-P1 full closure) + :8796 Live EXT Guardian + IBKR :4002 P4 & 60 MADR 4.0 ADRs"
       },
       "sota-dynamic-trail-c": {
         "url": "https://github.com/native-agent-stack/sota-dynamic-trail-c",

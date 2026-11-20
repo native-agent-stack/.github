@@ -105,13 +105,13 @@
       },
       "sota-compounding-lab": {
         "url": "https://github.com/native-agent-stack/sota-compounding-lab",
-        "baselineSha": "6ec67acd1009b022244b08d5dc7862f506174821",
-        "role": "5-stage Sim->PreWall->Paper->EB->Alpaca/IBKR lifecycle engine, DF1..DF12 guards, ADR-0022..0027 RTX 4090 GPU accelerator, canonical XNYS next_session_date pre-join lake (7.039M rows <= 2026-10-15), ADR-0028 Post-ANT consolidation, ADR-0029 Hansen SPA/MCS + Conformal PID (<=2.00%) + Fixed-Share Hedge + Hierarchical EB + H109..H114, ADR-0030 Advanced Backtest Playback Performance Manifest (W1 679d / W2 1707d / W3 655d) & 14-point low-quality practice purge & 30 MADR 4.0 ADRs"
+        "baselineSha": "379cafae44e9cd4abfbc3302b98c66450195dcb7",
+        "role": "5-stage Sim->PreWall->Paper->EB->Alpaca/IBKR lifecycle engine, DF1..DF12 guards, ADR-0022..0027 RTX 4090 GPU accelerator, canonical XNYS next_session_date pre-join lake (7.039M rows <= 2026-10-15), ADR-0028 Post-ANT consolidation, ADR-0029 Hansen SPA/MCS + Conformal PID (<=2.00%) + Fixed-Share Hedge + Hierarchical EB + H109..H114, ADR-0030 Advanced Backtest Playback Performance Manifest (W1 679d / W2 1707d / W3 655d), ADR-0031 Quality-First Experimental SOTA Policy (unblocks cvxportfolio/ArcticDB/timesfm/xtdb/ml4t/uni2ts/cudf; retains technical-only low-quality purge) & 31 MADR 4.0 ADRs"
       },
       "sota-upstream-shelf-lock": {
         "url": "https://github.com/native-agent-stack/sota-upstream-shelf-lock",
-        "baselineSha": "efacf5f45132ce4d32053f2ae11c256deafc8200",
-        "role": "18 immutable 40-char Git SHA core upstream pins preserved, ADR-0017 terminal taxonomy, ADR-0018/0021 refreshed qlib v0.9.8 + openbq-org/OpenBB v5.0.0 Apache-2.0 + openbq-org/backends-for-openbb, ADR-0020/0021 4-tier source coverage (7 official, 18 core, 18 frontier OSS, 19 official/community/beyond; 50/50 elite repos starred; NCSA/BSD-2-Clause OSI validator expansion; 15-source low-quality/copyleft/scraper purge firewall) & 21 MADR 4.0 ADRs"
+        "baselineSha": "505b149c0acce21a2bd9661256c11c450c8660fb",
+        "role": "18 immutable 40-char Git SHA core upstream pins preserved, ADR-0017..0021 4-tier source coverage + refreshed qlib v0.9.8 + openbq-org/OpenBB v5.0.0, ADR-0022 Owner-Authorized Quality-and-SOTA-Only Experimental Policy (zero license-only bans; 108 cumulative new SOTA repos starred across Wave-1 50 + Wave-2 58; strict technical-only low-quality rejections) & 22 MADR 4.0 ADRs"
       },
       "astrolabe": {
         "url": "https://github.com/native-agent-stack/astrolabe",

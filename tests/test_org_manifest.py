@@ -33,7 +33,14 @@ class TestOrgControlPlane(unittest.TestCase):
 
     def test_v3103_shared_24x5_foundation_and_github_maintenance_workflows(self) -> None:
         m = json.loads((ROOT / "ECOSYSTEM_ORG_MANIFEST.json").read_text(encoding="utf-8"))
-        self.assertEqual(m["schemaVersion"], "3.10.10")
+        self.assertEqual(m["schemaVersion"], "3.11.0")
+        pub = m["repositories"]["publicUnlimitedActionsTier"]
+        priv = m["repositories"]["privateExecutionAndVaultTier"]
+        self.assertEqual(pub["native-agent-stack"]["baselineSha"], "8edc98a4393786b1d1c7f3a040462851a4504fc0")
+        self.assertEqual(pub["sota-upstream-shelf-lock"]["baselineSha"], "e3549753294874eaf4d388119ff7053c308794dd")
+        self.assertEqual(pub["sota-compounding-lab"]["baselineSha"], "00178c12fbf318dbf4ae5ab9e59a374ba5a3a921")
+        self.assertEqual(priv["sota-dynamic-trail-c"]["baselineSha"], "d89ce3acf0ff9c4468b790c2df4fffb8a99c3879")
+        self.assertEqual(priv["sota-mover-ranker"]["baselineSha"], "67f786382ad81c0de3a518c23330552d55592530")
         pol = m["executionFirewall"]["stage5ProvenLosslessLivePolicy"]
         self.assertEqual(pol["goalId"], "G_SOTA_DUAL_MACHINE_MERIT_TO_LOSSLESS_LIVE_24X5")
         self.assertEqual(pol["simLanesNeverGated"], 2)

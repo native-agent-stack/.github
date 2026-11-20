@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "3.11.1",
+  "schemaVersion": "3.12.0",
   "organization": "native-agent-stack",
   "verifiedDate": "2026-11-20",
   "studyWallDate": "2026-10-15",
@@ -76,22 +76,22 @@
     "publicUnlimitedActionsTier": {
       ".github": {
         "url": "https://github.com/native-agent-stack/.github",
-        "role": "Org profile, v3.11.1 Post-ANT Whole-Market DF1..DF12 Merit Ranking & Lossless Consolidation Org Seal (ADR-0038), 3-OS home-path merge_gate.py, 60-skill Tier-3 full-manifest SkillEvaluator, 21 workflows, 15 dual-machine Orca automations & 415+8 starred seal, 38 MADR 4.0 ADRs, weekday scheduled CI + reusable-sota-lane-maintenance.yml & SHA-pinned reusable gate"
+        "role": "Org profile, v3.12.0 Finalized Ecosystem, Full Landscape, Quality-First SOTA Standard & Trial #105 Org Seal (ADR-0039), 3-OS home-path merge_gate.py, 60-skill Tier-3 full-manifest SkillEvaluator, 21 workflows, 15 dual-machine Orca automations & 415+8 starred seal, 39 MADR 4.0 ADRs, weekday scheduled CI + reusable-sota-lane-maintenance.yml & SHA-pinned reusable gate"
       },
       "native-agent-stack": {
         "url": "https://github.com/native-agent-stack/native-agent-stack",
-        "baselineSha": "1135dd7f30d3c588edecc2679f5f7e9fb6d58a53",
-        "role": "Canonical v3.11.1 umbrella, ADR-0042 Post-ANT Whole-Market DF1..DF12 Merit Ranking & Lossless Consolidation Seal (5 sibling commits pinned, Codex gpt-6.2-astra 0 findings, SOTA_FULL_LANDSCAPE_MANIFEST e9e92588..., Trial #105 unspent, Live :8798/:8796 untouched), 60 skills, 21 workflows, 15 Orca automations & 42 MADR 4.0 ADRs"
+        "baselineSha": "dea7154d380d062c70224ac2fe45075f64fc0056",
+        "role": "Canonical v3.12.0 umbrella, ADR-0043 Finalized Ecosystem, Full Landscape, Quality-First SOTA Standard (18 immutable pins + 108 Wave-1/2 stars), Trial #105 Empirical Governance (receipt 79d8e91c..., FAILED -> PROTECTIVE_FILTER_OR_GOVERNANCE, Trial #106 t*=4.2105), 4/4 Paper incl. IBKR :4002 IBC v3.24.2 + OpenBB :6900 KeepAlive & Stage-5 Elevated Reload Guard Seal, 60 skills, 21 workflows, 15 Orca automations & 43 MADR 4.0 ADRs"
       },
       "sota-harness-foundation": {
         "url": "https://github.com/native-agent-stack/sota-harness-foundation",
         "baselineSha": "c23b618848f2639dccf7ba8f859b1201c639c9f4",
-        "role": "Open-core multi-runtime harness foundation, ADR-0043..0044 Red-Team BugHunter & 4-Tier Full-Manifest 8-Runtime SkillEvaluator Mount Parity + Python AST gate + zero-stale hardening, ADR-0040..0042 Shared Active 24/5 Foundation + 5-Layer Computer-Use & 44 MADR 4.0 ADRs"
+        "role": "Open-core multi-runtime harness foundation, ADR-0045 TradingView 14-library/5-layout/6-14bps micro-trail & 1,000 rpm lossless contract, ADR-0043..0044 Red-Team BugHunter & 4-Tier Full-Manifest 8-Runtime SkillEvaluator Mount Parity + Python AST gate, ADR-0040..0042 Shared Active 24/5 Foundation + 5-Layer Computer-Use & 45 MADR 4.0 ADRs"
       },
       "agy-sota-harness": {
         "url": "https://github.com/native-agent-stack/agy-sota-harness",
         "baselineSha": "e25e6320d974ce0d446d3a3400bed6db24bf4de9",
-        "role": "Antigravity L0-L13 v3.10.10 harness, 60 canonical skills, 10 native agy workflows, ADR-0035 fail-closed DAG #10 E1 offline fallback honesty, 3-OS privacy merge gate & 8-runtime firewall manifest parity, hybrid 5-layer computer-use escalation (ADR-0033) & 35 MADR 4.0 ADRs"
+        "role": "Antigravity L0-L13 harness, 60 canonical skills, 10 native agy workflows, ADR-0036 TradingView 14-library/5-layout/1,000 rpm governance & red-team verifier, ADR-0035 fail-closed DAG #10 E1 offline fallback honesty, 3-OS privacy merge gate & 8-runtime firewall manifest parity, hybrid 5-layer computer-use escalation (ADR-0033) & 36 MADR 4.0 ADRs"
       },
       "dsh-sota-harness": {
         "url": "https://github.com/native-agent-stack/dsh-sota-harness",
@@ -122,21 +122,21 @@
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "4e08a4b10e6b7f5e33446c51ba0a5902634408fa",
+        "baselineSha": "4ef97d8146984b164f83aa5847104ffbdfa8f03a",
         "actionsEnabled": false,
-        "role": "Stage-3A/5 3.0s SIP+BOATS radar (:8787 P2), :8797 P3, :8798 Interactive Stage-5 1000RPM Live Cockpit & :8796 Live EXT Guardian (ADR-0062..0074: Post-ANT 6-pillar DF1..DF12 merit engine, ADR-0067..0073 fast-sync TV Cloud MCP + zero-TV-quota Alpaca mirror + 00:00 UTC daily latch + OpenBB 8-widget 4-tab backend + seamless L1..L5 layouts + #756 Day-2+ Stage-5 Gate #7 fix, ADR-0074 1000RPM 12s/8s anti-adverse-selection TTL, Fixed-Share Hedge + Conformal PID <=2.00% convexity policy, ADR-0070 micro-trail/Wave-2 live wiring, Trial #105 BOATS fade guard & clean W5 concentrated cohort) + IBKR :4002 P4 & 74 MADR 4.0 ADRs"
+        "role": "Stage-3A/5 3.0s SIP+BOATS radar (:8787 P2), :8797 P3, :8798 Interactive Stage-5 1000RPM Live Cockpit & :8796 Live EXT Guardian (ADR-0062..0075: Post-ANT 6-pillar DF1..DF12 merit engine, ADR-0067..0073 fast-sync TV Cloud MCP + zero-TV-quota Alpaca mirror + 00:00 UTC daily latch + OpenBB :6900 KeepAlive 8-widget 4-tab backend + seamless L1..L5 layouts + #756 Day-2+ Stage-5 Gate #7 fix, ADR-0074 1000RPM 12s/8s anti-adverse-selection TTL + Fixed-Share Hedge + Conformal PID <=2.00% + ADR-0070 micro-trail/Wave-2 + Trial #105 BOATS fade guard + clean W5 cohort, ADR-0075 fail-closed Stage-5 elevated reload guard & v3.12.0 finalization sync) + live IBKR :4002 P4 (IBC v3.24.2 persistent) & 75 MADR 4.0 ADRs"
       },
       "sota-dynamic-trail-c": {
         "url": "https://github.com/native-agent-stack/sota-dynamic-trail-c",
         "baselineSha": "94c302ef096fc8152cb08d1b482cb28b295a871f",
         "actionsEnabled": false,
-        "role": "Stage-5A 24/5 Near-Lossless guardian (:8799), ADR-0029..0030 shared LosslessProtectionKernel (exact Decimal ROUND_FLOOR, 4x leverage cap, >=10% exit reserve), Post-ANT dynamic merit-feed hydration (zero SPCX anchors) & DataFeed.BOATS parity, zero-lookahead TcaMarkoutTracker (/api/tca & /api/unified-blotter-feed), Win32 launcher & dual-desktop-coexist /api/state parity & 30 MADR 4.0 ADRs"
+        "role": "Stage-5A 24/5 Near-Lossless guardian (:8799), ADR-0029..0030 shared LosslessProtectionKernel (exact Decimal ROUND_FLOOR, 4x leverage cap, >=10% exit reserve, crossed-NBBO/Rule-612 red-team hardening), Post-ANT dynamic merit-feed hydration (zero SPCX anchors) & DataFeed.BOATS parity, zero-lookahead TcaMarkoutTracker (/api/tca & /api/unified-blotter-feed), Win32 launcher & dual-desktop-coexist /api/state parity & 30 MADR 4.0 ADRs"
       },
       "sota-private-vault": {
         "url": "https://github.com/native-agent-stack/sota-private-vault",
-        "baselineSha": "91a4406d7396bee6a2ff0fa85b7a1f9810e736ad",
+        "baselineSha": "51f4b1818b42e5c91e69f0345a73afff72177bd4",
         "actionsEnabled": false,
-        "role": "Stage-5B N=102 HLZ ledger (t*(102)=4.2019), IEEE-754/bitemporal DF1..DF12, v3.10.9 scrubbed wiki/promotion manifest sync & 25 MADR 4.0 ADRs"
+        "role": "Stage-5B N=105 HLZ ledger (Trial #104/#105 receipts sealed, next Trial #106 t*(106)=4.2105), ADR-0064 quarantine & 4/4 Paper parity, v3.12.0 scrubbed wiki/promotion manifest sync (ADR-0026) & 26 MADR 4.0 ADRs"
       },
       "cc-sota-harness": {
         "url": "https://github.com/native-agent-stack/cc-sota-harness",
@@ -227,7 +227,7 @@
     "catalogPath": "docs/adr/CATALOG.md",
     "generatorScript": "scripts/architecture_catalog.py",
     "revisitThresholdDays": 45,
-    "adrCount": 38,
+    "adrCount": 39,
     "records": [
       {
         "id": "ADR-0001",
@@ -887,6 +887,25 @@
           "https://github.com/native-agent-stack/sota-dynamic-trail-c",
           "https://github.com/native-agent-stack/sota-mover-ranker",
           "https://github.com/native-agent-stack/sota-multi-model-workflows"
+        ]
+      },
+      {
+        "id": "ADR-0039",
+        "layer": "Organization Control Plane (`L0`), Two-Tier Public/Private Visibility & CI Firewall (`L9`), & `22`-Repo 40-Char SHA Manifest (`L0\u2013L13` \u00d7 `T1\u2013T5`)",
+        "title": "`v3.12.0` Finalized Ecosystem, Full Landscape, Quality-First SOTA Standard & `Trial #105` Org Seal",
+        "status": "Accepted",
+        "date": "2026-11-20",
+        "evidenceGrade": "E4 (`sota-mover-ranker@4ef97d81` `ADR-0067..0075` `75/75` ADRs `598 passed`, `sota-compounding-lab@1c0f4802` `ADR-0029..0033` `33/33` ADRs incl. `Trial #105` `H109` & `Trial #106` `H112`, `sota-upstream-shelf-lock@505b149c` `ADR-0019..0022` `22/22` ADRs `108` Wave-1/2 stars, `sota-harness-foundation@c23b6188` `ADR-0045` `45/45` ADRs, `agy-sota-harness@e25e6320` `ADR-0036` `36/36` ADRs, `sota-dynamic-trail-c@94c302ef` `30/30` ADRs, `sota-multi-model-workflows@1cca7989` `36/36` ADRs, `sota-private-vault@51f4b181` `ADR-0026` `26/26` ADRs, `native-agent-stack@dea7154d` `ADR-0043` `43/43` ADRs `8 passed`, live `4/4` Paper incl. `IBKR :4002` E4 proof + `IBC v3.24.2` + `OpenBB :6900` KeepAlive, `39/39` Org MADR 4.0 ADRs, `sota-org-doctor --live` `22/22` zero-drift, `gitleaks 0` leaks)",
+        "file": "docs/adr/ADR-0039-v3120-finalized-ecosystem-full-landscape-and-trial105-org-seal.md",
+        "githubUrls": [
+          "https://github.com/native-agent-stack/.github",
+          "https://github.com/native-agent-stack/agy-sota-harness",
+          "https://github.com/native-agent-stack/native-agent-stack",
+          "https://github.com/native-agent-stack/sota-compounding-lab",
+          "https://github.com/native-agent-stack/sota-harness-foundation",
+          "https://github.com/native-agent-stack/sota-mover-ranker",
+          "https://github.com/native-agent-stack/sota-private-vault",
+          "https://github.com/native-agent-stack/sota-upstream-shelf-lock"
         ]
       }
     ]

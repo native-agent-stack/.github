@@ -35,16 +35,19 @@ class TestOrgControlPlane(unittest.TestCase):
 
     def test_v3103_shared_24x5_foundation_and_github_maintenance_workflows(self) -> None:
         m = json.loads((ROOT / "ECOSYSTEM_ORG_MANIFEST.json").read_text(encoding="utf-8"))
-        self.assertEqual(m["schemaVersion"], "3.11.1")
+        self.assertEqual(m["schemaVersion"], "3.12.0")
         pub = m["repositories"]["publicUnlimitedActionsTier"]
         priv = m["repositories"]["privateExecutionAndVaultTier"]
-        self.assertEqual(pub["native-agent-stack"]["baselineSha"], "1135dd7f30d3c588edecc2679f5f7e9fb6d58a53")
+        self.assertEqual(pub["native-agent-stack"]["baselineSha"], "dea7154d380d062c70224ac2fe45075f64fc0056")
         self.assertEqual(pub["sota-upstream-shelf-lock"]["baselineSha"], "505b149c0acce21a2bd9661256c11c450c8660fb")
         self.assertEqual(pub["sota-compounding-lab"]["baselineSha"], "1c0f48027479ebb9b800eeb5c27c5ba0a1bc7ccf")
         self.assertEqual(pub["sota-multi-model-workflows"]["baselineSha"], "1cca7989d01ac3f4cbd778bc58c3ca5ea9b23134")
+        self.assertEqual(pub["sota-harness-foundation"]["baselineSha"], "c23b618848f2639dccf7ba8f859b1201c639c9f4")
+        self.assertEqual(pub["agy-sota-harness"]["baselineSha"], "e25e6320d974ce0d446d3a3400bed6db24bf4de9")
         self.assertEqual(pub["astrolabe"]["baselineSha"], "801efa5a5706c606a60fe0c9577702624056b26e")
         self.assertEqual(priv["sota-dynamic-trail-c"]["baselineSha"], "94c302ef096fc8152cb08d1b482cb28b295a871f")
-        self.assertEqual(priv["sota-mover-ranker"]["baselineSha"], "4e08a4b10e6b7f5e33446c51ba0a5902634408fa")
+        self.assertEqual(priv["sota-mover-ranker"]["baselineSha"], "4ef97d8146984b164f83aa5847104ffbdfa8f03a")
+        self.assertEqual(priv["sota-private-vault"]["baselineSha"], "51f4b1818b42e5c91e69f0345a73afff72177bd4")
         pol = m["executionFirewall"]["stage5ProvenLosslessLivePolicy"]
         self.assertEqual(pol["goalId"], "G_SOTA_DUAL_MACHINE_MERIT_TO_LOSSLESS_LIVE_24X5")
         self.assertEqual(pol["simLanesNeverGated"], 2)

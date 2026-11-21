@@ -174,9 +174,9 @@
     "privateExecutionAndVaultTier": {
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "7af35cb1911cc25b84e4057e005c9288f42eb460",
+        "baselineSha": "acb1ba3c4bd6381b753d78cca390ff7a82b87315",
         "actionsEnabled": false,
-        "role": "Stage-3A/5 3.0s SIP+BOATS radar (:8787 P2), :8797 P3, :8798 Interactive Stage-5 1000RPM Live Cockpit & :8796 Live EXT Guardian + live IBKR :4002 P4 (ADR-0062..0091 Post-ANT 6-pillar DF1..DF12 + 1000RPM lossless + bidirectional tournament, ADR-0092..0093 Tier-0 SOTA-Source-Only firewall & zero-placeholder merge_gate, ADR-0094 direct NautilusTrader v2.0.0rc9 + VectorBT v1.2.0 pre-wall bridge, ADR-0095..0096 full-resolution backbone SHA-256 client + zero-redirect loopback guard + P2/P3/P4 :8794 consumption + Codex/Opus audit safety closure & AST/shelf_lock merge_gate, ADR-0097 EXT payoff floor + unconditional EXT exhausted-bottom short guard + IBKR P4 live ET session_segment parity, ADR-0098 whole-market all-symbol 6-factor extreme-mover engine 100% SIP+BOATS + RTX 4090 GPU + 104-slot bidirectional audit + /api/whole_market_extreme_factors) & 98 MADR 4.0 ADRs"
+        "role": "Stage-3A/5 3.0s SIP+BOATS radar (:8787 P2), :8797 P3, :8798 Interactive Stage-5 1000RPM Live Cockpit & :8796 Live EXT Guardian + live IBKR :4002 P4 (ADR-0062..0091 Post-ANT 6-pillar DF1..DF12 + 1000RPM lossless + bidirectional tournament, ADR-0092..0093 Tier-0 SOTA-Source-Only firewall & zero-placeholder merge_gate, ADR-0094 direct NautilusTrader v2.0.0rc9 + VectorBT v1.2.0 pre-wall bridge, ADR-0095..0096 full-resolution backbone SHA-256 client + zero-redirect loopback guard + P2/P3/P4 :8794 consumption + Codex/Opus audit safety closure & AST/shelf_lock merge_gate, ADR-0097 EXT payoff floor + unconditional EXT exhausted-bottom short guard + IBKR P4 live ET session_segment parity, ADR-0098 whole-market all-symbol 6-factor extreme-mover engine 100% SIP+BOATS + RTX 4090 GPU + 104-slot bidirectional audit + /api/whole_market_extreme_factors) & ADR-0099 24/5 per-session entry budget reset + passive unfilled-cancel refund + post-cooldown Tier-0 unblock) & 99 MADR 4.0 ADRs"
       },
       "sota-dynamic-trail-c": {
         "url": "https://github.com/native-agent-stack/sota-dynamic-trail-c",

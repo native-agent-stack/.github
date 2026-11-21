@@ -135,154 +135,154 @@
         "url": "https://github.com/native-agent-stack/tier0-quant",
         "visibility": "private",
         "actionsEnabled": true,
-        "baselineSha": "c286a4571b4afbfdf0f14a5e62095f14cd5083f4",
-        "role": "Sole active clean-room quant & research monorepo (Noesis-SOTA ~/tier0-quant + Z:/tier0-quant mirror + Mac M5 Max ~/Documents/tier0-quant; ADR-0001..ADR-0007, v4 manifest fbf4cac926d5103a): 63 disjoint L0-L10 active winners (62 unique slugs, 0 unpinned), 593+61 Starred/Beyond Atlas (0 overlap), 7 Claude native agents (tier0-grand-central + 6 dual-review Orca lanes across 6 harnesses), pure-JSON & loop-safe cross-harness hooks (Claude SubagentStop/Stop, Codex apply_patch/shell_command/Stop, Gemini replace/AfterAgent, OpenCode v2.3.0 deny permissions) + Orca v1.4.268 setup/archive/defaultTabs, NautilusTrader v2 + Rust hftbacktest 2.4.4, Qlib v0.9.8, 33 SHA-locked skills (21/21 roots), 13/13 Inspect, 13/13 Promptfoo (+ 6-case live matrix), Harbor 1.000, 39-doc XERJ :9200, 10 Noesis Docker research services + OpenBB :6900 + FINOS :1420, Z:/orca-workspaces Disk-Z Grand Central, <= 5,000 prod LOC, pre-wall <= 2026-10-15, and fail-closed post-proof LiveNode gate"
+        "baselineSha": "523f0e111f20a21a0afba4e8501189db23844f72",
+        "role": "Sole active clean-room quant & research monorepo (Noesis-SOTA ~/tier0-quant + Z:/tier0-quant mirror + Mac M5 Max ~/Documents/tier0-quant; ADR-0001..ADR-0008, v5 manifest 81acdea749e3235d): 63 disjoint L0-L10 active winners across 62 unique 100%-live-starred GitHub slugs (0 unpinned, 0 in 3a), 635+48 Starred/Beyond Atlas (0 overlap, 0 archived), 7 Claude native agents (tier0-grand-central + 6 inter-lane coordinated Orca 1.4.268 DAG lanes with cross-vendor failover & read-only paper-gatekeeper), NautilusTrader v2 + Rust hftbacktest 2.4.4 + Z3 5.4.1 UNSAT pure-integer Rule-612 risk (357 <= 400 LOC), Qlib v0.9.8, 33 SHA-locked skills, 14/14 Inspect AI, 15/15 Promptfoo, Harbor 1.000, Syft+OSV+Trivy+uv-audit+Zizmor+Gitleaks 0, XERJ :9200 RAG, 10 Noesis Docker research services + OpenBB :6900 + FINOS :1420, Z:/orca-workspaces Disk-Z Grand Central, <= 5,000 prod LOC, pre-wall <= 2026-10-15, and fail-closed post-proof LiveNode gate"
       }
     },
     "archivedLegacyTier": {
       "agy-sota-harness": {
         "url": "https://github.com/native-agent-stack/agy-sota-harness",
-        "baselineSha": "1682ee9112cde53e7d5e97eca18b62a7b226783e",
+        "baselineSha": "fadebba0863a3cb1233f4e45ee613dc08146ad0c",
         "archived": true,
         "actionsEnabled": false,
         "role": "Archived legacy AGY L0-L13 harness repo (green CI preserved read-only on GitHub & Disk Z: cold archive)"
       },
       "astrolabe": {
         "url": "https://github.com/native-agent-stack/astrolabe",
-        "baselineSha": "1682ee9112cde53e7d5e97eca18b62a7b226783e",
+        "baselineSha": "f8f023ee8991f668bbd843dfa35865f9a9ed0247",
         "archived": true,
         "actionsEnabled": false,
         "role": "Archived legacy IBKR execution repo (green CI preserved read-only; superseded by native NautilusTrader adapters in tier0-quant)"
       },
       "canon": {
         "url": "https://github.com/native-agent-stack/canon",
-        "baselineSha": "1682ee9112cde53e7d5e97eca18b62a7b226783e",
+        "baselineSha": "2e28d1f01ec7552ea4082c33d250d22931bcdc25",
         "archived": true,
         "actionsEnabled": false,
         "role": "Archived legacy Stage-2 causal research repo (162 ADRs preserved read-only on GitHub & Disk Z: cold archive)"
       },
       "cc-sota-harness": {
         "url": "https://github.com/native-agent-stack/cc-sota-harness",
-        "baselineSha": "1682ee9112cde53e7d5e97eca18b62a7b226783e",
+        "baselineSha": "da1aac06861b7e4fae7a0fab8b16f12f64a8bf3c",
         "archived": true,
         "actionsEnabled": false,
         "role": "Archived legacy Claude Code harness repo (43 ADRs preserved read-only on GitHub & Disk Z: cold archive)"
       },
       "dsh-plugin-landscape": {
         "url": "https://github.com/native-agent-stack/dsh-plugin-landscape",
-        "baselineSha": "1682ee9112cde53e7d5e97eca18b62a7b226783e",
+        "baselineSha": "4b881a9f6de7a3075cb24f68e2038cae8fa5dedb",
         "archived": true,
         "actionsEnabled": false,
         "role": "Archived legacy DSH plugin catalog repo (11 ADRs preserved read-only on GitHub & Disk Z: cold archive)"
       },
       "dsh-sota-harness": {
         "url": "https://github.com/native-agent-stack/dsh-sota-harness",
-        "baselineSha": "1682ee9112cde53e7d5e97eca18b62a7b226783e",
+        "baselineSha": "7d0d37a68781320f8801c389b7653a6d019d2838",
         "archived": true,
         "actionsEnabled": false,
         "role": "Archived legacy DSH harness repo (16 ADRs & green CI preserved read-only on GitHub & Disk Z: cold archive)"
       },
       "meridian": {
         "url": "https://github.com/native-agent-stack/meridian",
-        "baselineSha": "1682ee9112cde53e7d5e97eca18b62a7b226783e",
+        "baselineSha": "e69895830a947e783c9c87c72396367a8ebf6225",
         "archived": true,
         "actionsEnabled": false,
         "role": "Archived legacy Stage-1 simulation repo (65 ADRs preserved read-only; superseded by tier0-quant)"
       },
       "native-agent-stack": {
         "url": "https://github.com/native-agent-stack/native-agent-stack",
-        "baselineSha": "1682ee9112cde53e7d5e97eca18b62a7b226783e",
+        "baselineSha": "93a7c3ebd732dbe12a27be34baea2fa209cc1db1",
         "archived": true,
         "actionsEnabled": false,
         "role": "Archived legacy v3 umbrella repo (801-ADR master registry & 10/10 cleanliness receipt preserved read-only on GitHub & Disk Z: cold archive)"
       },
       "sota-compounding-lab": {
         "url": "https://github.com/native-agent-stack/sota-compounding-lab",
-        "baselineSha": "1682ee9112cde53e7d5e97eca18b62a7b226783e",
+        "baselineSha": "fa068fa84a43db3f8bc1f2da2dbf3405fdd5c2e0",
         "archived": true,
         "actionsEnabled": false,
         "role": "Archived legacy compounding lab repo (39 ADRs & green CI preserved read-only on GitHub & Disk Z: cold archive)"
       },
       "sota-dynamic-trail-c": {
         "url": "https://github.com/native-agent-stack/sota-dynamic-trail-c",
-        "baselineSha": "1682ee9112cde53e7d5e97eca18b62a7b226783e",
+        "baselineSha": "88c487fbcd04dbbd0645f4904bb52d7adee57b0c",
         "archived": true,
         "actionsEnabled": false,
         "role": "Archived legacy 24/5 trail guardian repo (35 ADRs preserved read-only on GitHub & Disk Z: cold archive)"
       },
       "sota-harness-foundation": {
         "url": "https://github.com/native-agent-stack/sota-harness-foundation",
-        "baselineSha": "1682ee9112cde53e7d5e97eca18b62a7b226783e",
+        "baselineSha": "815ffccbedde50e3f22a28aa37f45d5e8329de9a",
         "archived": true,
         "actionsEnabled": false,
         "role": "Archived legacy multi-runtime foundation repo (46 ADRs & green CI preserved read-only on GitHub & Disk Z: cold archive)"
       },
       "sota-mover-ranker": {
         "url": "https://github.com/native-agent-stack/sota-mover-ranker",
-        "baselineSha": "1682ee9112cde53e7d5e97eca18b62a7b226783e",
+        "baselineSha": "74b44f6384085746f317bbebf62a0d74ff8ab7a2",
         "archived": true,
         "actionsEnabled": false,
         "role": "Archived legacy mover ranker repo (100 ADRs preserved read-only on GitHub & Disk Z: cold archive)"
       },
       "sota-multi-model-workflows": {
         "url": "https://github.com/native-agent-stack/sota-multi-model-workflows",
-        "baselineSha": "1682ee9112cde53e7d5e97eca18b62a7b226783e",
+        "baselineSha": "cfee27fe76a142b4f5272167f3588e29cb57617f",
         "archived": true,
         "actionsEnabled": false,
         "role": "Archived legacy multi-model workflow mesh repo (37 ADRs & green CI preserved read-only on GitHub & Disk Z: cold archive)"
       },
       "sota-private-vault": {
         "url": "https://github.com/native-agent-stack/sota-private-vault",
-        "baselineSha": "1682ee9112cde53e7d5e97eca18b62a7b226783e",
+        "baselineSha": "2cfa851dd274ab903acd0f46ce928a042caca339",
         "archived": true,
         "actionsEnabled": false,
         "role": "Archived verbatim 19-repo / 801-ADR vault snapshot preserved read-only on GitHub & Disk Z: cold archive"
       },
       "sota-upstream-shelf-lock": {
         "url": "https://github.com/native-agent-stack/sota-upstream-shelf-lock",
-        "baselineSha": "1682ee9112cde53e7d5e97eca18b62a7b226783e",
+        "baselineSha": "5a046df1455826e4b1a40e533d2dab8e828d613f",
         "archived": true,
         "actionsEnabled": false,
         "role": "Archived legacy shelf lock validator repo (26 ADRs & green CI preserved read-only on GitHub & Disk Z: cold archive)"
       },
       "trading-sota": {
         "url": "https://github.com/native-agent-stack/trading-sota",
-        "baselineSha": "1682ee9112cde53e7d5e97eca18b62a7b226783e",
+        "baselineSha": "54f03256a50c15b90be8fe991fcbd7519a71758a",
         "archived": true,
         "actionsEnabled": false,
         "role": "Archived legacy PIT trading research repo (20 ADRs preserved read-only on GitHub & Disk Z: cold archive)"
       },
       "tsl": {
         "url": "https://github.com/native-agent-stack/tsl",
-        "baselineSha": "1682ee9112cde53e7d5e97eca18b62a7b226783e",
+        "baselineSha": "d3eec673ed22ec7f1eb5c7a3799f80aa236a0a37",
         "archived": true,
         "actionsEnabled": false,
         "role": "Archived legacy Trading Strategy Lab repo (27 ADRs preserved read-only on GitHub & Disk Z: cold archive)"
       },
       "legacy-agent-stack-202610": {
         "url": "https://github.com/native-agent-stack/legacy-agent-stack-202610",
-        "baselineSha": "1682ee9112cde53e7d5e97eca18b62a7b226783e",
+        "baselineSha": "4b8ca6208e8b2bb656f662df2708f6a70a3c7830",
         "archived": true,
         "actionsEnabled": false,
         "role": "Superseded Sep-Oct 2026 WSL/jcodemunch snapshot (cold-archived PRIVATE, Actions=false)"
       },
       "legacy-edge-202611": {
         "url": "https://github.com/native-agent-stack/legacy-edge-202611",
-        "baselineSha": "1682ee9112cde53e7d5e97eca18b62a7b226783e",
+        "baselineSha": "064366249313349b82235a92eadd51d21a09f70e",
         "archived": true,
         "actionsEnabled": false,
         "role": "Superseded local edge prototype harvested into ADR-0019 (cold-archived PRIVATE, Actions=false)"
       },
       "legacy-movers-202611": {
         "url": "https://github.com/native-agent-stack/legacy-movers-202611",
-        "baselineSha": "1682ee9112cde53e7d5e97eca18b62a7b226783e",
+        "baselineSha": "cd48e646cc2662cff9fbdb768ff52cc323c86aad",
         "archived": true,
         "actionsEnabled": false,
         "role": "Superseded local movers prototype harvested into ADR-0019 (cold-archived PRIVATE, Actions=false)"
       },
       "ecosystem-records": {
         "url": "https://github.com/native-agent-stack/ecosystem-records",
-        "baselineSha": "1682ee9112cde53e7d5e97eca18b62a7b226783e",
+        "baselineSha": "265a4d9f6c9d678c2d59fe8d437b9a4ea00581c5",
         "archived": true,
         "actionsEnabled": false,
         "role": "Superseded Oct 2026 continuity snapshot replaced by sota-private-vault (cold-archived PRIVATE)"
@@ -310,7 +310,7 @@
     "catalogPath": "docs/adr/CATALOG.md",
     "generatorScript": "scripts/architecture_catalog.py",
     "revisitThresholdDays": 45,
-    "adrCount": 40,
+    "adrCount": 41,
     "records": [
       {
         "id": "ADR-0001",
@@ -1006,6 +1006,25 @@
           "https://github.com/native-agent-stack/tier0-quant",
           "https://github.com/nautechsystems/nautilus_trader",
           "https://github.com/stablyai/orca"
+        ]
+      },
+      {
+        "id": "ADR-0041",
+        "layer": "L0 Org Control Plane (`L0`), Multi-Runtime Inter-Lane Coordination (`L9`), Formal Risk & Supply-Chain Integrity (`L5`/`L7`)",
+        "title": "Next-Era Inter-Lane Coordination DAG, `635`-Star Convergence, Immutable Archive Integrity & Full-Ecosystem Evidenced Seal",
+        "status": "Accepted",
+        "date": "2026-11-21",
+        "evidenceGrade": "E4 (`tier0-quant@523f0e11` `ADR-0001..ADR-0008` + `v5` manifest `81acdea749e3235d...`, `63` disjoint `L0`\u2013`L10` winners across `62/62 = 100%` live-starred unique slugs, `635` live stars + `48` non-archived beyond-starred frontier with `0` overlap, `6`-lane acyclic Orca `1.4.268` handoff DAG + `7/7` coordinated `.claude/agents/*.md`, `Z3 5.4.1` `UNSAT` pure-integer Rule-612 risk proof, `14/14` Inspect AI, `15/15` Promptfoo, `Harbor 1.000`, `SkillEvaluator 4/4`, `35/35` Noesis GPU `pytest`, `21/21` archived legacy SHAs restored & regression-tested, `gitleaks 0`, `zizmor 0`, `Noesis` <-> `Mac M5 Max` converged with `MAC_BROKER_PORTS=0`)",
+        "file": "docs/adr/ADR-0041-next-era-inter-lane-coordination-635-star-convergence-and-evidenced-ecosystem-seal.md",
+        "githubUrls": [
+          "https://github.com/DeusData/codebase-memory-mcp",
+          "https://github.com/Z3Prover/z3",
+          "https://github.com/anchore/syft",
+          "https://github.com/google/osv-scanner",
+          "https://github.com/native-agent-stack/.github",
+          "https://github.com/native-agent-stack/tier0-quant",
+          "https://github.com/stablyai/orca",
+          "https://github.com/xerj-org/xerj"
         ]
       }
     ]

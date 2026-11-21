@@ -85,5 +85,22 @@ class TestOrgControlPlane(unittest.TestCase):
         self.assertNotIn(b"\r", catalog_bytes, msg="docs/adr/CATALOG.md must use LF line endings")
 
 
+    def test_archived_repos_retain_distinct_immutable_shas(self) -> None:
+        m = json.loads((ROOT / "ECOSYSTEM_ORG_MANIFEST.json").read_text(encoding="utf-8"))
+        active_sha = str(m["repositories"]["nextEraActiveTier"]["tier0-quant"]["baselineSha"])
+        archived = m["repositories"]["archivedLegacyTier"]
+        shas: list[str] = []
+        for name, meta in archived.items():
+            sha = str(meta.get("baselineSha", ""))
+            self.assertRegex(sha, r"^[0-9a-f]{40}$", msg=f"{name} missing 40-char baselineSha")
+            self.assertNotEqual(
+                sha,
+                active_sha,
+                msg=f"Archived repo {name} must retain its own immutable SHA, not tier0-quant's",
+            )
+            shas.append(sha)
+        self.assertEqual(len(set(shas)), len(shas), msg="Archived repos must have distinct final SHAs")
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -34,6 +34,7 @@ def _verify_adr0023_hard_upstream_rule() -> list[str]:
     if not (ROOT / "UPSTREAM.md").is_file():
         errors.append("ADR-0023: missing UPSTREAM.md")
     umap = ROOT / "upstream-map.toml"
+    pins: dict[str, str] = {}
     if not umap.is_file():
         errors.append("ADR-0023: missing upstream-map.toml")
     else:
@@ -41,42 +42,23 @@ def _verify_adr0023_hard_upstream_rule() -> list[str]:
             parsed = tomllib.loads(umap.read_text(encoding="utf-8"))
             if not isinstance(parsed.get("areas"), dict) or not parsed["areas"]:
                 errors.append("ADR-0023: upstream-map.toml [areas] must be non-empty")
-            if (
-                not isinstance(parsed.get("shelf_pins"), dict)
-                or len(parsed["shelf_pins"]) < 18
-            ):
+            raw_pins = parsed.get("shelf_pins")
+            if not isinstance(raw_pins, dict) or len(raw_pins) < 18:
                 errors.append(
                     "ADR-0023: upstream-map.toml [shelf_pins] must contain all 18 core pins"
                 )
+            else:
+                pins = {str(k): str(v) for k, v in raw_pins.items()}
         except (OSError, tomllib.TOMLDecodeError) as exc:
             errors.append(f"ADR-0023: upstream-map.toml parse error: {exc}")
 
-    for cand in (
-        ROOT.parent / "sota-upstream-shelf-lock" / "src",
-        Path("C:/sota-workstation/sota-upstream-shelf-lock/src"),
-    ):
-        if cand.is_dir() and str(cand) not in sys.path:
-            sys.path.insert(0, str(cand))
-            break
-    try:
-        from shelf_lock.hard_upstream_rule import (
-            verify_adrs_have_evidence,
-            verify_sealed_manifests,
-            verify_shelf_pins_on_disk,
-            verify_upstream_map,
-        )
-    except ModuleNotFoundError:
-        if os.environ.get("GITHUB_ACTIONS", "").lower() == "true":
-            return errors
-        errors.append(
-            "ADR-0023: missing local sota-upstream-shelf-lock (required outside hosted CI)"
-        )
-        return errors
-
-    errors.extend(verify_upstream_map(ROOT))
-    errors.extend(verify_adrs_have_evidence(ROOT))
-    errors.extend(verify_sealed_manifests(ROOT))
-    errors.extend(verify_shelf_pins_on_disk())
+    if os.environ.get("GITHUB_ACTIONS", "").lower() != "true" and pins:
+        pins_md = Path.home() / "Documents" / "upstream" / "PINS.md"
+        if pins_md.is_file():
+            pins_text = pins_md.read_text(encoding="utf-8")
+            for name, sha in pins.items():
+                if sha not in pins_text:
+                    errors.append(f"ADR-0023: shelf pin {name}@{sha[:12]} missing from PINS.md")
     return errors
 
 

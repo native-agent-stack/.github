@@ -125,11 +125,11 @@ def main() -> int:
             raise SystemExit("ECOSYSTEM_ORG_MANIFEST.json adrGovernance drift detected")
         print(f"PASS: {len(rows)} GitHub-evidenced MADR 4.0 ADRs & manifest verified (0 drift).")
         return 0
-    CATALOG_PATH.write_text(rendered, encoding="utf-8")
+    CATALOG_PATH.write_bytes(rendered.encode("utf-8"))
     if args.sync_manifest and MANIFEST_PATH.is_file():
         m = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
         m["adrGovernance"] = block
-        MANIFEST_PATH.write_text(json.dumps(m, indent=2) + "\n", encoding="utf-8")
+        MANIFEST_PATH.write_bytes((json.dumps(m, indent=2) + "\n").encode("utf-8"))
     return 0
 
 

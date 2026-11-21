@@ -35,3 +35,26 @@ jobs:
           python3 scripts/architecture_catalog.py --check
           python3 scripts/merge_gate.py
           python3 -m unittest discover -s tests -v
+
+      - name: Run MIT Gitleaks Secret & Privacy Scan (SHA-256 pinned v8.30.1)
+        run: |
+          set -euo pipefail
+          curl -fsSL -o /tmp/gitleaks.tar.gz \
+            https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_linux_x64.tar.gz
+          echo "551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb  /tmp/gitleaks.tar.gz" | sha256sum -c -
+          tar -xzf /tmp/gitleaks.tar.gz -C /tmp gitleaks
+          chmod +x /tmp/gitleaks
+          /tmp/gitleaks git --no-banner
+          /tmp/gitleaks detect --no-git --source . --no-banner
+
+      - name: Run Zizmor GitHub Actions Security Audit (SHA-256 pinned v1.32.0)
+        run: |
+          set -euo pipefail
+          curl -fsSL -o /tmp/zizmor.tar.gz \
+            https://github.com/zizmorcore/zizmor/releases/download/v1.32.0/zizmor-x86_64-unknown-linux-gnu.tar.gz
+          echo "bb110cc765eca9cd7efb2e284a956be5974c60027b0970f16397d86208a9957b  /tmp/zizmor.tar.gz" | sha256sum -c -
+          mkdir -p /tmp/zizmor-bin
+          tar -xzf /tmp/zizmor.tar.gz -C /tmp/zizmor-bin
+          ZIZMOR_BIN="$(find /tmp/zizmor-bin -type f -name zizmor | head -n 1)"
+          chmod +x "$ZIZMOR_BIN"
+          "$ZIZMOR_BIN" --offline .github/workflows

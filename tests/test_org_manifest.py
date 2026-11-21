@@ -54,6 +54,35 @@ class TestOrgControlPlane(unittest.TestCase):
         self.assertTrue((ROOT / ".github" / "workflows" / "reusable-sota-lane-maintenance.yml").is_file())
         ci_txt = (ROOT / ".github" / "workflows" / "ci.yml").read_text(encoding="utf-8")
         self.assertIn("schedule:", ci_txt)
+        self.assertIn("gitleaks", ci_txt)
+        self.assertIn("zizmor", ci_txt)
+
+        reusable_txt = (ROOT / ".github" / "workflows" / "reusable-sota-lane-maintenance.yml").read_text(
+            encoding="utf-8"
+        )
+        self.assertNotIn('echo "Maintaining SOTA lane-kind=${{ inputs.', reusable_txt)
+
+    def test_upstream_md_free_of_retired_wrappers_and_valid_baseline_sha(self) -> None:
+        m = json.loads((ROOT / "ECOSYSTEM_ORG_MANIFEST.json").read_text(encoding="utf-8"))
+        baseline_sha = str(m["repositories"]["nextEraActiveTier"]["tier0-quant"]["baselineSha"])
+        self.assertRegex(baseline_sha, r"^[0-9a-f]{40}$")
+
+        upstream_txt = (ROOT / "UPSTREAM.md").read_text(encoding="utf-8")
+        for retired in (
+            "oh-my-claudecode",
+            "oh-my-codex",
+            "oh-my-openagent",
+            "oh-my-pi",
+            "agent-orchestrator",
+            "antigravity-sdk",
+            "beads",
+            "hcom",
+            "RD-Agent",
+        ):
+            self.assertNotIn(retired, upstream_txt)
+
+        catalog_bytes = (ROOT / "docs" / "adr" / "CATALOG.md").read_bytes()
+        self.assertNotIn(b"\r", catalog_bytes, msg="docs/adr/CATALOG.md must use LF line endings")
 
 
 if __name__ == "__main__":

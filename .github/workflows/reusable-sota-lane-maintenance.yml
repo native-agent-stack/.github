@@ -27,8 +27,10 @@ jobs:
           persist-credentials: false
           fetch-depth: 0
       - name: Verify MADR 4.0 ADRs, Upstream-First Citations, Zero-PII & Lane Suite
+        env:
+          LANE_KIND: ${{ inputs.lane-kind }}
         run: |
-          echo "Maintaining SOTA lane-kind=${{ inputs.lane-kind }}"
+          echo "Maintaining SOTA lane-kind=${LANE_KIND}"
           if [ -f UPSTREAM.md ]; then grep -q "https://github.com/" UPSTREAM.md; fi
           if [ -f scripts/architecture_catalog.py ]; then python3 scripts/architecture_catalog.py --check; fi
           if [ -f tools/architecture_catalog.py ]; then python3 tools/architecture_catalog.py --check; fi

@@ -1,24 +1,17 @@
-# Upstream Source-of-Truth Register (`native-agent-stack/.github` `v3.12.0`)
+# Upstream Source-of-Truth Register (`native-agent-stack/.github` `v4.0.0`)
 
 | Component | Pin / Commit | License | Source URL | Date Verified | Role | Origin |
 |---|---|---|---|---|---|---|
-| `actions/checkout` | `11bd71901bbe5b1630ceea73d27597364c9af683` | MIT | https://github.com/actions/checkout | 2026-11-18 | 40-char SHA-pinned reusable organization CI checkout | upstream |
-| `gitleaks` | `v8.24+` | MIT | https://github.com/gitleaks/gitleaks | 2026-11-18 | Zero-secret & zero-PII repository scan across all 22 org repositories | upstream |
-| `orca` | `v1.4.261` | Apache-2.0 | https://github.com/stablyai/orca | 2026-11-18 | Symmetric `:6770` Dual-Machine (`Mac M5 Max <-> Noesis Win32 + Noesis-Carbon WSL2`) `sota-orca-lane-hub.v2` | upstream |
-| `oh-my-claudecode` | `v5.8.4` | MIT | https://github.com/Yeachan-Heo/oh-my-claudecode | 2026-11-18 | `OMC_RUNTIME_V2=1` `cc-lead` central multi-session runtime worker hub | upstream |
-| `oh-my-codex` | `v0.22.10` | MIT | https://github.com/Yeachan-Heo/oh-my-codex | 2026-11-18 | `omx exec` / `omx mission` cross-vendor verification workflows | upstream |
-| `oh-my-openagent` | `v5.1.75` | MIT | https://github.com/code-yeongyu/oh-my-openagent | 2026-11-18 | Non-GPT `Hephaestus` structured multi-file graph refactoring | upstream |
-| `oh-my-pi` | `v18.22.0` | MIT | https://github.com/can1357/oh-my-pi | 2026-11-18 | `omp` `@worker` role-selected runtime workers | upstream |
-| `agent-orchestrator` | `main` (8-slot AO reference) | MIT | https://github.com/ComposioHQ/agent-orchestrator | 2026-11-18 | 8-slot pluggable Agent Orchestrator (`AO`) worktree & CI-reaction lifecycle | upstream |
-| `antigravity-sdk` | `v1.5.3` | Apache-2.0 | https://github.com/google-antigravity/antigravity-sdk-python | 2026-11-18 | Typed `run_workflow` 16-workflow multi-agent orchestration | upstream |
-| `beads` | `v1.3.4` | MIT | https://github.com/steveyegge/beads | 2026-11-18 | `bd` distributed git-backed DAG dependency graph | upstream |
-| `hcom` | `v0.7.31` | MIT | https://github.com/aannoo/hcom | 2026-11-18 | Real-time cross-terminal peer push messaging | upstream |
-| `cpython-stdlib` | Python `3.12+` | PSF-2.0 | https://github.com/python/cpython | 2026-11-18 | Fail-closed `merge_gate.py`, MADR 4.0 `architecture_catalog.py` & `unittest` control-plane checks | upstream |
-| `RD-Agent` | `main` (beyond-starred) | MIT | https://github.com/microsoft/RD-Agent | 2026-11-18 | Automated R&D hypothesis->factor/model Co-STEER feedback loop (`<= 2026-10-15` pre-wall) | upstream |
-| `databento-python` | `main` (beyond-starred) | Apache-2.0 | https://github.com/databento/databento-python | 2026-11-18 | Nanosecond institutional MBP-10/MBO & `DF1..DF12` bitemporal schema reference | upstream |
-| `darts` | `main` (beyond-starred) | Apache-2.0 | https://github.com/unit8co/darts | 2026-11-18 | Walk-forward multivariate time-series & probabilistic conformal forecasting | upstream |
-| `statsforecast` | `main` (beyond-starred) | Apache-2.0 | https://github.com/Nixtla/statsforecast | 2026-11-18 | Fast statistical econometric & volatility baselines (`AutoARIMA`/`GARCH`) | upstream |
-| `dspy` | `main` (beyond-starred) | MIT | https://github.com/stanfordnlp/dspy | 2026-11-18 | Programmatic multi-runtime prompt/signature compilation (`SkillOpt`/`GEPA`) | upstream |
-| `skfolio` | `v1.12.7` @ `90e3fb907fab39d244d899f3caf4e9676889309c` | BSD-3-Clause | https://github.com/skfolio/skfolio | 2026-11-20 | Disjoint `C(6,2)=15` CombinatorialPurgedCV & ADIA #19 MinTRL statistical gates | upstream |
-| `arch` | `v9.0.0` @ `d3e858fc1c99932bb6936cbaf0d1b45b136266e5` | NCSA | https://github.com/bashtage/arch | 2026-11-20 | Native Hansen (2005) SPA & HLN (2011) MCS stationary block bootstrap verification (`ADR-0020`/`ADR-0021`) | upstream |
-| `openbb-workspace-backend` | `a6293707576e16edda8305adda95b07b6a4b968b` | MIT | https://github.com/openbq-org/backends-for-openbb | 2026-11-20 | Upstream-first OpenBB Workspace custom FastAPI backend (`ADR-0020`/`ADR-0021`/`ADR-0086`) | upstream |
+| `actions/checkout` | `3d3c42e5aac5ba805825da76410c181273ba90b1` | MIT | https://github.com/actions/checkout | 2026-11-21 | 40-char SHA-pinned reusable organization CI checkout (`v7.0.1`) | upstream |
+| `step-security/harden-runner` | `e14015d583714f6e62063499dc959a02595150a1` | Apache-2.0 | https://github.com/step-security/harden-runner | 2026-11-21 | Egress-auditing CI runner hardening (`v2.21.1`) | upstream |
+| `gitleaks` | `v8.30.1` | MIT | https://github.com/gitleaks/gitleaks | 2026-11-21 | Zero-secret & zero-PII repository scan across active & archived org repositories | upstream |
+| `zizmor` | `v1.32.0` | MIT | https://github.com/zizmorcore/zizmor | 2026-11-21 | Static GitHub Actions workflow security audit across `.github/workflows` | upstream |
+| `orca` | `v1.4.268` | Apache-2.0 | https://github.com/stablyai/orca | 2026-11-21 | Dual-machine (`Mac M5 Max <-> Noesis Win32 + Noesis-SOTA + Noesis-Carbon`) worktree orchestrator | upstream |
+| `codebase-memory-mcp` | `v0.12.1` | MIT | https://github.com/DeusData/codebase-memory-mcp | 2026-11-21 | Direct stdio AST/call-graph MCP across multi-model harnesses | upstream |
+| `xerj` | `v1.0.0-rc.104` | Apache-2.0 | https://github.com/xerj-org/xerj | 2026-11-21 | Rust BM25/vector Memory & RAG server (`:9200` + `xerj mcp`) | upstream |
+| `dspy` | `3.5.0` | MIT | https://github.com/stanfordnlp/dspy | 2026-11-21 | Programmatic LM signature & GEPA optimization | upstream |
+| `skfolio` | `90e3fb907fab39d244d899f3caf4e9676889309c` | BSD-3-Clause | https://github.com/skfolio/skfolio | 2026-11-21 | Disjoint `CombinatorialPurgedCV` statistical gate | upstream |
+| `arch` | `v9.0.0` | NCSA | https://github.com/bashtage/arch | 2026-11-21 | Native Hansen (2005) `SPA` & StationaryBootstrap verification | upstream |
+| `openbb-workspace-backend` | `a6293707576e16edda8305adda95b07b6a4b968b` | MIT | https://github.com/openbq-org/backends-for-openbb | 2026-11-21 | Upstream-first OpenBB Workspace custom FastAPI backend (`:6900`) | upstream |
+| `zensical` | `v0.1.3` | MIT | https://github.com/zensical/zensical | 2026-11-21 | Rust-core MADR 4.0 ADR & architecture docs portal (`:8010`) | upstream |
+| `cpython-stdlib` | Python `3.12+` | PSF-2.0 | https://github.com/python/cpython | 2026-11-21 | Fail-closed `merge_gate.py`, MADR 4.0 `architecture_catalog.py` & `unittest` control-plane checks | upstream |

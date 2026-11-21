@@ -135,8 +135,8 @@
         "url": "https://github.com/native-agent-stack/tier0-quant",
         "visibility": "private",
         "actionsEnabled": true,
-        "baselineSha": "602f09df4dee6d3f3ee84d9405df2ea66a04787b",
-        "role": "Sole active clean-room quant & research monorepo (Noesis-SOTA ~/tier0-quant + Z:/tier0-quant mirror + Mac M5 Max ~/Documents/tier0-quant): 60 disjoint L0-L10 active winners (59 unique repos, 0 unpinned), NautilusTrader v2 + Rust hftbacktest 2.4.4, Qlib v0.9.8, 33 SHA-locked skills across 6 Orca lanes, 10 Noesis Docker research services, <= 5,000 prod LOC, pre-wall <= 2026-10-15, and fail-closed post-proof LiveNode gate"
+        "baselineSha": "a3bff5e4a4d3ea5ee8aadd00df9b0fd34b17456f",
+        "role": "Sole active clean-room quant & research monorepo (Noesis-SOTA ~/tier0-quant + Z:/tier0-quant mirror + Mac M5 Max ~/Documents/tier0-quant; ADR-0001..ADR-0005, v3 manifest 20010d0e9211e15a): 60 disjoint L0-L10 active winners (59 unique repos, 0 unpinned), 529+60 Starred/Beyond Atlas, 7 Claude native agents (tier0-grand-central + 6 dual-review Orca lanes across 6 harnesses), NautilusTrader v2 + Rust hftbacktest 2.4.4, Qlib v0.9.8, 33 SHA-locked skills, 11/11 Promptfoo, 27-doc XERJ :9200, 10 Noesis Docker research services + OpenBB :6900 + FINOS :1420, Z:/orca-workspaces Disk-Z Grand Central, <= 5,000 prod LOC, pre-wall <= 2026-10-15, and fail-closed post-proof LiveNode gate"
       }
     },
     "archivedLegacyTier": {

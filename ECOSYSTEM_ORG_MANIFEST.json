@@ -135,8 +135,8 @@
         "url": "https://github.com/native-agent-stack/tier0-quant",
         "visibility": "private",
         "actionsEnabled": true,
-        "baselineSha": "1682ee9112cde53e7d5e97eca18b62a7b226783e",
-        "role": "Sole active clean-room quant & research monorepo (Noesis-SOTA ~/tier0-quant + Z:/tier0-quant mirror + Mac M5 Max ~/Documents/tier0-quant; ADR-0001..ADR-0005, v3 manifest 20010d0e9211e15a): 60 disjoint L0-L10 active winners (59 unique repos, 0 unpinned), 529+60 Starred/Beyond Atlas, 7 Claude native agents (tier0-grand-central + 6 dual-review Orca lanes across 6 harnesses), NautilusTrader v2 + Rust hftbacktest 2.4.4, Qlib v0.9.8, 33 SHA-locked skills, 11/11 Promptfoo, 27-doc XERJ :9200, 10 Noesis Docker research services + OpenBB :6900 + FINOS :1420, Z:/orca-workspaces Disk-Z Grand Central, <= 5,000 prod LOC, pre-wall <= 2026-10-15, and fail-closed post-proof LiveNode gate"
+        "baselineSha": "c286a4571b4afbfdf0f14a5e62095f14cd5083f4",
+        "role": "Sole active clean-room quant & research monorepo (Noesis-SOTA ~/tier0-quant + Z:/tier0-quant mirror + Mac M5 Max ~/Documents/tier0-quant; ADR-0001..ADR-0007, v4 manifest fbf4cac926d5103a): 63 disjoint L0-L10 active winners (62 unique slugs, 0 unpinned), 593+61 Starred/Beyond Atlas (0 overlap), 7 Claude native agents (tier0-grand-central + 6 dual-review Orca lanes across 6 harnesses), pure-JSON & loop-safe cross-harness hooks (Claude SubagentStop/Stop, Codex apply_patch/shell_command/Stop, Gemini replace/AfterAgent, OpenCode v2.3.0 deny permissions) + Orca v1.4.268 setup/archive/defaultTabs, NautilusTrader v2 + Rust hftbacktest 2.4.4, Qlib v0.9.8, 33 SHA-locked skills (21/21 roots), 13/13 Inspect, 13/13 Promptfoo (+ 6-case live matrix), Harbor 1.000, 39-doc XERJ :9200, 10 Noesis Docker research services + OpenBB :6900 + FINOS :1420, Z:/orca-workspaces Disk-Z Grand Central, <= 5,000 prod LOC, pre-wall <= 2026-10-15, and fail-closed post-proof LiveNode gate"
       }
     },
     "archivedLegacyTier": {

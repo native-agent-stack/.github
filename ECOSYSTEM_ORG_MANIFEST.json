@@ -135,8 +135,8 @@
         "url": "https://github.com/native-agent-stack/tier0-quant",
         "visibility": "private",
         "actionsEnabled": true,
-        "baselineSha": "4b02a7337440c84f2b2125d6ac8af86ea48ab4ed",
-        "role": "Sole active clean-room quant & research monorepo (Noesis-SOTA ~/tier0-quant + Z:/tier0-quant mirror + Mac M5 Max ~/Documents/tier0-quant): 59 disjoint L0-L10 upstream winners, NautilusTrader v2 + Rust hftbacktest 2.4.4, Qlib v0.9.8, 33 SHA-locked skills across 6 Orca lanes, 10 Noesis Docker research services, <= 5,000 prod LOC, pre-wall <= 2026-10-15, and fail-closed post-proof LiveNode gate"
+        "baselineSha": "ffaad9064159977ade6bed2fd8f4ce06aeebc82f",
+        "role": "Sole active clean-room quant & research monorepo (Noesis-SOTA ~/tier0-quant + Z:/tier0-quant mirror + Mac M5 Max ~/Documents/tier0-quant): 60 disjoint L0-L10 active winners (59 unique repos, 0 unpinned), NautilusTrader v2 + Rust hftbacktest 2.4.4, Qlib v0.9.8, 33 SHA-locked skills across 6 Orca lanes, 10 Noesis Docker research services, <= 5,000 prod LOC, pre-wall <= 2026-10-15, and fail-closed post-proof LiveNode gate"
       }
     },
     "archivedLegacyTier": {

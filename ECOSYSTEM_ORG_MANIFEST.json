@@ -129,7 +129,7 @@
         "url": "https://github.com/native-agent-stack/.github",
         "visibility": "public",
         "actionsEnabled": true,
-        "role": "Org control plane, Next-Era schemaVersion 4.0.0 ECOSYSTEM_ORG_MANIFEST.json, 43 MADR 4.0 ADRs, standalone merge_gate.py & weekday scheduled CI"
+        "role": "Org control plane, Next-Era schemaVersion 4.0.0 ECOSYSTEM_ORG_MANIFEST.json, 44 MADR 4.0 ADRs, standalone merge_gate.py & weekday scheduled CI"
       },
       "tier0-quant": {
         "url": "https://github.com/native-agent-stack/tier0-quant",
@@ -310,7 +310,7 @@
     "catalogPath": "docs/adr/CATALOG.md",
     "generatorScript": "scripts/architecture_catalog.py",
     "revisitThresholdDays": 45,
-    "adrCount": 43,
+    "adrCount": 44,
     "records": [
       {
         "id": "ADR-0001",
@@ -1063,6 +1063,26 @@
           "https://github.com/sst/opencode",
           "https://github.com/stablyai/orca",
           "https://github.com/tradermonty/claude-trading-skills"
+        ]
+      },
+      {
+        "id": "ADR-0044",
+        "layer": "L0 Org Control Plane (`L0`), Quantitative Engine & Z3 Risk Boundary (`L2`/`L3`/`L5`), Cross-Harness Security, Evals & Landscape Automation (`L7`/`L8`/`L9`/`L10`)",
+        "title": "`tier0-quant` `PR #14`\u2013`#18` Convergence: Native-First Thin Layer (`4,351` LOC), M1 Strict 4-Harness Hooks, `P0\u2013P5` Self-Landing, `12/12` Global Hooks & `24/24` Skill Roots",
+        "status": "Accepted",
+        "date": "2026-11-22",
+        "evidenceGrade": "E4 (`tier0-quant@b83a1b4e43dc67f2d871145a28eefc0308f873f6` [`PR #14` `f7f0a94e` `P0\u2013P5`, `PR #15` `2100bf53` R1\u2013R4/Challenger 18, `PR #16` `74c9c9ac` Charter `0c2ac1ea...` + LOC ratchet, `PR #17` `15d85153` `4,351 <= 4,500` LOC + `native-thin-layer.md`, `PR #18` `b83a1b4e` Peer 2 M1 strict hooks + `_active_repo_root()` `GIT_DIR` pre-commit fix + full `ADR-0012`/inventory parity], `v5` manifest `739bc7b6c9b738a5`, lock `2c1a2e33fbefdd8f`, `246/246` pytest, `119/119` E2E `TIER0_REQUIRE_ALL_CONTRACTS=1`, `19/19` Inspect AI, `20/20` Promptfoo, `11/11` Layer Scorecard, `Harbor 1.000`, `4/4` SkillEvaluator `9/9`, `643+48` live-starred/frontier Atlas, `24/24` skill roots `46/46`, `12/12` user-level 4-harness global hooks synced across Win32/`Noesis-SOTA`/`Noesis-Carbon`, Dagster schedules `RUNNING` `5/5 SUCCESS`, `10/10` Docker services Up, `11/12` portals HTTP `200`, `21/21` immutable archived legacy SHAs intact, `paper_live_deployed=False` with `MLflow N=231 / passes=0`, `tier0-quant` main CI `45010457893` `success`)",
+        "file": "docs/adr/ADR-0044-tier0-quant-native-thin-layer-m1-strict-hooks-p0-p5-and-full-landscape-convergence.md",
+        "githubUrls": [
+          "https://github.com/NVIDIA/SkillEvaluator",
+          "https://github.com/UKGovernmentBEIS/inspect_ai",
+          "https://github.com/Z3Prover/z3",
+          "https://github.com/dagster-io/dagster",
+          "https://github.com/native-agent-stack/.github",
+          "https://github.com/native-agent-stack/tier0-quant",
+          "https://github.com/nautechsystems/nautilus_trader",
+          "https://github.com/nkaz001/hftbacktest",
+          "https://github.com/promptfoo/promptfoo"
         ]
       }
     ]

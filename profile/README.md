@@ -10,8 +10,8 @@ All `17` superseded multi-repo harnesses, rankers, labs, and vaults are archived
 
 | Role | Repository | Visibility | Scope & Verification |
 | :--- | :--- | :--- | :--- |
-| **Control Plane** | [`.github`](https://github.com/native-agent-stack/.github) | Public | Org manifest (`schemaVersion: "4.0.0"`), `42` MADR 4.0 ADRs, standalone `scripts/merge_gate.py`, and SHA-pinned reusable CI |
-| **Sole Clean Monorepo** | `tier0-quant` | Private | `63` disjoint `L0`–`L10` upstream winners (`62` unique live-starred repos, `643+48` Atlas), `NautilusTrader v2` + `hftbacktest 2.4.4`, `Qlib v0.9.8`, `10` Noesis Docker research services, `46` SHA-locked skills across `6` Orca lanes, `ADR-0001`..`ADR-0010` (`Zensical :8010`), `18` immutable `PINS.md` shelf SHAs |
+| **Control Plane** | [`.github`](https://github.com/native-agent-stack/.github) | Public | Org manifest (`schemaVersion: "4.0.0"`), `43` MADR 4.0 ADRs, standalone `scripts/merge_gate.py`, and SHA-pinned reusable CI |
+| **Sole Clean Monorepo** | `tier0-quant` | Private | `63` disjoint `L0`–`L10` upstream winners (`62` unique live-starred repos, `643+48` Atlas), `NautilusTrader v2` + `hftbacktest 2.4.4`, `Qlib v0.9.8`, `10` Noesis Docker research services, `46` SHA-locked skills across `6` Orca lanes, `ADR-0001`..`ADR-0012` (`Zensical :8010`), `18` immutable `PINS.md` shelf SHAs |
 
 ## 2. Archived Legacy Tier (`21` Read-Only Repositories, `actions_enabled=false`)
 

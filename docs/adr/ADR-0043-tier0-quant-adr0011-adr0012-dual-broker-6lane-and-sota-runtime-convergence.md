@@ -1,0 +1,35 @@
+# ADR-0043: `tier0-quant` `ADR-0011`–`ADR-0012` & PR `#13` Convergence: Dual-Broker Rate Pacing, Consolidated `7`-Line `24/5` Charter, `6`-Lane Multi-Model Harnesses & SOTA Runtime Bounds
+
+- **Status:** Accepted
+- **Date:** 2026-11-21
+- **Layer:** L0 Org Control Plane (`L0`), Quant Execution & Multi-Venue Rate Pacing (`L2`/`L5`), Multi-Model 6-Lane Harnesses & SOTA Runtime Concurrency (`L9`/`L10`)
+- **Evidence Grade:** E4 (`tier0-quant@7bae31361eb56a4612b359fea143dbfe29e88e60`, `PR #11` `eb1e4978` `ADR-0011`, `PR #12` `baa088c8` `ADR-0012`, `PR #13` `7bae3136` SOTA runtime bounds, `12/12` bounded ADRs `ADR-0001..ADR-0012`, Charter `AGENTS.md` SHA-256 `54e5c0ab5b2e9b44fe0f8654d80f18202eb95c2f50244170e213154782746ea7`, `v5` manifest `ec76ec6f9ce2a7a246672106ead9dc89e4cdbb4afef5f82abe57a28538e7e8ca`, `3,701 <= 5,000` prod LOC with untouched Z3 `UNSAT` `risk.py = 361 <= 400`, `46/46` SHA-locked skills (`0` orphans across `6` Orca lanes), `7` path-scoped rules, `10` slash commands, `7` native agents, `643+48` live-starred/frontier Atlas (`0` overlap), `17/17` Inspect AI, `18/18` Promptfoo, `41 passed, 7 deselected` CI pytest (`48` collected total), `21/21` immutable archived legacy SHAs intact, `gitleaks 0`, `zizmor 0`, and `Noesis` <-> `Mac M5 Max` convergence with `MAC_BROKER_PORTS=0`)
+- **GitHub Evidence:** https://github.com/native-agent-stack/.github, https://github.com/native-agent-stack/tier0-quant, https://github.com/nautechsystems/nautilus_trader, https://github.com/nkaz001/hftbacktest, https://github.com/tradermonty/claude-trading-skills, https://github.com/sst/opencode, https://github.com/stablyai/orca, https://github.com/Z3Prover/z3
+- **Revisit Trigger:** Achieving the first verified pre-wall (`<= 2026-10-15`) 6-gate statistical falsification pass independently on both directional and inverse-reversal legs (`hlz_trials_passed >= 1`) authorizing Stage 4 Paper `LiveNode` (`:4002`) sign-off via `paper-gatekeeper`, or a schema-breaking Next-Era org control-plane upgrade.
+
+## Context and Problem Statement
+
+Following `ADR-0042` (`tier0-quant@9f9b1fbe`, `ADR-0010`), three converged pull requests landed on `native-agent-stack/tier0-quant` `main`:
+
+1. **Dual-Broker Venue Rate Profiles & Consolidated `7`-Line `24/5` Charter (`PR #11`, `eb1e4978`, `ADR-0011`):** Declared `EXECUTION_VENUE_PROFILES` (`IBKR 3,000 rpm`, `Alpaca Paper 200 rpm` debounced via `min_modify_delta_bps`, documented `Alpaca Pro-Line 1,000 rpm` Reg-NMS held with `DMA=TWAP=VWAP=False`, and `Elite Smart Routers` not-held separation while all LIVE profiles remain fail-closed `PermissionError`), exported Prometheus venue gauges in `telemetry.py`, and consolidated `AGENTS.md` to SHA-256 `54e5c0ab5b2e9b44fe0f8654d80f18202eb95c2f50244170e213154782746ea7`.
+2. **SOTA Execution Optimization, `6`-Lane Multi-Model Harnesses & On-Demand Frameworks (`PR #12`, `baa088c8`, `ADR-0012`, `12/12` Bounded Capacity):** Added `AdaptiveInitialStop`, `SymbolChurnGuard` (passing opposite-side regime flips immediately), `PriorityVenueRatePacer` (`1s` burst + `60s` 3-tier priority `Exit/Cancel/BE > Trail > Entry` at `70%`), and `IntradayEquityThrottle` (`GREEN -> YELLOW -0.50% -> ORANGE -0.90% -> HALT_HARD -1.50%` plus `+1.00%` high-water profit-giveback lock) in `engine.py`/`telemetry.py` while keeping `risk.py` (`361 <= 400` LOC, Z3 `5.4.1 UNSAT`) untouched inside `3,701 <= 5,000` prod LOC, and expanded `orca.yaml` / `.claude/{rules,commands,agents}` / `scripts/harness_directive_hook.py` to `7` path-scoped rules, `10` slash commands, `7` agents, and `primary != reviewer` orthogonal multi-model chains across all `6` lanes.
+3. **Cross-Layer Runtime Concurrency, Docker Cgroup & Sandbox Bounds (`PR #13`, `7bae3136`):** Enforced `sitecustomize.py` / `tests/conftest.py` thread & GPU runtime bounds alongside `GOMAXPROCS`, `libuv`, `uv`, Docker Compose cgroup limits, `sota_host.sh` hardening, and cross-FS portability across CI, sandbox, and workstation surfaces.
+
+## Decision Outcome
+
+1. **Advance `repositories.nextEraActiveTier.tier0-quant.baselineSha` to `7bae31361eb56a4612b359fea143dbfe29e88e60`:**
+   - Synchronize `ECOSYSTEM_ORG_MANIFEST.json` (`schemaVersion 4.0.0`) to record `tier0-quant@7bae3136` (`ADR-0001..ADR-0012` `12/12` bounded, Charter `54e5c0ab5b2e9b44`, `v5` manifest `ec76ec6f9ce2a7a2`, `63` active winners across `62` unique live-starred slugs, `643+48` Starred/Beyond Atlas, `46/46` SHA-locked skills, `7` rules, `10` commands, `7` native agents, dual-broker `3,000/200/1,000` profiles, `PriorityVenueRatePacer` / `AdaptiveInitialStop` / `SymbolChurnGuard` / `IntradayEquityThrottle`, `3,701 <= 5,000` prod LOC with untouched `risk.py = 361 <= 400`, `41 passed, 7 deselected` CI pytest / `48` collected, `17/17` Inspect AI, `18/18` Promptfoo, PR #13 SOTA runtime/cgroup/conftest bounds, and `XERJ :9200` `53` docs indexed).
+2. **Preserve All `21` Immutable Archived Legacy Repository SHAs Untouched:**
+   - Retain every distinct final commit hash under `repositories.archivedLegacyTier` untouched, continuously guarded by `tests/test_org_manifest.py::test_archived_repos_retain_distinct_immutable_shas`.
+3. **Maintain Dual-Machine Parity (`Noesis` <-> `Mac M5 Max`) & Single Active Broker Host Boundary:**
+   - Converge `tier0-quant` (`7bae3136...`) and `.github` cleanly across `Noesis` (`Z:\` + `Noesis-SOTA` WSL2 + `10/10` Docker + live portals) and `Mac M5 Max` (`100.93.211.101`, `6/6` portals, `46/46` skills, `MAC_BROKER_PORTS = 0`), with `paper_live_deployed == False` and `live_execution_enabled == False`.
+
+## Alternatives Considered
+
+- **Leaving `.github` Pinned at `tier0-quant@9f9b1fbe` (`ADR-0010`):** Rejected — omits `ADR-0011` (`PR #11`), `ADR-0012` (`PR #12`), consolidated Charter `54e5c0ab5b2e9b44`, and `PR #13` runtime/cgroup bounds from the org control plane.
+- **Creating an Unbounded `ADR-0013` in `tier0-quant` for Runtime Bounds:** Rejected — `ADR-0001..ADR-0012` (`12/12`) enforces a strict `<= 12` ceiling in `tier0-quant`; `PR #13` cleanly enacted runtime concurrency hardening without breaching the bounded ADR cap.
+
+## Verification Witness
+
+- `tier0-quant@7bae31361eb56a4612b359fea143dbfe29e88e60` CI: `Tier-0 SOTA Verification Gate` (`44984454088`, `completed/success` — `41 passed, 7 deselected` of `48` collected pytest, `Promptfoo 18/18 100%`, `zizmor 0`, `trivy 0`, `gitleaks 0`) and `Tier-0 Docs Portal Strict Build` (`44984454096`, `completed/success`), plus live `Noesis-SOTA` checks (`layers 11/11`, `Inspect AI 17/17`, `Promptfoo scorecard 18/18`, `46/46` skills, `manifest_sha256 = ec76ec6f9ce2a7a2...`, `XERJ :9200` `53` docs / `43` hits).
+- `.github` Control Plane: `python scripts/architecture_catalog.py --sync-manifest` & `--check` (`43/43` GitHub-evidenced MADR 4.0 ADRs, `0` drift, LF-only), `python scripts/merge_gate.py` (`PASS`), `python -m unittest discover -s tests -v` (`5/5 OK` incl. `21/21` immutable archive SHA test), `zizmor --offline .github/workflows` (`0` findings), `gitleaks git --no-banner` (`0` leaks), and `Org Control-Plane Gate` CI (`completed/success`), paired with `Noesis` <-> `Mac M5 Max` convergence (`MAC_BROKER_PORTS = 0`).

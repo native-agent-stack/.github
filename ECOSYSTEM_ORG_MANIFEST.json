@@ -129,14 +129,14 @@
         "url": "https://github.com/native-agent-stack/.github",
         "visibility": "public",
         "actionsEnabled": true,
-        "role": "Org control plane, Next-Era schemaVersion 4.0.0 ECOSYSTEM_ORG_MANIFEST.json, 40 MADR 4.0 ADRs, standalone merge_gate.py & weekday scheduled CI"
+        "role": "Org control plane, Next-Era schemaVersion 4.0.0 ECOSYSTEM_ORG_MANIFEST.json, 42 MADR 4.0 ADRs, standalone merge_gate.py & weekday scheduled CI"
       },
       "tier0-quant": {
         "url": "https://github.com/native-agent-stack/tier0-quant",
         "visibility": "private",
         "actionsEnabled": true,
-        "baselineSha": "523f0e111f20a21a0afba4e8501189db23844f72",
-        "role": "Sole active clean-room quant & research monorepo (Noesis-SOTA ~/tier0-quant + Z:/tier0-quant mirror + Mac M5 Max ~/Documents/tier0-quant; ADR-0001..ADR-0008, v5 manifest 81acdea749e3235d): 63 disjoint L0-L10 active winners across 62 unique 100%-live-starred GitHub slugs (0 unpinned, 0 in 3a), 635+48 Starred/Beyond Atlas (0 overlap, 0 archived), 7 Claude native agents (tier0-grand-central + 6 inter-lane coordinated Orca 1.4.268 DAG lanes with cross-vendor failover & read-only paper-gatekeeper), NautilusTrader v2 + Rust hftbacktest 2.4.4 + Z3 5.4.1 UNSAT pure-integer Rule-612 risk (357 <= 400 LOC), Qlib v0.9.8, 33 SHA-locked skills, 14/14 Inspect AI, 15/15 Promptfoo, Harbor 1.000, Syft+OSV+Trivy+uv-audit+Zizmor+Gitleaks 0, XERJ :9200 RAG, 10 Noesis Docker research services + OpenBB :6900 + FINOS :1420, Z:/orca-workspaces Disk-Z Grand Central, <= 5,000 prod LOC, pre-wall <= 2026-10-15, and fail-closed post-proof LiveNode gate"
+        "baselineSha": "7defd6c4c798613d60831d79a32256012441d537",
+        "role": "Sole active clean-room quant & research monorepo (Noesis-SOTA ~/tier0-quant + Z:/tier0-quant mirror + Mac M5 Max ~/Documents/tier0-quant; ADR-0001..ADR-0009, lean SOTA Charter 88bcce562e402a64, v5 manifest 54bc25e710a6b676): 63 disjoint L0-L10 active winners across 62 unique 100%-live-starred GitHub slugs, 635+48 Starred/Beyond Atlas, 46/46 SHA-locked upstream skills (0 orphans across 6 Orca 1.4.268 DAG lanes), 7 Claude native agents, 4-harness enforcement (Claude/Codex/Gemini/OpenCode ESM plugin + fail-closed zero-self-invented-agent/skill hooks), canonical docs/UNIFIED_ECOSYSTEM_INVENTORY.md, 24/5 session-aware dynamic trailing (incl. XNYS 13:00 ET half-days) & whole-market causal regime/PIT ALFRED/peak-exhaustion reversal inside NautilusTrader v2 + Rust hftbacktest 2.4.4 + untouched Z3 UNSAT pure-integer Rule-612 risk (361 <= 400 LOC), 3,000 <= 5,000 prod LOC, bounded CPU/GPU/DuckDB/MLflow/Compose pools & flock check.sh, 44/44 pytest, 15/15 Inspect AI, 16/16 Promptfoo, Harbor 1.000, Trivy+uv-audit+Zizmor+Gitleaks 0, XERJ :9200 RAG, 10 Noesis Docker research services + OpenBB :6900 + FINOS :1420, pre-wall <= 2026-10-15, and fail-closed post-proof LiveNode gate"
       }
     },
     "archivedLegacyTier": {
@@ -310,7 +310,7 @@
     "catalogPath": "docs/adr/CATALOG.md",
     "generatorScript": "scripts/architecture_catalog.py",
     "revisitThresholdDays": 45,
-    "adrCount": 41,
+    "adrCount": 42,
     "records": [
       {
         "id": "ADR-0001",
@@ -1025,6 +1025,25 @@
           "https://github.com/native-agent-stack/tier0-quant",
           "https://github.com/stablyai/orca",
           "https://github.com/xerj-org/xerj"
+        ]
+      },
+      {
+        "id": "ADR-0042",
+        "layer": "L0 Org Control Plane (`L0`), Quant Execution & Risk (`L2`/`L5`), Cross-Harness Governance (`L9`/`L10`)",
+        "title": "`tier0-quant` 24/5 Session-Aware Dynamic Trailing, Whole-Market Regime Reversal, `46` SHA-Locked Skills, 4-Harness OpenCode Plugin & Lean Charter Convergence",
+        "status": "Accepted",
+        "date": "2026-11-21",
+        "evidenceGrade": "E4 (`tier0-quant@7defd6c4c798613d60831d79a32256012441d537`, `ADR-0001..ADR-0009` (`9/12` bounded), lean SOTA Charter `AGENTS.md` SHA-256 `88bcce562e402a64...`, `v5` manifest `54bc25e710a6b676...`, `3,000 <= 5,000` prod LOC with untouched Z3 `UNSAT` `risk.py = 361 <= 400`, `46/46` SHA-locked upstream skills (`0` orphans across `6` Orca lanes), `docs/UNIFIED_ECOSYSTEM_INVENTORY.md`, native OpenCode ESM plugin `.opencode/plugins/tier0-harness-hook.js` + fail-closed zero-self-invented-agent/skill hooks across Claude/Codex/Gemini/OpenCode, `XNYS` `13:00 ET` early-close `SESSION_PROTECTION_24X5`, optional PIT ALFRED `VIXCLS`/`BAMLH0A0HYM2` regime stress confirmation, `d101034` bounded CPU/GPU/DuckDB/MLflow/Compose pools & `flock check.sh`, `44/44` pytest, `15/15` Inspect AI, `16/16` Promptfoo, `21/21` immutable archived legacy SHAs intact, `gitleaks 0`, `zizmor 0`, `Noesis` <-> `Mac M5 Max` converged with `MAC_BROKER_PORTS=0`)",
+        "file": "docs/adr/ADR-0042-tier0-quant-24x5-trailing-46-skills-opencode-and-lean-charter-convergence.md",
+        "githubUrls": [
+          "https://github.com/Z3Prover/z3",
+          "https://github.com/native-agent-stack/.github",
+          "https://github.com/native-agent-stack/tier0-quant",
+          "https://github.com/nautechsystems/nautilus_trader",
+          "https://github.com/nkaz001/hftbacktest",
+          "https://github.com/sst/opencode",
+          "https://github.com/stablyai/orca",
+          "https://github.com/tradermonty/claude-trading-skills"
         ]
       }
     ]

@@ -8,3 +8,8 @@ Following `ADR-0040`, all `17` superseded multi-repo repositories were sealed an
 - **Organization ADRs:** [`docs/adr/CATALOG.md`](docs/adr/CATALOG.md) (`44` MADR 4.0 ADRs)
 - **Standalone Merge Gate:** [`scripts/merge_gate.py`](scripts/merge_gate.py) (zero leaks, `40`-char SHA-pinned GitHub Actions, `18` `PINS.md` shelf SHAs)
 - **Pre-Wall & Execution Firewalls:** Strictly historical discovery `<= 2026-10-15`, `<= 2.00%` atomic initial stop (`ADR-0022`), and hard-refused live broker endpoints (`:4001`, `:7496`).
+
+## Clean New Install
+```bash
+git clone https://github.com/native-agent-stack/tier0-quant.git && cd tier0-quant && bash scripts/orca_workspace_setup.sh
+```

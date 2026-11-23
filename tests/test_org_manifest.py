@@ -24,7 +24,7 @@ class TestOrgControlPlane(unittest.TestCase):
 
         self.assertEqual(set(active.keys()), {".github", "tier0-quant"})
         self.assertEqual(active[".github"]["visibility"], "public")
-        self.assertEqual(active["tier0-quant"]["visibility"], "private")
+        self.assertEqual(active["tier0-quant"]["visibility"], "public")
         self.assertEqual(len(archived), 21)
         for name, meta in archived.items():
             self.assertTrue(meta.get("archived"), msg=f"{name} must have archived=true")

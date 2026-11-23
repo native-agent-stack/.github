@@ -2,7 +2,7 @@
 
 **Next-Era Two-Repository Architecture: Single Active Clean-Room Quant Monorepo (`tier0-quant`) + Organization Control Plane (`.github`).**
 
-All `17` superseded multi-repo harnesses, rankers, labs, and vaults are archived read-only on GitHub alongside the `4` historical archives (`21` archived repos total), leaving **`tier0-quant`** as the sole active clean-room monorepo (`Noesis-SOTA`, `Z:/tier0-quant` mirror, and `Mac M5 Max`) enforcing Upstream-First & Zero Paper Self-Invention (`<= 4,400` custom production LOC, MADR 4.0 ADRs, SHA-pinned Actions, and fail-closed `<= 2026-10-15` pre-wall + paper-only firewalls).
+All `17` superseded multi-repo harnesses, rankers, labs, and vaults are archived read-only on GitHub alongside the `4` historical archives (`21` archived repos total), leaving **`tier0-quant`** as the sole active clean-room monorepo (`Noesis-SOTA`, `Z:/tier0-quant` mirror, and `Mac M5 Max`) enforcing Upstream-First & Zero Paper Self-Invention (`<= 3,500` custom production LOC, MADR 4.0 ADRs, SHA-pinned Actions, and fail-closed `<= 2026-10-15` pre-wall + paper-only firewalls).
 
 ---
 
@@ -11,7 +11,7 @@ All `17` superseded multi-repo harnesses, rankers, labs, and vaults are archived
 | Role | Repository | Visibility | Scope & Verification |
 | :--- | :--- | :--- | :--- |
 | **Control Plane** | [`.github`](https://github.com/native-agent-stack/.github) | Public | Org manifest (`schemaVersion: "4.0.0"`), `44` MADR 4.0 ADRs, standalone `scripts/merge_gate.py`, and SHA-pinned reusable CI |
-| **Sole Clean Monorepo** | `tier0-quant` | Private | `63` disjoint `L0`–`L10` upstream winners (`62` unique live-starred repos, `643+48` Atlas), `NautilusTrader v2` + `hftbacktest 2.4.4`, `Qlib v0.9.8`, `10` Noesis Docker research services, `46` SHA-locked skills across `6` Orca lanes, `ADR-0001`..`ADR-0012` (`Zensical :8010`), `18` immutable `PINS.md` shelf SHAs |
+| **Sole Clean Monorepo** | `tier0-quant` | Private | `64` disjoint `L0`–`L10` upstream winners (`63` unique live-starred repos, `643+48` Atlas), `NautilusTrader v2` + `hftbacktest 2.4.4`, `Qlib v0.9.8`, `16` Noesis Docker research/FINOS/sandbox services, `46` SHA-locked skills across `6` Orca lanes, `ADR-0001`..`ADR-0012` (`Zensical :8010`), `18` immutable `PINS.md` shelf SHAs |
 
 ## 2. Archived Legacy Tier (`21` Read-Only Repositories, `actions_enabled=false`)
 

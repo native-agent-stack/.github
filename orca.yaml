@@ -1,13 +1,12 @@
 # Orca (https://github.com/stablyai/orca) dual-machine workspace recipe for .github (v4.0.0 Next-Era)
 # Supports Stationary Noesis (Win32 + Noesis-SOTA + Noesis-Carbon) and Portable Mac M5 Max.
 # Cross-OS invariant: commands run identically in Win32 PowerShell, macOS zsh, and Linux bash.
+setupAgentStartupPolicy: wait-for-setup
 scripts:
   setup: |
     uv run --no-project python --version
-setupAgentStartupPolicy: wait-for-setup
-defaultTabs:
-  - title: Org Governance Agent
-  - title: Org Merge & ADR Gate
-    command: uv run --no-project python scripts/merge_gate.py
-  - title: Org Manifest Tests
-    command: uv run --no-project python -m unittest discover -s tests -v
+  check: |
+    uv run --no-project python scripts/architecture_catalog.py --check
+    uv run --no-project python scripts/merge_gate.py
+  test: |
+    uv run --no-project python -m unittest discover -s tests -v

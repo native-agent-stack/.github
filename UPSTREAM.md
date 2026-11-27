@@ -3,7 +3,7 @@
 | Component | Pin / Commit | License | Source URL | Date Verified | Role | Origin |
 |---|---|---|---|---|---|---|
 | `actions/checkout` | `3d3c42e5aac5ba805825da76410c181273ba90b1` | MIT | https://github.com/actions/checkout | 2026-11-21 | 40-char SHA-pinned reusable organization CI checkout (`v7.0.1`) | upstream |
-| `step-security/harden-runner` | `e14015d583714f6e62063499dc959a02595150a1` | Apache-2.0 | https://github.com/step-security/harden-runner | 2026-11-21 | Egress-auditing CI runner hardening (`v2.21.1`) | upstream |
+| `step-security/harden-runner` | `aebdcf6156ab6691adf63218240e476564a1ed4c` | Apache-2.0 | https://github.com/step-security/harden-runner | 2026-11-26 | Egress-auditing CI runner hardening (`v2.23.0`) | upstream |
 | `gitleaks` | `v8.30.1` | MIT | https://github.com/gitleaks/gitleaks | 2026-11-21 | Zero-secret & zero-PII repository scan across active & archived org repositories | upstream |
 | `zizmor` | `v1.33.1` | MIT | https://github.com/zizmorcore/zizmor | 2026-11-26 | Static GitHub Actions workflow security audit across `.github/workflows` | upstream |
 | `orca` | `v1.4.278` | Apache-2.0 | https://github.com/stablyai/orca | 2026-11-26 | Dual-machine (`Mac M5 Max <-> Noesis Win32 + Noesis-SOTA + Noesis-Carbon`) worktree orchestrator | upstream |

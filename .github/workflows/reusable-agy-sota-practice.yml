@@ -1,0 +1,175 @@
+name: Reusable AGY SOTA Practice & Supply-Chain Gate
+
+on:
+  workflow_call:
+    inputs:
+      check-retiring-models:
+        required: false
+        type: boolean
+        default: true
+      max-agents-md-lines:
+        required: false
+        type: number
+        default: 45
+      max-agents-md-chars:
+        required: false
+        type: number
+        default: 1600
+      require-harden-runner:
+        required: false
+        type: boolean
+        default: true
+
+permissions: {}
+
+jobs:
+  agy-sota-practice:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    steps:
+      - name: Harden runner
+        uses: step-security/harden-runner@e14015d583714f6e62063499dc959a02595150a1 # v2.21.1
+        with:
+          egress-policy: audit
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Verify AGY Practice, Customizations & 40-Char SHA-Pinned Workflows
+        env:
+          CHECK_RETIRING_MODELS: ${{ inputs.check-retiring-models }}
+          MAX_AGENTS_MD_LINES: ${{ inputs.max-agents-md-lines }}
+          MAX_AGENTS_MD_CHARS: ${{ inputs.max-agents-md-chars }}
+          REQUIRE_HARDEN_RUNNER: ${{ inputs.require-harden-runner }}
+        run: |
+          python3 - <<'PY'
+          import os
+          import pathlib
+          import re
+          import sys
+
+          root = pathlib.Path(".")
+          errors: list[str] = []
+
+          max_lines = int(float(os.environ.get("MAX_AGENTS_MD_LINES", "45")))
+          max_chars = int(float(os.environ.get("MAX_AGENTS_MD_CHARS", "1600")))
+          check_retiring = os.environ.get("CHECK_RETIRING_MODELS", "true").lower() == "true"
+          require_harden = os.environ.get("REQUIRE_HARDEN_RUNNER", "true").lower() == "true"
+
+          agents_md = root / "AGENTS.md"
+          if agents_md.is_file():
+              txt = agents_md.read_text(encoding="utf-8")
+              lines = len(txt.splitlines())
+              chars = len(txt)
+              if lines > max_lines or chars > max_chars:
+                  errors.append(f"AGENTS.md exceeds budget: {lines}L/{chars}c > {max_lines}L/{max_chars}c")
+              if re.search(r"<!--.*?-->", txt, re.DOTALL):
+                  errors.append("AGENTS.md contains HTML comments (must be 0)")
+
+          fm_re = re.compile(r"^---\r?\n(.*?)\r?\n---(?:\r?\n|$)", re.DOTALL)
+          valid_triggers = {"always_on", "glob", "model_decision", "manual"}
+
+          rules_dir = root / ".agents" / "rules"
+          if rules_dir.is_dir():
+              for md in sorted(rules_dir.glob("*.md")):
+                  raw_bytes = md.read_bytes()
+                  if len(raw_bytes) > 24_000:
+                      errors.append(f"{md}: {len(raw_bytes)} B exceeds 24,000 B cap")
+                  txt = raw_bytes.decode("utf-8")
+                  m = fm_re.match(txt)
+                  if not m:
+                      errors.append(f"{md}: missing YAML frontmatter")
+                      continue
+                  trig = re.search(r"^trigger:\s*(.+)$", m.group(1), re.MULTILINE)
+                  if not trig or trig.group(1).strip().strip("'\"") not in valid_triggers:
+                      errors.append(f"{md}: invalid or non-snake_case trigger frontmatter")
+
+          skills_dir = root / ".agents" / "skills"
+          if skills_dir.is_dir():
+              for sdir in sorted(d for d in skills_dir.iterdir() if d.is_dir()):
+                  sk = sdir / "SKILL.md"
+                  if not sk.is_file():
+                      continue
+                  txt = sk.read_text(encoding="utf-8")
+                  m = fm_re.match(txt)
+                  if not m:
+                      errors.append(f"{sk}: missing YAML frontmatter")
+                      continue
+                  nm = re.search(r"^name:\s*(.+)$", m.group(1), re.MULTILINE)
+                  if not nm or nm.group(1).strip().strip("'\"") != sdir.name:
+                      errors.append(f"{sk}: name frontmatter must match folder '{sdir.name}'")
+                  dm = re.search(r"^description:\s*(.*?)(?=\n[A-Za-z0-9_-]+:|\Z)", m.group(1), re.MULTILINE | re.DOTALL)
+                  if not dm:
+                      errors.append(f"{sk}: missing description frontmatter")
+                  else:
+                      desc = dm.group(1).strip().strip("'\"")
+                      if len(desc) > 1024:
+                          errors.append(f"{sk}: description {len(desc)}c exceeds 1,024c cap")
+
+          tilde_deny_re = re.compile(r"(?:read_file|write_file|edit_file|command)\s*\(\s*~/")
+          agents_root = root / ".agents"
+          if agents_root.is_dir():
+              for jf in sorted(agents_root.rglob("*.json")):
+                  if tilde_deny_re.search(jf.read_text(encoding="utf-8", errors="replace")):
+                      errors.append(f"{jf}: unexpanded ~/ deny rule found")
+
+          if check_retiring:
+              retiring_re = re.compile(
+                  r"(?i)(gemini[-_ ]4[-_ ]argon|gemini[-_ ]3[._-]8([-_ ]flash)?|gpt[-_ ]oss[-_ ]120b|claude[-_ ](?:(?:sonnet|opus)[-_ ])?4[._-]6)"
+              )
+              scan_targets = [p for p in (root / "AGENTS.md", root / "orca.yaml") if p.is_file()]
+              for base in (root / ".agents", root / ".github" / "workflows"):
+                  if base.is_dir():
+                      scan_targets.extend(sorted(p for p in base.rglob("*") if p.is_file()))
+              for target in scan_targets:
+                  if target.name == "reusable-agy-sota-practice.yml":
+                      continue
+                  txt = target.read_text(encoding="utf-8", errors="replace")
+                  hit = retiring_re.search(txt)
+                  if hit:
+                      errors.append(f"{target}: retiring Nov-30 model slug '{hit.group(0)}'")
+
+          uses_re = re.compile(r"^\s*-?\s*uses:\s*([^#\s]+)", re.MULTILINE)
+          sha_pin_re = re.compile(r"^[A-Za-z0-9_.-]+/[A-Za-z0-9_./-]+@[0-9a-f]{40}$")
+          wf_dir = root / ".github" / "workflows"
+          if wf_dir.is_dir():
+              for wf in sorted(p for p in wf_dir.iterdir() if p.is_file() and p.suffix in (".yml", ".yaml")):
+                  txt = wf.read_text(encoding="utf-8")
+                  for u in uses_re.findall(txt):
+                      if u.startswith(("./", "native-agent-stack/.github/")):
+                          continue
+                      if not sha_pin_re.match(u):
+                          errors.append(f"{wf}: unpinned GitHub Action '{u}' (40-char SHA required)")
+                  if require_harden and "step-security/harden-runner@" not in txt:
+                      errors.append(f"{wf}: missing step-security/harden-runner")
+
+          if errors:
+              for err in errors:
+                  print(f"FAIL: {err}", file=sys.stderr)
+              raise SystemExit(1)
+          print("PASS: AGY SOTA practice, customizations, sunset & 40-char SHA workflow checks clean.")
+          PY
+      - name: Run MIT Gitleaks Secret & Privacy Scan (SHA-256 pinned v8.30.1)
+        run: |
+          set -euo pipefail
+          curl -fsSL -o /tmp/gitleaks.tar.gz \
+            https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_linux_x64.tar.gz
+          echo "551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb  /tmp/gitleaks.tar.gz" | sha256sum -c -
+          tar -xzf /tmp/gitleaks.tar.gz -C /tmp gitleaks
+          chmod +x /tmp/gitleaks
+          /tmp/gitleaks git --no-banner
+          /tmp/gitleaks detect --no-git --source . --no-banner
+      - name: Run Zizmor GitHub Actions Security Audit (SHA-256 pinned v1.33.1)
+        run: |
+          set -euo pipefail
+          curl -fsSL -o /tmp/zizmor.tar.gz \
+            https://github.com/zizmorcore/zizmor/releases/download/v1.33.1/zizmor-x86_64-unknown-linux-gnu.tar.gz
+          echo "3e6a301c7a820a2501915f5a9de8c0486da82bdec7965f068477538a98743d43  /tmp/zizmor.tar.gz" | sha256sum -c -
+          mkdir -p /tmp/zizmor-bin
+          tar -xzf /tmp/zizmor.tar.gz -C /tmp/zizmor-bin
+          ZIZMOR_BIN="$(find /tmp/zizmor-bin -type f -name zizmor | head -n 1)"
+          chmod +x "$ZIZMOR_BIN"
+          "$ZIZMOR_BIN" --offline .github/workflows

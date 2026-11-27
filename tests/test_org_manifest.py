@@ -113,21 +113,30 @@ class TestOrgControlPlane(unittest.TestCase):
         agy = wpe["agy-sota-convergence"]
         self.assertEqual(agy["url"], "https://github.com/seathatflowsinourveins/agy-sota-convergence")
         self.assertEqual(agy["visibility"], "public")
-        self.assertEqual(agy["version"], "3.1.0")
+        self.assertEqual(agy["version"], "3.2.0")
         self.assertRegex(str(agy["commitSha"]), r"^[0-9a-f]{40}$")
         self.assertRegex(str(agy["manifestSha256"]), r"^[0-9a-f]{64}$")
         self.assertIn("sotaConvergenceGates", agy["liveCiRuns"])
         self.assertIn("sotaDocsPortalBuild", agy["liveCiRuns"])
-        self.assertEqual(agy["manifestGates"], "17/17")
-        self.assertEqual(agy["checkScriptGates"], "12/12")
+        self.assertEqual(agy["trackedFiles"], 89)
+        self.assertEqual(agy["manifestGates"], "18/18")
+        self.assertEqual(agy["checkScriptGates"], "13/13")
         self.assertEqual(agy["upstreamSpdxWinners"], "63/63")
-        self.assertEqual(agy["skillEvaluatorTier1"], "Grade A 100.0/100")
+        self.assertEqual(agy["skillEvaluatorTier1"], "4/4 Grade A 100.0/100")
+        self.assertEqual(agy["zensicalPortalPages"], 26)
+        plugin_pack = agy["agyPluginPack"]
+        self.assertEqual(plugin_pack["path"], "plugins/agy-sota-practice")
+        self.assertEqual(plugin_pack["files"], 19)
+        self.assertFalse(plugin_pack["optInHooksEnabled"])
+        self.assertFalse(plugin_pack["idleRulesAgentsMd"])
+        self.assertEqual(plugin_pack["byteParitySyncedFiles"], "8/8")
 
         self.assertEqual(wpe["noesis"]["visibility"], "public")
         self.assertEqual(wpe["sota-research-convergence"]["visibility"], "archived_private")
         self.assertEqual(wpe["tier0-quant"]["visibility"], "archived_private")
         std = wpe["githubSotaWorkflowStandard"]
         self.assertIn("reusable-agy-sota-practice.yml", std["reusableWorkflows"])
+        self.assertIn("aebdcf6156ab6691adf63218240e476564a1ed4c", std["runnerHardening"])
         self.assertEqual(std["gitleaksPin"], "v8.30.1")
         self.assertEqual(std["zizmorPin"], "v1.33.1")
         self.assertRegex(str(std["zizmorLinuxX64Sha256"]), r"^[0-9a-f]{64}$")
@@ -138,9 +147,16 @@ class TestOrgControlPlane(unittest.TestCase):
         wf_txt = wf.read_text(encoding="utf-8")
         self.assertIn("workflow_call:", wf_txt)
         self.assertIn("permissions: {}", wf_txt)
-        self.assertIn("step-security/harden-runner@", wf_txt)
+        self.assertIn("step-security/harden-runner@aebdcf6156ab6691adf63218240e476564a1ed4c", wf_txt)
         self.assertIn("3e6a301c7a820a2501915f5a9de8c0486da82bdec7965f068477538a98743d43", wf_txt)
         self.assertIn("551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb", wf_txt)
+
+        for wf_file in sorted((ROOT / ".github" / "workflows").glob("*.yml")):
+            self.assertIn(
+                "step-security/harden-runner@aebdcf6156ab6691adf63218240e476564a1ed4c",
+                wf_file.read_text(encoding="utf-8"),
+                msg=f"{wf_file.name} must pin harden-runner v2.23.0",
+            )
 
         for gov in (
             ROOT / ".github" / "CODEOWNERS",

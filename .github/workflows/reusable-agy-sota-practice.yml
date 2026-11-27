@@ -30,7 +30,7 @@ jobs:
       contents: read
     steps:
       - name: Harden runner
-        uses: step-security/harden-runner@e14015d583714f6e62063499dc959a02595150a1 # v2.21.1
+        uses: step-security/harden-runner@aebdcf6156ab6691adf63218240e476564a1ed4c # v2.23.0
         with:
           egress-policy: audit
       - name: Checkout repository
@@ -38,7 +38,7 @@ jobs:
         with:
           persist-credentials: false
           fetch-depth: 0
-      - name: Verify AGY Practice, Customizations & 40-Char SHA-Pinned Workflows
+      - name: Verify AGY Practice, Customizations, Plugin Packs & 40-Char SHA-Pinned Workflows
         env:
           CHECK_RETIRING_MODELS: ${{ inputs.check-retiring-models }}
           MAX_AGENTS_MD_LINES: ${{ inputs.max-agents-md-lines }}
@@ -46,6 +46,7 @@ jobs:
           REQUIRE_HARDEN_RUNNER: ${{ inputs.require-harden-runner }}
         run: |
           python3 - <<'PY'
+          import json
           import os
           import pathlib
           import re
@@ -115,6 +116,57 @@ jobs:
               for jf in sorted(agents_root.rglob("*.json")):
                   if tilde_deny_re.search(jf.read_text(encoding="utf-8", errors="replace")):
                       errors.append(f"{jf}: unexpanded ~/ deny rule found")
+
+          plugins_dir = root / "plugins"
+          kebab_re = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
+          if plugins_dir.is_dir():
+              for pdir in sorted(d for d in plugins_dir.iterdir() if d.is_dir()):
+                  pj = pdir / "plugin.json"
+                  if not pj.is_file():
+                      continue
+                  try:
+                      pdata = json.loads(pj.read_text(encoding="utf-8"))
+                  except Exception as exc:
+                      errors.append(f"{pj}: invalid JSON ({exc})")
+                      continue
+                  if not isinstance(pdata, dict) or not kebab_re.match(str(pdata.get("name", ""))):
+                      errors.append(f"{pj}: missing/non-kebab-case 'name'")
+                  if "repository" in pdata and not isinstance(pdata["repository"], str):
+                      errors.append(f"{pj}: 'repository' must be a plain HTTPS string")
+                  for shadow in (pdir / "hooks" / "hooks.json", pdir / "commands", pdir / "rules" / "AGENTS.md"):
+                      if shadow.exists():
+                          errors.append(f"{shadow}: forbidden AGY plugin shadow path")
+                  phooks = pdir / "hooks.json"
+                  if phooks.is_file():
+                      htxt = phooks.read_text(encoding="utf-8")
+                      if ("$" + "{PLUGIN_ROOT}") in htxt:
+                          errors.append(f"{phooks}: use relative ./ paths instead of PLUGIN_ROOT expansion")
+                  prules = pdir / "rules"
+                  if prules.is_dir():
+                      for md in sorted(prules.glob("*.md")):
+                          raw_bytes = md.read_bytes()
+                          if len(raw_bytes) > 24_000:
+                              errors.append(f"{md}: {len(raw_bytes)} B exceeds 24,000 B cap")
+                          m = fm_re.match(raw_bytes.decode("utf-8"))
+                          trig = re.search(r"^trigger:\s*(.+)$", m.group(1), re.MULTILINE) if m else None
+                          if not trig or trig.group(1).strip().strip("'\"") not in valid_triggers:
+                              errors.append(f"{md}: invalid or non-snake_case trigger frontmatter")
+                  pskills = pdir / "skills"
+                  if pskills.is_dir():
+                      for sdir in sorted(d for d in pskills.iterdir() if d.is_dir()):
+                          sk = sdir / "SKILL.md"
+                          if not sk.is_file():
+                              continue
+                          m = fm_re.match(sk.read_text(encoding="utf-8"))
+                          if not m:
+                              errors.append(f"{sk}: missing YAML frontmatter")
+                              continue
+                          nm = re.search(r"^name:\s*(.+)$", m.group(1), re.MULTILINE)
+                          if not nm or nm.group(1).strip().strip("'\"") != sdir.name:
+                              errors.append(f"{sk}: name frontmatter must match folder '{sdir.name}'")
+                          dm = re.search(r"^description:\s*(.*?)(?=\n[A-Za-z0-9_-]+:|\Z)", m.group(1), re.MULTILINE | re.DOTALL)
+                          if not dm or len(dm.group(1).strip().strip("'\"")) > 1024:
+                              errors.append(f"{sk}: missing or >1,024c description frontmatter")
 
           if check_retiring:
               retiring_re = re.compile(
